@@ -1,0 +1,20 @@
+Recursos
+Formación gratuita Microsoft
+https://learn.microsoft.com/es-es/training/
+Cursos gratuitos Linux
+https://www.edx.org/es/learn/linux/the-linux-foundation-introduccion-a-linux
+https://www.udemy.com/es/topic/linux/free/
+Formación gratuita Cisco
+https://skillsforall.com/
+Plataformas de aprendizaje ciberseguridad
+https://tryhackme.com/
+https://www.hackthebox.com
+
+HackTheBox
+
+Certificaciones Linux
+
+https://www.comptia.org/certifications/linux
+https://www.lpi.org/our-certifications/lpic-1-overview
+https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs
+https://www.redhat.com/en/services/certification/rhcsa
