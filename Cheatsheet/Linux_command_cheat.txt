@@ -1,0 +1,18 @@
+Linux Command Cheat Sheet|
+|--> pipe(redirect)output
+sudo--> superuser
+nohup..--> run<command> inmmuune to hangup signal
+man..--> display help pages of commands
+command & --> run command and send task to background
+>>[fileA] append to fileA, preserving existing contents
+>[fileA] output to fileA, overwriting contents
+echo -n --> display a line of test
+xargs --> build command line from previous output
+1>2& redirect stdout to stderr
+fg %N go task N
+jobs  list task
+ctrl-z suspend current task
+
+FILE PERMISION:
+chmod -c-R chmod file read,write and executable permission
+touchmm-a -t

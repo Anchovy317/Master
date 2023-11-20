@@ -1,0 +1,37 @@
+Fundamentos:
+    Pilares de la ciber:
+        ciberseguridad: Sistemas, Redes, Programacion, Compliance; regulaciones etc...
+Unidad 1 - Introduccion a la ciberseguridad:
+    Conpectos generales; Panorama globales de la ciberseguridad; actores y dominios de la ciberseguridad; Actores y dominios  de la ci
+    Seguridad de la cominicaciones: Proteccion contra una amenaza  a la infraestructura tecnica  de un cibersistema que pueda  conducir a una alteracion de sus caracteristicas para realizar actividades
+                                    no privista por sus propietarios,
+    Seguridad de las operaciones:
+    Seguridad de las informacion:
+    Seguridad fisica:
+    Seguridad publica/nacional:
+
+
+    zeroodioum bug bounty huntr(ia and marchinglearling)
+
+    Cloud ia and 5G:
+        https://nvd.nist.gov/
+
+https://www.first.org/cvss/calculator/3.1
+
+https://zerodium.com/
+
+https://huntr.com/
+ nirdsoft.net/utils/web_browser_password.html
+
+
+ttp tacticas Tecnicas y procedimientos Mitre atack (att) es para ver la tacticas utilizadas para las vulnerabilidades.
+defend mitre metodos para proteger o defender
+
+defacemet:
+Hacer resumenes de los apuntes de clase.
+
+Ataques basados en la web, watering hole attack, drive-by attacks
+
+
+Actores de defensa:
+hostedscan for web scan , 7

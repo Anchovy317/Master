@@ -1,0 +1,100 @@
+La ciberseguridad es un elemento ensencial en la era digital, no solo por su papel en la proteccion de la info, sino tambien por su contribucion
+en la prevencion del robo de datos, ayuda a minimizar el tiempo de inactividad del sistema y mantener intacta la reputacion de una empresa.
+ -CONCEPTOS:
+    1.  Prevenir los ataques de los delicuentes cibernetiocos que pueden robar, danhar o incluso destruir info.
+    2.  Garantizar  la confidencialidad, integridad y disponibiilidad de la info que son los que principios  fundamentales de la seguridad.
+    3.  Cummplir con las formas y leyes de proteccion de datos y privacidad que regulan el uso de la info lo cual es fundamental en el mundo actual
+        sobre la privacidad del user.
+    4.  Mejorar la competitividad y la reputacion de la organizacion, una org que gestiona la info de manera segura responsable hana la confiaza de sus
+        clientes y socios, lo que a su vez puede conducir a un crecimiento y exito sostenible.
+No solo es una serie de medidas para proteger un sistema tambien se trara de una serie de estrategias, politicas y tech que se emplean en salvaguardar las
+redes dispositivos, los programas y los datos de ataque.
+Ademas de manejo  de los conceptos de ciber tambien implica la compresion de las normas, leyes, y regulacione relacionadas con la seguiridad de la info y
+la privacidad de los datos.
+Las empresas deben adaptarse al entorno digital con el fin de alcanzar un mayor eficiencia y compititividad, se encientra en su capacidad para satisfacer
+las expectatvas tech de sus clientes y distinguirse de sus competidores.
+
+-El obj de la trasndormacion digital sera distinto segun:
+    1.  organizacion/sector en la que aplicara
+    2.  Punto de la partida
+    3.  Situacion de riesgo de la organizacion
+    4.  Inclusion de las diversas areas
+    5.  Contexto regulativo
+    6.  Referentes y antecedentes
+
+-Los componentes habituales son los siguientes:
+    1.  Reorientacion hacia el negocio "core" de la empresa
+    2.  Adaptacion a un nuevo contexto regulatorio y social
+    3.  Simplificacion de los procesos operativos necesarios
+    4.  Cambio cultural en la organizacion
+    5.  Procesamiento de cambio tech
+
+-En el caso de las organizacionesm esto ha significado:
+    1.  Redefinivion de sus estrategias en torno a plataforma digitales.
+    2.  Concentrarse en las capacidades clave de cada empresa y en la gestion responsable de los datos de los clientes como clave primordial para lograr ser
+        relevantes para los clientes.
+    3.  Procesamiento de una cultura agil.
+    4.  La fijacion de las confianza y la seguridad de datos e infraestructura como elementos fudamentales para todo esto.
+
+La ciberseguridad es la conjunto de medidas y acciones que tienen como obj proteger la info y los sistemas que lo procesas, almacenan y trasmisiones de la amenaza
+que existen en el entorno digital, de acuerdo con la info System audit and control Association(ISACA) la ciber se centra en la proteccion de activos de la info mediante
+el tratamiento de la amenaza que ponen en peligro su condidecialidad, integridad y disponibiilidad.
+[PDF: agencia de la union europea para la ciber(ENISA)], la ciber se centra en la seguridad ciberespacio, que se conoce como el espacio de lla interaccion entre individuales
+sevicios y dispositivos que utilizan una red global de telecomunicaciones.
+
+1. Segiridad de las comunicaciones:
+    Se refire a la proteccion contra las amenzas que pueden impactar el la infraestructura tecnicas de un sistema o red info, como hardware, software, protocolos o servicios.
+    Estas amenazas pueden provocar una alteraciono un mal funcionamiento del sistema o red, impedimiento o dificultado su uso habitual o permitido realizar actv no autorizadas o maliciosas de terceros.
+2. Seguridad de las operaciones:
+    Se refirere a la proteccion contra las amenzas que pueden afectar los procesos o procedimentos que se llevan a cabo en un sistema o red inforamtica, como flujo de trabajo, la gestion, el mantenimeinto
+    o la autoridad, las amanezas pueden ocasionar un corrupcion o una interrupcion de los procesos o procedimientos, generados resultado, erroneos ineficiente o indeseado por parte de los users o repsosable del sistema.
+3. Seguridad de la info:
+    Se refirer a la protecion contra las amenazas que pueden afectar a los datos contenidos que se alamcenan o transmiten en un sustema o red informatica, como documentos, fotos,videos....
+    Estas amenazas pueden provocar un robo, borrado o una alteracion de los datos o contenidos, lo que vilnera su confidencialidad integridad y disponibiilidad del sistema.
+4. Seguridad fisica:
+    Se refiere a la protecion contra las amenazas fisicas que pueden influir o afectar el bienestar de un sistema or red informatica.
+5. Seguridad publica/nacional:
+    Proteccion contra las ameazas que se originan en el ambito cibernetico, pueden tener consecuncias graves en la seguridad fisica digital de una nacion, regiom...
+    pueden ser politicas, militares....
+
+Principios fundamentales que se an rcogido en la triada CID:
+    1. Confidencialidad:
+        Se refiere al mantenimiento de los secretos empresariale, la preservacion de los datos estrategicos, financieros, tech y areas comerciales entre otras.
+    2. integridad:
+        Implica asegurar en los informes finacioeros(SOX) que los datos necesarios para la toma de decisiones  sean ajustados a la realidad, actualizados y no alterados.
+    3. Disponibiilidad:
+        Se refiere a la capacidad de cumplimiento de los contratos de mantenimiento, la calidad de servicios, las garantias de funcionamentos, las infraestructuras crtiticas entre otras.
+
+1. Amenazas:
+    Es una accion potencial que puede ocasionar un prejuicio o danho en los sistemas informaticos.
+2. ciberseguridad:
+    Tecnica o practica concebidas con el fin de asegurar la integridad de los sistemas.
+3. Vulnerabilidad:
+    Se refiere a las debilidades en nuestros sistemas que pueden ser afectadas por las amenazas.
+4. Incidente:
+    Se trata de un acomodamiento que produce cuando una amenaza se aprovecha de una Vulnerabilidad y genera un impacto en el sistema.
+5. Activos :
+    Son recursos valiosos que necesitamos proteger en nuestra organizacion.
+6. Riesgos:
+    Combinacion de la probabilidad que ocurra un suceso y el impacto que tendria.
+
+
+EJEMPLOS:
+Una empresa de tecnología contaba con una gran cantidad de activos valiosos, como su infraestructura de red, servidores, bases de datos, propiedad intelectual y datos de clientes.
+Un día, un grupo de hackers malintencionados, conocidos como la amenaza, fijó su objetivo en dicha empresa para infiltrarse en la red y robar información confidencial.
+La empresa tenía un problema en uno de sus servidores, un software que no estaba actualizado. Los atacantes descubrieron una vulnerabilidad y luego la explotaron para ganar acceso a la red.
+Es importante señalar que la empresa había implementado diversas técnicas y prácticas de ciberseguridad para proteger sus activos. Habían estado actualizando con frecuencia su software, usando firewalls y sistemas de detección de intrusiones,
+capacitando a su personal en seguridad informática y estableciendo políticas de seguridad sólidas.
+A pesar de sus mejores esfuerzos, un día ocurrió un incidente. Los atacantes lograron aprovechar la vulnerabilidad y obtuvieron acceso a la red, lo que dio como resultado una violación de datos.
+El riesgo para la empresa era alto. El impacto potencial del incidente y la probabilidad de que ocurriera eran significativos. El impacto fue el costo financiero para solucionar la violación, el daño a la reputación y la posible pérdida de la empresa.
+
+.Activos:
+    Cualquier recurso de gran valor relevante, para indentificar los riesgo y vulnerabilidades es important entender como se relacionan entre si los activos a traves de arch y dependencias.
+    En el caso de High Value Class(HVA) o activo de gran valor, es un tipo esencial para el funcionamiento y exito de una organzacion.
+.Vulnerabilidades:
+    Son debilidades existentes, al conocerlas se informa al proveedor y se le asignara exposicion comun(CVE) Catalogos(https://cve.mitre.org/)
+    Base de datos nacionas de Vulnerabilidades(NVD)https://nvd.nist.gov/.
+.Riesgo:
+    Le riesgo de una vulnerabilidad se cuantifica por la probabilidad de que sea explotada y el impacto ocasionado en el sistema:
+        Riesgo= probabilidad * IMpacto
+
