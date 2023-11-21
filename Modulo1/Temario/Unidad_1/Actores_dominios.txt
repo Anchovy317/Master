@@ -1,0 +1,118 @@
+La ciberseguridad es un campo que tambien involucra a diversos actores y se encuentran en diversos ambitos, como la gestion de la seguridad de la info, la arch
+de seguridad y los servicios de seguridad de gestionados. En estes se encuentra las ciberamenazas, que pueden clasificarse en vectores de ataque pasivo y activos/
+Como proposito de prevenir estas amenazas, se emplean diversas estrategias(como analisis de riesgo) que requiere la atencion de diversos factores y activos,
+optar por los ciberseguros para disminuir estos riesgos, e implementar un marco de ciberseguridad, especialmente el del NIST, que proporciona una guia par entender
+y gestionar estos riesgos.
+
+
+VECTORES DE ATAQUE:
+Los vectores de ataque son la forma  o medios que los ciberatacantes utilizan para acceder, comprender a danhar los sistemas infomaticosy las redes, Los vectores de
+ataque pueden ser clasificados en dos categorias:
+Pasivos:
+Los pasivos son aquellos que intentan obtener o
+utilizan la info del sistema sin modificar ni afectar
+en sus recursos, dificiles de detectar:
+    1.Typosquatting: se refiere a reguistrar dominios
+      similares a los legitimos para enganhar a los usr
+    2.Phishin: consiste en enviar correos falsos con el
+      fin de obtener info.
+    3. Ing social: tipo de ataque donde manipulan o
+    persuden a personas para revelar info o hacer cosas
+    maliciosas.
+
+Activos:
+Son aquellos que pretenden alterar, degradar o destruir el
+sistema o recursos.
+    1.Malware:
+        Consiste en programas maliciosos que infectan y danhan el sistema
+    2.Explotacion de vulnerabilidades no parcheadas:
+        consiste en aprovechar las debilidades o fallos del sistema para acceder
+        o controlarlos.
+    3.Ataques Man-in-the-middle: consisten en intercerptae o modificar las comunicaciones entre
+         dos partes.
+    4.Suplementacionde correo elecronico: consiste en enviar correos elecronico falsos desde dirr
+        legitimas para enganhar a los destinarios.
+    5.Secuestro de dominio: consite en tomar el control de dominio legitimo y redirigilo a otro sitio
+    6.Ransoware: consiste en cifrar datos del sistema y pedir un rescate para pedir un rescate para
+        liberarlos.
+    [DIFERENCIAS3.PNG]
+
+-TACTICAS, TECNICAS Y PROCEDIMIENTO(TTP):
+    El cibercrimen ha utilizado una amplia variedad de estrategias para cometer sus delitos, existen cirtos patrones y estructuras de funcionamiento que han sido establecidad como TTP:
+        1.Tacticas: el vector con el que los ciberataques buscan desarrollar  su actividad y alcanzar sus obj.
+        2.Tecinicas: metodo utilizado para alcanzar el obj tactico, cada tactica puede ser compuesta pr multiples tecnicas.
+        3.Procedimiento: pasos establecidos y preconfigurados por los ciberatacantes para desplegar sus tecnicas y lograr que su estategia tenga exito.
+-Como se lleva a cabo el ataque:
+    1.El atacante identifica un obj potencial.
+    2.El atacante reune info sobre el obj utilizado ing social, malware, Phishin, inteligencia de funtes abiertas(OSINIT) y escane autorizado de vulnerabilidades.
+    3.El atacante utiliza esta info para indetificar posibles vectores de ataque para crear o utilizar herramientas existentes para explotarlos.
+    4.El atacante obtiene acceso no autorizado al sistema para robar datos sensibles o intallar codigo malicios.
+    5.El atacante vigila la red de la victima para robar contunuamente info o usar recursos informaticos de la victima.
+[actores.png]
+
+-Hacktivismo:
+    -Motivacion:politica, social o idieologia.
+    -Actividad: atcan con instuciones consideradas malvadas o con puntos de vista opuesta como actos de protesta para atraer la atencion de los medios y la sociedad hacia sis revindicaciones.
+    [Encuesta.pdf]
+-Ciberespionaje:
+    -Motivacion: economica o politica
+    -Actividad: Roban secretos industriales y derechos de propiedad intelectual a empresas competidoras del sectpr para obtener una ventaja compitetiva en el mercado o roban secretos de estado a
+                paises rivales para obtener ventajas geopoliticas.
+    -TTP: inteligencia social, robo de credenciales mediante ataques de phishing dirigidos, exfiltracion de daos, troyanos de acceso de datos u ataques remotos.
+-Insider:
+    -Motivacion: financiera o venganza.
+    -Actividad: trabajan dentro de la organizacion despues de haberla infiltrado o despues de haberse vuelto en contra, a causa de su acceso o recursos internos y confianza depositada, estos recursos
+                constituyen una amenaza particularmente peligrosa, pueden actuar de forma independiente p pertence a una organizacion.
+    -TTP:exfiltracion de datos y abuso de privilegios.
+-Cibercrimem
+    -Motivacion: politica o militar
+    -Actividad: Atacan infrastucturas criticas o ganan acceso a largo plazo para supervisarlas, roban info estrategica, ganan inteligencia o desastibilizan gobiernos de estados extranjeros.
+    -TTP:ATPs, malware destructivo, ing social y compromiso directo de sistemas.
+Ejemplos:
+Los ciberdelicuentes aprovechan la pandemia de COVID para intesificar sus ataques, enfocados en empresas, gobiernos en infraestructuras....
+Informe que destacan:
+    .Estafas en linea y suplantacion de identidad.
+    .Malware perturbado
+    .Dominios maliciosos
+
+-Ciberguerra:
+    -Motivacion:economica
+    -Actividad:organizacion generalmente en estructuras criminales, atacan empresas o particulares de manera indiscriminada en todo el mundo para robar dinero, robar datos personales para reventa
+    o extorsionar a sus victimas.
+    -TTP: phishing, ing social, timos por correo, botnets, Ransoware, malware, kits de explotacion y ataques contra contrasenhas.
+
+    El ciberespacio actualmente es considerado como el quinto dominoo belico de guerra, despues de la tierram, mar, aire y espacio.
+Ejemplos:
+    1. Pincy Spider: grupo que ofrece su Ransomware REvil en modelo Raas, que ha afectado a empresas como colonial pipeline, esta basado en su anterior creacionm GrandCrab que causo M de victimas.
+    2. Judgment Pands: grupo vinculado cn el gobierno chino, que han realizado una campanha de espionaje contra el parlamento  de Finlandia en 2020 conocido APT31.
+    3. Agrius APT: nuevo grupo relacionado con iran, que usa wiper compartido por otros grups iranies como APT-33 y APT-34, israel y hamas en mayo 2021.
+-Cibreterrorismo:
+    -Motivacion: politica o idieologicam propaganda.
+    -Actividad: el obj es pertubar el funcionamiento o destruir infrastucturas criticas del estado, region o ciudad con el obj de interrumpir el servico o causar el panico.
+    -TTP:troyanosm ataques web y ataques con drones.
+Ejemplos:
+    .Ataque ciberterroriesta en florida: 2021 un hacker accedio a sistema de una planta de agua potable e incremento el nivel de sustancias quimicas.
+    .Stuxnet: Ralph langnet explican en su charla ted como descubrio el proposito y funcionamiento de Stuxnet virus informatico que ataco el programa nuclear de iran.
+-Desastres Naturales:
+    -Motivacion:ninguna
+    -Actividad: eventos naturales que pueden afectar a un sistema, organizacion....
+    -TTP: no aplica.
+{nature.jpg}
+
+
+Tendencias serian definidas:
+    1.Malware: sofware maliciosos, para atacar, incluyen virus, Ransomware, gusanos, syware.
+    2.Ataque basado en la web: Utilizan sistemas y servicios web para enganhar, pueden facilitar una URL maliciosa  o scripts para dirigir al user a sitios peligrosos.
+    3.Phishin: Mensajes de correo que parece provenir de fuentes para enganhar a los user.
+    4.Ataque basado en apps web: Suelen aprovechar vulnerabilidades en estas apps para acceder a datos.
+    5.Spam: envio masivo de mensajes no solicitados
+    6.DDoS: denegacion de servicio distribuido se producen cuando los atacantes inundan un sistema con trafico con el fin de impedir sus procesos a los users legitimos.
+    7.Robo de Identidad:
+    8.Brecha de datos: problema en la seguridad en la que acceden a info sin permiso lo que puede causar perdidad.
+    9.Insider:
+    10.Manupulacion fisica: alteracion danhi o robo perdida de dispositivos.
+    11.Filtracion de datos: incidente en una organizacion que viola la confidencialidad, disponibilidad o integridad.
+    12.Ransomware
+    13.Ciberspionaje:
+    14.Criprohacking: Es el uso involuntario de los recursos de un dispositivo para minar criptomonedas.
+    15.Botnet: red de dispositivos infectados por un malware que son utilizados para ataques DDoS, se controlan remotamente po un agente malicios para operar de forma sinz.

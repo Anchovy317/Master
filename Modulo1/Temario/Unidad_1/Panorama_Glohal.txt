@@ -1,0 +1,45 @@
+El ambito global de la ciber es un tema de gran relevancia en la actialidad, en el mundo de las Tech de la info y la comunicacion , y en las tic hay tres tendencias importantes en
+la IA y big data, sl cloud y computing y el lOT y 5g. Estos avances estan cambiando el panorama de la ciber seguridad en todo el mundo.
+donde las infrastructuras criticas se encuentran cada vez mas expuestas en las organizaciones, como costes economicos, costes de reputacion y costes normativos.
+El mercado global de la ciberseguridad  esta experimentando un rapido crecimiento, a pasar que existen profesionales altamente capacitados en el campo, la demanda no logra ser satisfecha
+Esto ha impulsado la inversion y la inovacion en ciber y la adaptacion de otras alternativas[normas regulaciones de la proteccion de los datos...]
+En el mundo de las Tic, hay tres tendecias importortantes:
+    1. Intelegencia Artificial y Big data
+    2. Cloud Computing
+    3. Internet de las Cosas y la tech 5G
+
+-Todas las tecnologias presentan fallos:
+    La innovacion ofrece oportunidad de aprovechar las ventajas de las tech, pero tambien la exposicon a los riegos de la ciberdelincuencia, a pesar de la segirodad no simpre
+    se tiene encuenta como un aspecto esencial de las innovaciones tech, esto significa que muchas tech se desarrollan sin tener en  encuenta las posibilidades de amenaza.
+    Se requiere abordar los nuevos retos a nivel global, estableciendo garantias, transpariencia y confianza suficiente y asegurarnos la interperabildad mundial tanto en las soluciones
+    tecnicas como en los principios de la gobernabilidad, existen el peligro que:
+        1. El mundo se enctre en condiciones de un entorno digital que carezca de la capacidad de resistir las nuevas amenazas y riesgos sistemicos.
+        2. No se pueden aprovechar todos los beneficios potenciales de ecosistema digital global.
+
+    Todas las Tech es vulnerable > Las vulnerables se descubren > Todas vulnerabilidades sera explotada.
+
+    El foro mundial clasifica los ciberataques a las infrastructuras criticas como el quinto riesgo con mas impacto para la economia globas en 2023.
+    A medida que el mundo [PNG Global risk report] este mas interconectado digitalmente, mantener la ciberseguridad sera mas dificil. Las herraminas digitales se encuentran cada vez mas conectas
+    con la infrastructura fisica, lo que implica la necesidad de asegurar de manera adecuada los sistemas criticos resultantes, las organizaciones tendran que hacer uso del aprendidajje automatico
+    y la Intelegencia artifical para medir e informar mejor sobre el ciberiesgo, ya que se enfrenta a los problemas asociados con la proliferacion de dispositivos que impulsan las ciudades inteligentes
+    y el loT, las caracteristicas y la evolucion del ciberspace que contribuyen al aumento del ciberataques:
+        1. La naturaleza distribuida de internet.
+        2. La capacidad de los ciberdelicentes de atacar los objetivos fuera de su juristicion, lo que dificulta signifitivamente la labor policial.
+        3. La crecimento rentabilidad y facilidad de comercion en Dark Web.
+        4. La proliferacion de dispositivos moviles y del internet de las cosas en el mundo.
+
+Los pueden aftar a una organizacion:
+    1. Costes economicos: robo de la propiedad intelectual, info corporativa, interrupcion y coste de reparacion de los sistemas danhados.
+    2. Costes de reputacion: Reduccion de confianza de los consumidores, reduccion de los clientes actuales y futuros a favor de la competencia y mala cobertura mediatica.
+    3. Costes normativos: el RGPD y oreas leyes de proteccion de datos implican que una organizacion podria sufrir multas o sanciones reglamentarias como consecuencia de los ciberdelitos.
+Casos Reales:
+    Yahoo: revelo una brecha en 2013 habia comprometido a 1000millon de cuentas, las preguntas de seguridad se vieron comprometidas lo que aumento el riesgo de robo de indentidad.
+
+AUMENTO DE INVERSION EN CIBERSGURIDAD:
+    La empresas incrementan gradualmente su inversion en seguridad con el fin de provenir las amenazas ciberneticas y adaptarse a los nuevos marcos reguladores, cada vez mas exigentes, las empresas
+    necesitan adoptar soluciones avanzadas de ciberseguridad para operar con normalidad.
+ESCENARIO DE LA CIBERSGURIDAD:
+    1. Los ciberatacantes explotan las vulnerabilidades de sus victimas, superando las barreras defensivas.
+    2. La ciberdefensa se enfoca en las medidad o estrategias para proteger los sistemas informaticos contra las amenazas de los ciberataques.
+    3. Las victimas de los ciberataques pueden ser personas, empresas o incluso paisesm pueden sufrir diversos danhos o prejuicios.
+
