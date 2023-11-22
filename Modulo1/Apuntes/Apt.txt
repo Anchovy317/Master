@@ -1,0 +1,15 @@
+Universia para notificacion de empleabilidad.
+https://www.universia.net/es/home.html
+correo de empleabilidad chica(marta.marcos@immune.institute)
+Telehack apanet logical map, march
+https://telehack.com/
+https://wiki.texto-plano.xyz/doku.php?id=telehack
+framework de simulacion de adversario: https://github.com/BishopFox/sliver/wiki/HTTP(S)-C2
+
+SPF, DKIM y DMARC auth de correos o otros metodos
+
+MAC espufin:
+ip link  depende de cuantas tarj de reds
+macchanger -a mac random
+
+Equipo\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTHPORT\Parameters

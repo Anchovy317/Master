@@ -219,8 +219,56 @@ DEFENSA Y PROFUNDIDAD:
             3.Los sistemas de detencion de intrusos y notificaciones.
     3.  Defensa perimetral: es el espacio o conjunto de los puntos de la red interna de confiaza gestionada por la organizacion, en contacto con otras redes externas no fiables, el atacante puede acceder a estos servicios. Para defender el perimetro
         se emplea cortafuegos, redes privadas virtuales, dispositivos de comunicacion eficiente, dispositivo de comunicacion inalambrica debidamente protegidos aso como filtros o antivirus.
-    4.
-    5.
-    6.
-    7.
+    4.  Defensa en la red: si un atacante obtiene acceso a la red, pueden acceder a culquiera equipo o monitorear el trafico de la red. las organizaciones tienen a utilizar sistemas de detencion y prevencion de instruciones, segmentacion de redes, IPsec TLS
+        para el cifrado de datos durante su transporte y proteccion.
+    5.   Defensa de host: la seguirad de los dispositivos, tanto servers como clientes, implica tres tareas fundametales:
+         1. Mantener actualizados los parches de seguridad.
+         2. Desactiva servicios innecesarios.
+         3. Mantener el antivirus activo y actualizarlos en los endpoints.
+        Para proteger esta capa, se utiliza dos herramientas basicas: el bastionado, que endurece el sistema operativo y las apps de platilla de segurdad.
+    6.  Defensa de apps: las apps protegen su seguridad mediante el uso de controles de acceso riguroso a traves de de la mecanismo de auth y autorizacion robusta, estos mecanismos garantizan que solo los users auth puedan acceder a los datos pertenientes[medida adicional WAF]
+    7.  Defensa de datos: a pesar de que un atacante pueda superar todas las restricciones de serguridad y acceder a la app, aun existen salvaguardas adicionales, tales como la auth y aut con el cifrado, las cuales son tech mas utilizadas para preservar los datos.
 
+La estrategia de suguridad de confiaza cero es un enfoque proactivo y riguroso para la seguridad, las acciones se basa en la permisa de que las discrepancia son inevitables, establecen controles estrictos para autentificar y auth cada user, dispositivo u conexion.
+
+
+-Comunicacion de incidentes de ciberseguridad:
+    El incremeto de los ataques, los responsables politicos estan trabajando arduamente en la creacion de medidas que permitan notificara los clientes...
+    Este es fundamental para asegurar la trasnparencia y mantener la confianza del publico, se muestra una figura que presenta  un modelo de politica sobre los requisitos de not de acuerdo con el World Economic Forum WEF
+    [comunicacion de incidentes de ciber.png]
+
+
+-Dominios de ciberseguridad:
+    Se clasifican en tres categorias:
+        1. Gestion de Seguridad de info: se enfoca en establecer y mantener un marco de trabajo un marco de trabajo que garantice la confidencialidad, integridad y disponibilidad.
+        2. Arquitectura de Seguridad de la info: se enfocan en la creacion, implementacion y mantenimiento de sistemas de seguridad y redes informaticas: incluye la seleccion y confg de hard y soft de seguridad.
+        3. Servicio de Seguridad Gestionado: implica la utiliza  de servers externis para gestionar ciertos aspectos de seguridad, como la monitorizacion y gestion de amenaza.
+
+1.GESTION DE SEGURIDAD DE LA INFO:
+    1.Fraude: puede tener diversas formas, como el robo de indentidad, phishing, y el fraude en las trasiciones en linea.
+    2.Gobierno de Tl y planes directores: es un aspecto clave en la gestion de la seguridad de la info, esto implica establecer politicas y procedimieto para garantizar que las organizaciones estan utilizando recursos,
+    tech eficazmente y esta protegida contra la amenaza.
+    3.Auditoria de seguridad.
+    4.Detective del datos: un detective podria ser un analista que usa una herramiento y tecnicas para analizar grandes volunes de datos con el obj de identificar comportamietno anomales.
+    5.Analisis de gestion de riesgo: esencial de la gestion de la seguridad  de la info, esto requiere identificar  y evaluar los roesgos a los que se enfrenta la organizacion.
+    6.Introduccion a la ciber: campo que se dedica a proteger los sistemas informaticos t las redes contra las amenazas.
+2. ARCH DE SEGURIDAD DE LA INFO:
+    1. Seguridad en loT
+    2. Seguridad de redes
+    3. Seguridad en OT
+    4. Seguridad de sistemas operativos.
+    5. Seguridad en Cloud
+    6. desarrollo de Seguro: uso de buenas practicas de seguridad.
+    7. Seguridad en cloud
+    8. Consciencia en la seguridad de la info:
+    9. criptografia
+    10. Seguridad en apps
+    11. Identificacion digital
+    12. Seguridad dispositivos endpoints
+3. SERVICIO DE SEGURIDAD GESTIONADOS:
+    1. inteligencia de amenaza
+    2. Operaciones de Seguridad
+    3. Analisis forense digital
+    4. Ing inversa o analisis de malware
+    5. Analisis de vulnerabilidade
+    6. Respuesta a incidentes
