@@ -116,3 +116,111 @@ Tendencias serian definidas:
     13.Ciberspionaje:
     14.Criprohacking: Es el uso involuntario de los recursos de un dispositivo para minar criptomonedas.
     15.Botnet: red de dispositivos infectados por un malware que son utilizados para ataques DDoS, se controlan remotamente po un agente malicios para operar de forma sinz.
+
+
+-Procesos basicos de seguridad:
+    La ciberseguridad se estructura em una serie de procedimentos fundamentales que garantizan la seguridad digital ante la amenaza que puedan seguir, se estructuran en:
+        1.Gestion de riesgos de seguridad: evaluan riesgos de proceso e infraestructuras para comprender que puede suceder y mantenerlos bajo control.
+        2.Gestion de vulnerabilidades tecnicas: revisar sistemas y las infraestructuras en busca de agujeros que pueden ser abusados para penetrarlos.
+        3.Gestion de activos: se debe clasificar los activos, su tipo, criticidad y dependicia para evaluar el nivel de dependencia para saber el nivel de seguridad que requiere.
+        4.Monirizacion y gestion de incidentes: monitorear y responder a los indicios de posibles incidentes.
+        5.Parcheos de sistema: asegurar que todos los componentes SW esten actualizdos  a sus versiones mas seguras.
+        6.Continuidad de negocios y contingencia tech: estudiar los procesos de negocio
+        7.Configuracion segura: utilizar los sistemas de forma segura para evitar abusos.
+        8.Gestion de terceros: controlar la cadena de suministro, los proveedores en sus interacciones con nuestro proceso y plataformas, tales como los requisitos de seguridad.
+        9.Control de acceso logico a los sistemas: asegurar que solo aquellos deben acceder  a los sistemas con los permisos respectivos.
+        10.Ciberinteligenciia e innvestigacion: anticipar amenazas de seguridad medinate la innvestigacion de funtes externas de inteligencia de seguridad.
+        11.Ciclo de vida de seguridad del SW: incluir criterios de seguridad en el desarrollo de software para hacerlo seguror desde un inicio.
+        12.Concienciacion y formacion: crear una cultura de seguridad entre empleados y companheros.
+
+-Analisis de riesgos:
+    La gestion de riesgos se centra en minimizar los riesgos a un nivel aceptable[analisisderiesg.png], existen diversos riesgos y asimismo diveros factores que pueden contrubir a estos,
+    danho fisico, errores tecnicos.....
+    La exposicio de riesgo es la probabilidad de que la amenaza se materialice para reducir esta exposiocion o mitigar el riesgo, diversas opciones:
+        1.Reducir o mitigar mediante contramedidas.
+        2.Trasferirlos a una empresa de seguros o proveedor de servicios de seguridad y gestion.
+        3.Asumirlo si se considera que es apropiado para el negocio.
+        4.Eliminarlo a traves del activo, la amenaza o la vulnerabilidade.
+-Ciberseguros:
+    Los cieerseguros son herramientas para hacer frente a las perdidas economicas derivadas de los riesgos asociados a las tic de la info t la comunicacion.[pdf weforum]
+-Marco de ciberguridad del NIST:
+    Es critero contra una guia para orientar un plan de accion, evaluar el riesgo se acostumbra a reducirrir a un marco de seguridad ampliamente acceptado y validado por los expertos.
+    Este marco  de ciber fue concibido por el Instituto Nacional de Seguridad(NIST) con el proposito de prorcionar:
+        1.Recuperar: identificar las actividades apropiadas para mantener los planes de resilecia y restaurar los servicips danhados.
+        2.indetificar: ayuda a desarrollar una compresion organizativa de la gestion de los riesgos para sistema, personas....
+        3.Proteger: respalda la capacidad de limitar o contener el impacto posibles a eventos de ciber y salvaguardar para prestaciones de servicios critios.
+        4.Detectar: define las actividades apropiadas para indetificar la ocurrencia de un evento de maneta oportuna.
+        5.Responder: Incluye las actividades apropiadas para tomar medidas en relacion con los incidentes para minimizar su impacto.
+-Tecnologia de ciberseguridad:
+    1. Seguridad de apps: analisis de vulnerabilidades, test de seguridad de apps, firewalls de apps(WAP)
+    2. Gestion integrada de riesgos: Soluciones de gestion integrada de riesgos.
+    3. Seguridad cloud: Brokers de seguridad de acceso a cloud(CASB)
+    4. Gestion de indetidad y acceso: gestion de acceso, gestion de acceso privilegiados, gobierno y administracion de identidades,.
+    5. Equipamiento de seguridad de redes: equipamiento de firewalls, equipamiento especializado para sistemas de prevencion de intrisiones(IPS)
+    6. Proteccion de infraestructuras: Plataformas de proteccion del endpoint, gatway de email seguro, gateway de web seguro, Gestion de info y enventos de seguridad, inteligencia de amenaza.
+    7. Seguridad de datos: prbencion de perdida de datos, criptografia, tokenizacion.
+    8. Sofware de seguridad para el consumidor: leyes  de privacidad, arch de malla de ciber, consolidacion de capacidad de seguridad, riesgos de ciber en transacciens comerciales, detencion y
+    respuesta de amenazas contra identidades(ITDR)
+ Existen tambien tech segun su funcion, el sector  comprende una gran variedad de funciones que pueden ser preventivas o correctivas, tales como identificar proteger, detectar, responder, recuperar.
+ (omers.png)
+
+-Top de fabricantes en ciber:
+    .Un informe de gartner dice que se espera que el gasto global en productos y servicios aumente un 270.00 millones de dolares en 2026.
+    .Mientras que algunas de la empresa de ciber destacadas: Cisco, Cloudflare, CrowdStrike, Fortinet, IBM, MAndinar, MIcrosowft, Paloalto network, Positive Tech.
+    .La tipologia de productos de ciber se pueden clasificar segun su funcion, ambito o tech.
+
+-SERVICIOS DE CIBERSEGURIDAD:
+    -Consultorias: son los que ayudan a las organizaciones a evaluar, analizar y mejorar la eficiencia de sus operaciones empresariales, operaciones de TI y estrategias tech para actividades de seguridad
+    gestion de riesgo:
+        1. Consultoria empresarial de TI en cuanto a la seguridad como analisis de riesgo, definicion de politicas, gestion de cambios o la gobernalidad.
+        2.Garantia de seguridad: como la evaluacion de la madurez, el cumplimieto de normas, la certificacion o la auditoria interna.
+    -Integracion: Los servicios son aquellos que disenhan o desarrollan soluciones, activos y procesos de seguridad, estos aplican un disenho concebidos ppor los consultores:
+        1. Installacion, conf y puesta en marcha son las soluciones de seguridad, como hardware, el software o las apps.
+        2. Desarollo o adaptacion de los activos y procesos de seguridad, como los scripts, las reglas, los flujos o las inerfaces.
+        3. Evaluacion, validacion y optimizacion del rendimeinto y la eficacia de las soluciones, activos y procesos integrados.
+    -Soporte HW:
+        Son aquellos que reparan u optimizan fisicamente el hardware relacionado con la seguridad informatica.
+            1.Instalacion basica de hardware, como el montaje o el cableado.
+            2.Mantenimeito por contrato de hardware, como la revision periodica o el remplazo preventivo.
+            3.Reparacion por incidente del hardware in situ o en un deposito centralizado, como el diagnostico a el remplazo correctivo.
+            4.Resolucion de problemas tecnicos por telefono o por medios electronicos.
+            5.Asistencia para la conf de hardware o las actulizaciones pagadas.
+
+    -Operaciones: los servicios de operaciones son aquellos que gestionan o supervisan las funciones de seguridad informatica  de manera remotam a traves de centros de operaciones de seguridad(SOC):
+        1.Cortafuegos o IPS que estan supervisados o gestionados, controlan el trafico de red y la bloquen las conexiones no auth o maliciosas.
+        2.Sistemas de detencion de instruciones (IDS) supervisados o gestionados que vigilan la actividad de red y avisan de posibles ataques o anomalias.
+        3.Proteccion contra la denegacion de servicio distrubuida (DDoS) que reduce los ataques qie tratan de saturar los recursos de red o los servers
+        4.Pasarelas seguras de mensajeria y web seguras, que filtran el correo, evitan spam y el phishing, gestion el trafico web y evitan el acceso a sitios malicioso o inapropiados.
+        5.Gestion de evento y de la ingo de seguridad(SIM), recopila y almacena y analiza los datos de seguridad proveniente de diff fuentes.
+        6.Escaneo gestionado de vulnerabilidades de redes, serves, bases de datos o apps.
+        7.Servicios de notificaciones de amenazas y vulnerabilidades de seguridad sobre las ultimas tendencias, riesgos o soluciones en materia de ciber
+        8.Gestion y analisis de registros, que recopila almacena y analiza los registros generados por los dispositivos o sistemas infomaticos para fines forenses, auditorias o cumplimietos.
+        9.Informes: relacionados con los dispositivos supervisor/gestionados y respuestas de incidentes, que brindan info sobre el estado y el rendimiento.
+    -Formacion y entrenamiento: son aquellos que ofrecen programas de cocienciacion, formacion y entretenimiento en ciber dirigidos a diversos colectivos en funcion de la posesion y responsabilidad de la organizacion:
+        1.Formacion en trato online, presencial o ambos  de acuerdos con la modalidads de entrega
+        2.Publico obj a organizaciones de diversas areas, desde pequenhas u medianas empresas o hasta grandes.
+        3.Duracion del programa que puede variar
+    Pueden abarcar temas:
+        1.Sesibilizacion acerca de riesgos y buena practica en cuanto a la ciber.
+        2.Capacitacion tecnica sobre la herramientas, las tecnicas....
+        3.Certificacion pro sobre estandares, normatica o metodologia....
+
+
+DEFENSA Y PROFUNDIDAD:
+    Normalmente se divide en siete capas estrategias de defensa[defensa.png] cada capa se aplican una serie de medidas de proteccion integral que requiere a personal especializado, el proposito es mitigar los peligros
+    asociados y garantizar la seguridad y rendimeinto.
+
+    1.  Politicas y procedimoentos de seguridad: son las bases para controlar los riesgos y las amenzas a los sistemas informaticos, con la Norma ISO 27001, la direccion debe aprobar, publicar y comunicar a todos los empleados el documento
+        de la politica de seguridad que establezca el compromiso y el enfoque de la organizacion. EL documeto debe incluir, una definicion de la seguridad y los obj, el alacance  de la seguridad y su importancia....
+    2.  Seguridad fisica y del entorno se ve afectada por la amenaza que pueden surgir  de la tech del internet de las cosas, la cual posibilita la autorizacion de diversas instalaciones, esta capa tiene gran imp ya que una diferencia en la
+        proteccion de los equipos e infraestructuras de red puede suponer que gran amenza para la informacion que contiene.
+            1.Los sistemas de control de acceso y vigilancia.
+            2.Los sistemas de videovigilancia.
+            3.Los sistemas de detencion de intrusos y notificaciones.
+    3.  Defensa perimetral: es el espacio o conjunto de los puntos de la red interna de confiaza gestionada por la organizacion, en contacto con otras redes externas no fiables, el atacante puede acceder a estos servicios. Para defender el perimetro
+        se emplea cortafuegos, redes privadas virtuales, dispositivos de comunicacion eficiente, dispositivo de comunicacion inalambrica debidamente protegidos aso como filtros o antivirus.
+    4.
+    5.
+    6.
+    7.
+
