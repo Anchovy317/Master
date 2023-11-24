@@ -1,0 +1,103 @@
+PILAS DE PROTOCOLOS:
+    Interent es una red abierta que permite que cualquiera cree y utilice un nuevo protocolo sobre internet, una pila de protocolo es un
+    conjunto de protocolos que se organizan en capas o niveles en base a la funcion, cada capa usa los servicios de la capa inferior y ofrece,
+    servicios de la capa inferior y ofrece servers a la capa superior, de esta forma se logra una comunicacion eficiente y seguro entre los
+    los distpositovos conectados a internet.
+    La pila de protocolo de internet es fundamental para enviar informacion de manera fiable entre dos lugares del mundo.
+    pila OSI o una pila de protocolo de TCP/IP.
+
+    Pila de protocolo OSI: es una de las primeras pilas de protocolos que se disenhan como un modelo teorico por capas y sive como referencia para
+    muchos aunque nunca se ha implantado por completo en la practica.
+    Pila de protocolo TCP/IP: Se utiliza en la red con un efoque mas practico, dado que las tres ultimas capas del modelo OSI, se fusionara en la pila
+    TCP/IP, esto significa que todas las funciones son gestionadas directamente por la aplicacion.
+    (protocolo.png)
+
+    Cada capa de estos modelos cumplen una funcion especifica y se relaciona exclusivamente con las capas a su vez, esto permite que los cambios en una
+    capa no afecten a las demas, lo que facilita la actualizacion y el mantenimieto  de los protocolos. El TCP/IP no solo se limita a las cuatro capas,
+    tradicionales, sino que tambien pueden incluir capas intermedias, como la capa de seguridad IP(IPsec) o la capa de trasnporte de seguro(TLS).
+    o la capa de transporte seguro(TLS), las cuales ofrecen funciones adicionales como la encriptacion y la auth de datos.
+FUNCIONAMIENTO DE LA PILA:
+    En el sistema esquema se evidencia como las pilas de protocolo funcionan de mareas dff debido a que las capas superiores se benefician de los servicios
+    de las capas inferiores:
+        1.  Cuando la capa desean enviar datos a su contraparte en el node de destino, codifica estos datos en un msg y lo trasnmite a la capa inf.
+        2.  Esta capa inferior anhade una cabecera, que es una serie de datos necesarios para el protocolo para trasnmitir dicha info, esta info se envia
+            a la siguiente capa inferior, asi los datos iniciales se les van agregando cabeceras de todos los protocolos por los que pasan.
+        3.  Hasta que finalmente todas estas cabeceras y datos se codifican como una senhal analogica que se transmite a traves de un medio de trasmision.
+        4.  Al arriba a la fuente correspondiente, se procede a llevar a cabo el procedimieto.
+        5.  Cada capa por la que pasan el mensaje recibido analiza sus respectivas cabeceras de protocolo  para confirmar que se ha recibido correctamente y
+            determinar a que capa superior debe entregar los datos.
+        6.  Cada capa elimina su cabecera y entrega los datos restantes a la capa inmediatamente superior, los datos recibidos se les ban quitando las cabeceras
+            anhadidas en el origen a medida que asciende por la pila de protocolos, hasta que la capa de app recibe  exactamente los mismos datos que envio la app
+            de origen
+(capas de app.png)
+
+ELEMENTOS DE INETERCONEXION:
+    Si el origen y el destion de la comunicacion no estan direactamente conectadas a traves de un medio de transicion, se utiliza distpositos de interconexion para
+    simplificar la comunicacion, estes pueden funcionar en dff niveles de la pile de protocolo y son importantes para trasmitir de forma eficiente y segura los datos
+    a traves de internet.
+        N1: Nivel fisico: es el mas bajo y se utiliza distpositovos como repetidores, hubs y spliters. Los repetidores amplifican las senhales para que puedan viajar
+            distancias mas largas, los hubs y spliters trasmiten senhales a miltiples distpositovos
+        N2: Nivel de enlace: En esta area se encuentran dispositovos  como switches, ethernet, puntos de acceso y WIFi. Los switches Ethernet dirigen los datos a su
+            destino correcto en la red local (LAN), mientras que los puntos de acceso y Wifi  proporcionan conectividad inalambrica.
+        N3: Nivel de red: En el nivel los routers son los responsables de dirigir los paquetes de datos a traves de multiples redes hasta su destino final.
+        N4: Niviel de trasporte como Firewalls y NATs ofrecen seguridad en el trasporte, los firewalls protegen las redes al supervisar el trafico de entrada y salients
+            mientras que los Network Address Teaslation(NATs) permiten que multiples dispositovos compartan una unica IP publica.
+        N7: Nivel de app: En este ambito los servicios de proxy web que actuan como intermediarios entre el cliente y server, lo que puedene proporcionar beneficios como el
+            anonimato o la cache para acelerar las solicitudes recurrentes.
+PROTOCOLOS EMPLEADOS EN INTERNET:
+    En la red se emplea una variedad de protocolos, cada una de ellos brindan distintas caracteristicas  o servicios dist. Todos comparten el mismo protocolo de red: protocolo IP
+    (internet protocol).
+    Ademas del protocolo IP aparece el protocolo de transporte TCP(envio de info) y UDP(para intercambio de info), protocolos de app = como el uso de hhtp para acceder al Word wide Web.
+    o el SMTP para enviar correos.
+    Ademas de portocolos IP, se encuentra disponibles diversos portocolos de enclace, que se adecuan al medio de trasnmision que se desea emplear. En el Ethernet se utiliza cables
+    de cobre y PON de fibra optica, Bluethooth, wifi y los protocolos de comunicacion celulares como GMS, UMTS, LTE, 5G, se trasnmite por el aire...
+    En consecuencia se puede afirmar que la pila de protocolo TCP/IP presentan una forma de reloj de arena, un centro estreche que se componen de un conjunto de protocolos comunes
+    que interconectan capas con un amplio numero de protocolos comunes.
+ATAQUES A PROTOCOLOS DE COMUNICACION:
+    -Ataques activos:   los ataques pasivos, el ataque solo se limita a escuchas del trafico de la red sin interferir:
+        1.  Captura de trafico: el atacante recopila datos dir del medio fisico o en un dis de interconexiones fisicas.
+        2.  Analisis de trafico: a pesar de que el trafico este cifrado, el atacante puede obtener info valiosa como el tamanho de los datos trasmitidos y quien esta comunicado con quien.
+    -Ataques activos:   el atacante transforma el contenido de los msg o info:
+        1.  Denegacion de server(DoS): el atacante trata de sobrecargar al obj, generados mas trafico de que puede procesar, defensa pueden incluir filtrar el trafico malicioso o mejorar la capacidad
+            del sistema para manejar cargas mas pesadas.
+        2.  Repeticion: el atacante captura el trafico luego lo reenvia, para evitar este tipo de ataque.
+        3.  Intercepcion: el atacante puede recibir el trafico desde el origen, modificarlo y posteriormente enviarlo al destino.
+        4.  Suplementacion(Spoofing): el atacante se hace pasar por otra entidad en la red, la auth del origen pueden ser util para verificar la identidad dde las partes en comunidad.
+
+-SEGURIDAD EN NIVEL FISICO:
+    El proprosito principal del nivel fisico es la trasmision de bits a traves de un medio de trasmision especifico, cada medio de trasnmision tiene caracteristicas unicas que determina como
+    se codifica los datos, asi como las velocidades y distancias que pueden alcanzar.
+    Diversas formas de trasmitir los datos a traves de cables o de manera inalambrica, mediante la modulacion de las propiedades de una ondaelectromacnetica.Ex(red ethernet, fibra optica, ondas de radio inalambrica, wifi, 5G)
+-SEGURIDAD DE NIVEL DE ENLACE:
+    Es facilitar la comunicacion entre dispositovos que estan conectados dir:
+        1.  Direccionamiento: determina con quien se estan establecidos la comunicacion.
+        2.  Control de acceso: decide quien tiene el derecho de trasmitir en un momento dado.
+        3.  Control de error: verifica si la trama ha llegado correctamente al dispositovos destinados
+        4.  seguridad u privacidad: evaluan si la comunicacion puede ser interceptar por terceros.
+Como Ethernet, Bluethooth y wifi, que utiliza dirr MAC de 48 bits para identificar a los dis. Tipos de trasnmision:
+    Fuil-duplex: premite envio y recepcion de datos simultaneamente, lo que sg que los datos pueden eviarse en cualquier momento, solo intenta detectar paquetes erroneos y nose
+    retasmisiones si fallan.
+    Semi-duplex: se el medio de trasnmision es compartido (comunicacion inalambrica) es necesario decidir quien trasnmite en cada momento, es habitual que se pierdan...
+
+ETHETNET:   red local LAN mas utilizada, bajo coste y alta capacidad. Utiliza cables  trenzados o fibra obtica y switches para conectar todos los dis de una LAN a velocidad de 10Mbit.s hasta 100Gbits en modo Full-duplex.
+            Ventajas: no requiere confg, cada disp tiene si propia dir MAC y switches aprenden auto la ubicacion de cada dis.
+            Seguridad: no cifra datos por def, puede auteticar a los dis antes de que conecten a las LAN mediante estandar IEEE 802.1x. Ethernet permite dividir una misma LAN fisica en varias LAN virtuales(VLAN) para limitar
+            que dis pueden comunicarse entre si  niveles  Ethernet.
+Bluethooth: La tecnología Bluetooth es una tecnología inalámbrica que posibilita la creación de una Red de Área Personal (PAN) entre los dispositivos de una persona, como dispositivos móviles, ordenadores, auriculares, entre otras.
+
+            Ventajas: no requiere ningún tipo de dispositivo de interconexión adicional, ya que existe un dispositivo maestro que se conecta directamente con hasta 7 dispositivos esclavos. Utiliza la banda “libre” de 2.4 GHz, cuyo
+            uso no requiere licencia ni pago de tasas. Salta entre frecuencias para evitar interferencias con otras señales inalámbricas. Aunque tenga un alcance reducido (<10 m) y una velocidad muy baja (<1 Mbit/s), consume muy poca energía
+            (y BLE aún menos), lo que prolonga la vida de la batería de los dispositivos.
+            Seguridad: las comunicaciones Bluetooth suelen estar cifradas, lo que dificulta que terceros puedan acceder a los datos transmitidos. No obstante, el nivel de cifrado depende de la versión del protocolo y de la aplicación que lo utiliza.
+            Es necesario emparejar los dispositivos con anterioridad, para que se pueda usar un PIN o confirmar un PIN, de conformidad con las capacidades de los dispositivos. Esto evita que dispositivos no autorizados puedan conectarse a la red Bluetooth.
+WIFI: WiFi es una tecnología inalámbrica que permite crear una Red Inalámbrica de Área Local (WLAN), que es compatible con la Ethernet. Este sistema permite conectar dispositivos sin cables, lo que facilita la movilidad y reduce el costo de instalación.
+            Ventajas: utiliza las bandas “libres” de 2,4 GHz y 5 GHz, que no requieren licencia ni pago de tasas. Se caracteriza por su alcance de hasta 100 metros y una velocidad de hasta varios Gbit/s, según la versión del protocolo y las circunstancias
+            del entorno. Existen diversas versiones de WiFi compatibles entre sí, que se ajustan a las necesidades de los usuarios y las aplicaciones
+
+            Seguridad: los paquetes de datos de conexión a distancia (WiFi) son cifrados, lo que obstaculiza la entrada de terceros a los datos transmitidos. No obstante, el nivel de cifrado se encuentra determinado por la versión del protocolo y el tipo de red. accesskey
+            AAsimismo, las estaciones deben autenticarse para conectarse al Punto de Acceso (AP), que es el dispositivo que coordina la comunicación entre los dispositivos inalámbricos y los dispositivos de la LAN. Existen diversas metodologías de autenticación, como WPA2-PSK,
+            con la contraseña del AP (en el hogar) y WPA2-Enterprise, con las credenciales del usuario (en entornos empresariales, requiere un certificado digital).
+REDES MOVILES: Las redes móviles son Redes Inalámbricas de Área Extensa (WWAN) que ofrecen servicios de voz y datos. Estas redes presentan bandas licenciadas entre 900 MHz y 26 GHz, lo que pueden abarcar áreas extensas, siendo complejas y operadas por proveedores de telecomunicaciones
+
+            Ventajas: los usuarios pueden mantenerse conectados mientras se desplazan, gracias a las diferentes redes móviles: 2G = GSM+GPRS/EDGE, el 3G = UMTS+HSDPA, el  4G = LTE y el 5G. Además, con el roaming, los usuarios pueden seguir utilizando sus dispositivos incluso cuando viajan al extranjero.
+            Seguridad: todas las comunicaciones están cifradas, lo cual dificulta su interceptación. Cada terminal debe autenticarse en la red mediante una tarjeta SIM y una clave o PIN, lo que añade una capa adicional de seguridad.
