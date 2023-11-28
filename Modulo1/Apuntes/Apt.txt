@@ -13,3 +13,9 @@ ip link  depende de cuantas tarj de reds
 macchanger -a mac random
 
 Equipo\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTHPORT\Parameters
+
+shodan.io info de como utilizar y mirar algun video
+
+consultas de dns diga(app) mirar la utilizacion de esta tool.
+
+mxtoolbox dominios de correos para saber spf, accion al reves para llegar a la ip

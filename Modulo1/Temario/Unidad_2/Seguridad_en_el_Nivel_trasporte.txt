@@ -1,0 +1,62 @@
+El nivel de red se ocupa de enviar datos de un lugar a otro a traves de internet, pero no se preocupa por la fiabiliadad ni la app. PAra determinar can que app se deasea
+comunicar en cada dispositivo, cada app tiene un numero de puerto diff.
+Los Servers de app conocidos tienen puertos fijos(0-1.023), los servers web usan el puerto 80 de TCP, los serves DNS el puerto 53 de UPD y los servers de correo y
+puerto de TCP.
+Una comunicacion TCP/IP entre dos apps de internet se define por 5 valores:
+    1.Direcciones IP origen
+    2.Puerto de origen
+    3.Protocolo de transporte
+    4.Direcciones IP
+    5.Puerto destino
+LA seguridad en el nivel de tansporte se refiere a enviar datos de manera fiable entre app que se ejecutam en diferenetes dispositivo, como un navegador web y un server web.
+Se utilizan protocolos de transporte pricipales, el TCP y UDP.
+
+PROTOCOLO UDP Y TCP:
+    -El User DAtagrama Protocol se trata del protocolo mas rapido y se usa para intercambiar info breve y urgente, este posibilita la recepcion de datos de inmediato sin establecer
+    una conexion, pero no garantiza que llegen los datos al destino ni que lo hagan en orden.
+    -El trasmission COntrol Protocol es el mas utilizado y se usa para trasmitir una gran cantidad de info. Se asegura que los datos lleguen al destino sin errores ni perdidas, pero
+    requiere establecer una conexion previa entre los dos dispositivos y usar mas recursos.
+
+    Ventajas de los dos:
+        -TCP:El transporte garantiza que los datos lleguen al destino de orden; si se pide un paquete, se reenvia y se reduce la velocidad de envio.
+        se conecta  con el destio enviado 3 paquetes: Sincronizacion(SYN), reconocido de Sincronizacion(SYN+ACK) y Acuse de recibo(ACK), Al recibir un paquetes de datos, se envia un paquete
+        de confirmacion (ACK) para que el origen continue enviandolo. SI no hay confirmacion, se renvian los datos y se bajan la velociodad.
+        *Cuando un extremo no quiere enviar mas datos, cierra si conexion con un paquete fin, que dura hasta que el otro extremo haga lo mismo.
+        -UDP:*EL transporte es mas sencillo y rapido, ya que solo se requiere conocer los puertos de las apps que se comunican. *UDP no se preocupa  por la fiabilidad ni el orden de los datos,
+        por lo que se utiliza en apps que requieren rapidez y no precision, RTP- el protocolo para trasnsmitir television por Internet- esa UDP porque no sucede  nada si se pierde un fotograma,
+        pero si se retrasa la emision por esperar a un paquete perdido.
+        *Permite enviar datos sin establecer una conexion previa con el destino, lo cual ahorra tiempo y recusos adicionales. Al no tener la certeza de la identidad del origen. se puedem efectuar
+        ataques de denegacion de servicio.
+
+ESCANEO DE PUERTOS:
+    Se realiza el ecaneo de puertos como un proceso que se utiliza para identificar puertos abiertos y accesibles en una red o en un sistema informatico, dado que el numero de puertos conocidos es limitado
+    resulta factibles establecer conexiones a todos los puertos de una pc con el fin de detectar servers activos y verificar si son sujetos a ataques.
+    SHODAN
+
+ATAQUES DISTRIBUIDOS DE DENEGACION DE SERVICIO(DDoS):
+    Los ataques de denegacion de servicios distribuidos (DDoS) se enfocan la transferencia de info desde multiples dispositivos a un mismo server o subred, lo que provoca una sobrecarga y bloqueo de acceso a los
+    users legitimos. Los ataques efectuados pueden alcanzar velociadades de hasta 2,3 teras pro segundo, y se emplean para extorsionar a las victimas solicitando un rescate para evitar el ataque.
+    Los atacantes suelen usar el protocolo UDP para realizar los ataques de DDoS, ya que este protocolo no limita la velocidad de transmision ni requiere restablecer una conexion previa con el destino, esto permite
+    aumentar el ataquem enviado mas datos de los que recibe el server.
+
+CORTAFUEGOS O FIREWALLS:
+    Un sistema de red conocido como firewall es un dispositivo de red que regula el trafico de datos erntrante y saliente en un organizacion, los sistemas operativos tambien disponen de firewalls de software para controlar
+    el trafico de red de la maquina.
+    Como se muestra9(Firewall.png) un firewall permite ejecucion de todos el trafico inicial(TCP SYN) desde el area  de la organizacion. Se establece nomas que se evaluan en un orden estricto con el fin de reterminar la
+    capacidad de trafico y la limitacion de su capacidad.
+    No solo protegen la red interna de amenazas externas, sino que tambien pueden ser configurados para proteger infomacion sensible en la red, se debe mantener actualizados y configurados adecuadamente para asgurar la
+    maxima proteccion.
+
+TRASPORT LAYER SECURITY(TLS):
+    El protocolo  Trasport Layer Security es el requisitos de seguridad mas relevante de la red, que garantiza la autenticacion, confidencialidad e integridad de los datos tramitidos. Se le conocia como Secure SOckets Layer(SSL),
+    pero este nombre se ha quedado obsoleto.
+    El protocolo TLS se ubica en el nivel de Trasporte(TCP) y el nivel de Aplicacio, y brinda una capa adicional de seguridad a los potocolos de app que lo utilizan, el protocolo HTTPS(Hypertext Protocol Secure) es una version
+    segura de HTTP que usa TLS para cifrar y verificar los datos enviados y recibidos por los servers web y los navegadores.
+    Mas de 90% de trafico web usa TLS, existen otros protocolos de app que no lo implementan a lo hacen de forma opcional, esto implica que en un sistema maquina pueden coexistir protocolos seguros e inseguros, que utlilizas, puertos
+    diff para escuchar las conexiones. El protocolo SMTP(Simple MAil TRasnfer Protocol) pueden usar el puerto TCP/25 para enviar  correos electronicos  sin cifrar, o el puerto TCP/465 para usar TLS.
+    (ProtocoloTLS.png)
+Subprotocolo:
+    1.Handshake Protocol: se encarga de establecer una sesion TLS segura entre las partes, negociaciones los parametros de seguridad y autenticado las identidades mediante certificados.
+    2.Record Protocol: se encarga de fragmentar, comprimir, cifrar y verificar los datos que se envian y recibe durante la sesion TLS.
+
+

@@ -1,0 +1,83 @@
+Protocolos de nivel de app:
+    1.DNS(Domain Name Service): resuelve los nombres de dominio en direcciones.
+    2.SMTP(Correo electronico): envia correos entre servidores y clientes.
+    3.HTTP(Hypertext Trasnfer Protocol): transfiere documentos web entre server y navegador.
+    Ejemplos:
+    1.HTML
+    2.MINE
+    3.JSON
+
+
+DNS: es un sistema que permite traducir los nombres de dominio, www.example.com, en direcciones IP y 93.184.216.34, que son utilizadas por los dispositivos de comunicacion de
+     internet para encaminar los paquetes. El DNS es un servicio distribuido y jerarquico.
+        1.Los dispositivos consultan el nombre www.example.com a su server DNS local, que puden obternese mediante DHCP o conf manualmente.
+        2.Si el server DNS local no tiene respuesta en su cache, cosulta a los servers DNS raiz(root DNS), que son los que conocen los servers auth para cada dominio de nivel superior.
+        3.EL server DNS local recibe la direccion del server DNS auth para el dominio.com y le pregunta por el nombre www.example.com.
+        4.E; server DNS auth para el dominio.com devuelve la direccion del server DNS auth para el subdominio, .example.com y el server DNS local le pregunta por el nombre www.example.com
+        5.El server DNS auth para el subdominio .example.com devuelve la direccion IP asociada al nombre www.example.com y el server DNS local la envia al dispositivo que hizo la consulta.
+        6.El servidor DNS local guarda en su cache la respuesta y las dir de los serves DNS intermedios, para acelerar futuras consultas.
+SEGURIADAD DNS:
+    Se debe tener en cuanta el nombre DNS que se consulta, ya que a veces los ataques utilizan nombres DNS similarea a dominios populares para capturar passwords (phishing).
+    El protocolo DNS habilita la resolucion de los nombres de dominio en dir IP, no ofrecen ninguna garantia de privacidad ni de seguridad. Si se trata de un sitio web seguro(https://www.[dominio privado].com)
+    el proveedor de internet puede ver quese se ha consultado ese dominio. aunque no se pueda ver el contenido de la pagina. Para prevenir este problema, existen el protocolo DNS-over-TLS(DoT) y que el
+    protocolo DNS-over-HTTPS(DoH), que cifran las consultas DNS entre cliente y su server DNS.
+    Sin embargo. los servers DNS pueden almacenar en cache las respuestas de otros serves con el fin de acelerar el proceso, lo que plantea otro riesgo:¿cómo identificar si la dirección IP que nos proporciona un servidor DNS es la adecuada y no está enviando a un sitio malicioso?
+    la respuesa es el protocolo DNSsec, que permite a los dominios DNS firmar sus repuestas digitalmente, de manera que los clientes puedan verificar su auth, sin importar quien se les haya proporcionado.
+CORREOS ELECTRONICO(SMTP):
+    1.SMTP(Simple Transfer Protocol): el protocolo utilizado para trasmitir correos electronicos desde un user, de correo electronico a un server de correo o entre server de correo TCP/25
+    2.POP(Post Office Protocol): es el protocolo que se utiliza para descargar los correos electronicos desde un server de correo a un cliente de correo local TCP/110.
+    3.IMAP(Internet Message Access Protocol): es el protocolo que se utiliza para acceder y manipular  los correos  en un server de corre sin descargar al cliente de correo local TCP/143.
+
+Ejemplo:
+    Alice (remitente) desea enviar un mensaje desde su correo alice@emailempresa.org a bobCharlie(destinatario), cuya dir son bob@emailempresa.com  y charlie@emailempresa.com.
+
+Desde la parte del remitente:
+    1.Alice emplea su server de correo para redactar el mensaje y remitirlo a su server de correo local (smtp.emailempreasa.org), utilizado el protocolo SMTP, se auth con su server de correo mediante un nombre de user y password.
+    2.El server de correo local de Alice ha efectado una consulta del DNS, con el fin  de obtener la direccion IP del server de correo de bob y charlie.
+    3.El server de correo local de alice se conecta conel server de correo de Bob y Charlie usando SMTP y le envia el mensaje, el server de alice no requiere de auth con el server de BOB y Charlie ya que pertenecen a dominios distintos.
+Desde la parte del destinatario:
+    1.Bob utiliza su cliente de correo para conectarse a su server de correo usando el protocolo POP, su cliente de correo se auth y se conecta con su server de correo mediante un nombre de user y una password, descarga el mensaje y lo almacena localmente.
+    2.Charlie utiliza su equipo de correo para conectarse a su server de correo a traves de IMAP, su cliente de correo se auth con su server de correo mediante un nombre de user y una password, accede al mensaje sin descargarlo y lo lee directamente desde el server.
+
+El sistema de correo SMTP posibilita la recepcion de mensajes a destinatarios que no aparezcan en el contenido del mensaje, esto se llama copia oculta o CCP(BCC, Blind Carbon Copy), si Alice hubiera puesto a charlie como CCO del mensaje, en el
+cuerpo solo se veria las dir de alice (DE:) y Bob(PARA:) pero el server de correo local de alice le habria  indicado al server de corro Bob y Charlie que el mensaje tambien iba dirigido a Charlie.
+
+SEGURIDAD SMTP:
+    El correo es antiguo en la web, asi que los portocolos de correo electronico no estan cifrados por defecto, pueden usar TLS para auth:
+        1.SMTP(TCP/25)--> SMTP OVER TLS(TCP/465)
+        2.POP(TCP/110)--> SPOP OVER TLS(TCP/995)
+        3.IMAP(TCP/143)--> SIMAP OVER TLS(TCP/993)
+SOLUCIONES A RESOLVER PROBLEMAS DE IDENTIDAD:
+    1.SPF(Sender Policy Framework): que permite publicar en el DNS la lista de servers de correo saliente de una organizacion, para que los demas no acepten correos falsos que parezcan de ella.
+    2.DKIM(DomainKeys Identified Mail), permite firmar digitalmente los mensajes enviados, para que los clientes puedan verificar su origen.
+    3.SSL(Secure Sockets Layer) y TLS(Trasnport Layer Security), las cuales cifran la comunicaciones entro los servers y los clietes de coreo, a fin de prevenir la interaccion entre terceros.
+    4.PGP(Pretty Good Privacy) o el S/MINE, que cifran y firman mensajes de forma individual, asegurando su confidecialidad e integridad.
+
+
+
+    HYEPERTEXT TRASFER PROTOCOL(HTTP):
+        Es el lenguaje que utilizan los servers web online de internet para cominicarse entre si y con los navegadires, las paginaas web estan redactadas a un leguanje de marcado de hipertexto(HTML), y albergan enlaces a otros recursos, como img, hojas de estilo.....
+        La info en la web se identifica mediante localizadores uniformes de recursos(URL) que indican su dir, nombre y tipos:
+            1.Consultas de sistemas de nombre de dominio (DNS) para obetener la IP del server que aloja el recurso.
+            2.Establece conexion de control de trasmision(TCP) con el server y el puerto especificados(o el puerto por defecto del protocolo) y se le encia una peticion HTTP para solicitar el recurso, junto con los parametros de consulta, si los hay*(GET /blog/index.html?pagina=1&resultados=25 HTTP/1.1
+              Host: www.example.com)
+            3.Recibe una respuesta HTTP del server con el contenido del recurso solicitado o con un codigo de error sin no lo encuentra:
+              HTTP/1.1 200 OK
+              Content-Type: text/html
+              <html> … </html>
+            4.De acuerdo al tipo de recursos, si es una pagina web, el navegador la muestra en la pantalla y continua descargando todos los recuersos que contiene<img><audio>. Si alguno de ellos estan en otro server web, tiene que estavlecer otra conexion TCP con el, Se el recurso a JavaScript<script>, el n
+              navegador lo ejecuta en un entorno aislado (sandbox) que retringe las acciones que pueden realizar o la info a la que puedan acceder.
+
+    SEGURIDAD HTTP:
+        El protocolo HTTP(TCP/80) no brinda ninguan proteccion contra el espionaje o la manipulacion de datos que de transmiten por la red, para asegurar la seguridad y la privacidad de las comunicaciones web, se pueden utilizar el protocolo HTTPS, que se una version cifrada de HTTP que utiliza TLS (TCP/443)
+        como capa de seguridad.
+        No todos los los sitios web usan HTTPS por defecto, y algunos navegadores pueden intentar acceder a ellos mediante HTTP si no es especifica el protocolo en la URL, la presente situacion puede propiciar al user ataque de intermediarios (MAN-In-The-Middle) que pueden interceptar, alterar o redirigir el
+        trafico web, este tipo de ataques es el StripSSL.
+
+        EJEMPLO:
+        Algunas paginas web muestan el uso de https, el cual utiliza capa SSL(Secure Socket Layer), estableciendo una conexion protegida entre un server web y un navegador.
+        Un Ataque StripSSL remplaza o redirige el protocolo https a http en todas las URLS que se obtiene de forma insegura, haciendo que todas las navegaciones sea vulnerables.
+        Para prevenir este peligro, hay que establecer el estandar HSTS(HTTP STRICT-TRASPORT-SECURITY), que le dice al navegador que solo debe usar HTTPS para conectarse a un servidor determinado, sin importar lo que ponga el user en la URL, se evita que el navegador intente user HTTPS y protege la conexion contra ataques
+        de intermediarios.
+        Factor importante es la auth, que es el proceso de verificar la identidad del usr que accede a un sitio web, se realiza mediante un formulario web en el que user introduce su nombre  y password. Se confirma estos datos, le envia al navegador una cabecera Set-Cookie con un identificador de sesion( que el server asocia con el user ).
+

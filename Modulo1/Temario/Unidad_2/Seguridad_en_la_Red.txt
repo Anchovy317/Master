@@ -1,0 +1,48 @@
+DIRECION IP:
+    Ip es el unico protocolo comun a internet, lo que significa que todos los equipos de todos el mundo que estan conectados  que estan conectados a internet usan este  protocolo de nivel de red.
+    Se encuentra disponibles  dos versiones de protocolos IP, que presentan distintas caracteristicas, el protocolo IPv4 e IPv6.
+
+    IPv4:Es la version original y la mas utilizada en el ambito global, y se emplea en direcciones de 32bits. No obstate, ya no existen mas dir IPv4 publicas disponibles debido al aumento del numero
+         debido al aumento del numero de dispositivos conectados a internet.
+    IPv6:Es una version mas nueva y se basa en direcciones de 128 bits, a diferencia de IPv4, no se espera que estas se agoten en ningun momento.
+    (diffipv4deipv6.jpg)
+
+    A diferencia de los protocolos de nivel de enlace, que tienen a tener una diireccion MAC unica asignada por el fabricante, las dir IP deben configurarse
+    en los dispositivos que desean conectarse a internet. Dos opciones:
+        1.El admin de la red asigna una dir de forma permanente. como suele ocurrir con los serves.
+        2.El dispositivo obtine una dir temporal mediante el protocolo DHCP, como es el caso de los portatiles.
+    Dos tipos de IPv4:
+        1.Privadas: no son unicas, lo que permite que muchas organizaciones las utilice de manera simultanea.
+            10.0.0.0 – 10.255.255.255
+            172.16.0.0 – 172.31.255.255
+            192.168.1.0 – 192.168.255.255
+        2.Publicas: que estan asignadas a una unica organizacion y nadis mas podra usarlas, es necesario utilizar una direccion IP publica, que comprende el resto de dir no privadas:
+            0.0.0.0 – 255.255.255.255
+
+NETWORK ADDRESS TRASLATION(NAT):
+    Debido a las carenciacias de la IPv4 las organizaciones pueden obtar por el direcionamiento privado inerno, el cual se conoce como NAT, donde las comunicaciones cuando requieran acceder a ineternet
+    se les asigna una de las dir IP publicas disponibles  de la organizacion.
+    (NAT.png)
+    Como se puede apreciar en la figura, este procedimiento se lleva a cabo mediante de NAT o sistema de firewall que conecta a la organizacion(cliente) con la red de internet(server).
+    Este dispositivo modifica la dir IP privada original de los paquetes que se presentan en internet por una de las IP publicas asignadas a la organizacion, registra esta relacion entre ambas dir para su
+    uso posterior, de modo que el paquete puede acceder a internet(que solo admite dir publicas) y llegar al server de destino. El server responde a la dir publica, lo que posibilita que el paquete IPv4 de respuesta pueda atravesar internet.
+    Cuando este paquete ingresa al NAT en la entrada de la organizacion, el NAT busca la IP privada asociada a las dir IP publicas con la direccion privada asociada, permitiendo que el paquete llegue al ordenador original dentro de la organizacion.
+
+REDES Y SUBREDES:
+    Los routers son dispositivos que conectan distintas partes de internet y que usan una tabla de ruta para saber a donde enviar los paquetes de datos, cada paquete disponen de una direccion IP de destiono, que es un numero  de 32 bits que identifica
+    a un equipo en internet.
+    Dado que ecisten mas de 4.000 millones de IPs, se emplean subredes que agruparlas y optimizar en el encaminamieto, una subred es un conjunto de direcciones IP que comparten los mismos bits, los routers y los equipos Ip cosultan su tabla de rutas para determinar
+    a que router enviar los paquetes segun la subred de destino, caso de ninguna ruta especifica seria 0.0.0.0/0
+    (/home/Anchovy/Downloads/iproutetable.png)
+    Los routes aprenden las rutas a las subredes mediante protocolo de ecaminamiento, como Border Gatway Protocol(BGP), que les permite intercambiar informes con otros routers sobre el mejor camino para llegar a cada subred, estos protocolos se basan en la confianza
+    entre los routers, y pueden ser vulnerables a errores o atques que alteren las rutas, puede causar que el trafico se desvie por caminos mas largos o inseguros, provocados problemas de rendimiento o seguridad. Hay iniciativas como RPKI o BGP buscan verficar las rutas
+    a traves de certificados o firmas digitales.
+
+RED PRIVADA VIRTUALES(VPN):
+ Son estructuras de tuneles que se establecen en la estructuras de internet con el fin  de conectar  dispositivos de manera segura y exclusiva, etas redes son altamente benificiosas para conectar diversas areas de una organizacion o para permitir el acceso remoto  a los
+ trabajadores, asegurando de esta manera la seguridad y privacidad de las comunicaciones.
+ Funcionan a traves de tecnicas de encapsulamiento y crifrado, los datos se almacenan y se cifran previamente antes de ser enviados, lo que obstaculiza la posibilidad de ser interceptores o modificados por terceros.
+ Diversos protocolos:
+    1.MPLS(MUltiProtocol Label Switching): es un protocolo que se utiliza cuando el proveedor de comunicacion proporciona la VPN y el trafico no requiere ser cifrado.
+    2.IPSec(Internet Protocol Segurity): protocolo que se utiliza cuando la VPN se establece sobre internet y el trafico requiere ser cifrado para asegurar su seguridad.
+

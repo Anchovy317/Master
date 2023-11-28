@@ -101,3 +101,6 @@ REDES MOVILES: Las redes móviles son Redes Inalámbricas de Área Extensa (WWAN
 
             Ventajas: los usuarios pueden mantenerse conectados mientras se desplazan, gracias a las diferentes redes móviles: 2G = GSM+GPRS/EDGE, el 3G = UMTS+HSDPA, el  4G = LTE y el 5G. Además, con el roaming, los usuarios pueden seguir utilizando sus dispositivos incluso cuando viajan al extranjero.
             Seguridad: todas las comunicaciones están cifradas, lo cual dificulta su interceptación. Cada terminal debe autenticarse en la red mediante una tarjeta SIM y una clave o PIN, lo que añade una capa adicional de seguridad.
+
+
+
