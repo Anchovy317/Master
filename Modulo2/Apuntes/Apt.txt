@@ -1,0 +1,10 @@
+----------------CLASE 1-------------------------
+Certificados: CSIM, CSSIP
+CERT:Computer emergency responde Team
+CSIRT: Computer incident Response Team
+SOC: Security Operation Center.
+enisa.europa.eu respuestas de incidentes respond[https://www.enisa.europa.eu/]
+first.org[https://www.first.org/]
+incibe [https://www.incibe.es]
+Table top exercise: Metodologia, arquitectura, funcionamiento, sumilacion, crisis, cibernetica.
+

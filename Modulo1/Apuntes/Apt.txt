@@ -19,3 +19,26 @@ shodan.io info de como utilizar y mirar algun video
 consultas de dns diga(app) mirar la utilizacion de esta tool.
 
 mxtoolbox dominios de correos para saber spf, accion al reves para llegar a la ip
+
+FUNDAMENTOS DE PYTHON:
+Video para el caso practico: https://sites.google.com/immune.institute/2311-vcso-modulo-1-u4/unidad-4-introducci%C3%B3n-al-malware/5-ejemplo?authuser=1
+:
+pypip
+
+virustotal: url. hash. file
+
+python desde tipos de variables.
+
+python standar library
+Python -m Pip Freeze > archivo.txt
+
+Mirar la parte de oletools
+Miarai github.
+mimikats
+pwd20.....
+
+Malware end-points
+virustotal
+certutil mds5
+wormgpt
+fiddler
