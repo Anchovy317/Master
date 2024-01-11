@@ -1,0 +1,6 @@
+DESCRIPCION GENERAL DE LA UNIDAD:
+    La gestion de identidades y acceso(IAM) es esencial para asegurar que solo las personas auth tengan acceso a los
+    recursos tecnologicos necesarios, lo que permite preservar la integridad de los sitemas y los datos.
+    Los temas centrales de la IAM abarca la auth, los sitemas de gestion de credenciales y el ciclo de vida de la identidad coorporativa.
+    En esta unidad veremos Autentificacion, sistema de gestion de credenciales, ciclo de vida de la identidad coorporativa.
+

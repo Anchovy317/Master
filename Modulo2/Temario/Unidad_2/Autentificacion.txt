@@ -1,0 +1,23 @@
+AUTENTIFICACION:
+
+La autenficacion es una proceso fundamental que verifica la identidad de un usuario antes de permitirle el acceso
+a recursos digitales. Este proceso requiere la identificacion (quien eres) y la autenficacion(verificacion de tu identidad).
+En el ambito de la gestion de identidad y acceso (IAM), se aborda la tematica de "cinco ASES" que son metodos relevantes
+utilizados para identificar a los users y mantener la seguridad del sistema:
+    1.Autenticacion
+    2.Autorizacion
+    3.Auditoria
+    4.Administracion
+    5.Analitica
+
+PASSWORDS:
+SOn el metodo de autenficacion mas utilizado para acceder a los sistemas informaticos. La seguridad que ofrecen las passwords
+esta en la gran medida determinada por la confidencialidad. Con fin de optimizar la seguridad de una passwords, se pueden seguir
+diversas recomendaciones:
+    1.No debe estas asociada de manera rapida con ninguna info relacionada con el user de la cuenta.
+    2.Debe tener una logituf minima de 8 caracteres con diferentes tipos  de caracteres  tipograficos.
+    3.Se debe cambiar la contrasenha de manera periodica.
+    4.No se debe compartir las cuentas o las passwords  con otros user en ningun caso.
+    5.No se deben anotar las cuentas y passwords en lugares de facil acceso, ni alamacenamiento  en archivos en el pc sin ninguna proteccion.
+    6.Es necesario limitar la opcion de "Recordar pass" que ofrecen ciertos navegadores.
+    7.Apps de alamacenamiento de passwords
