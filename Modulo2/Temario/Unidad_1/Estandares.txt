@@ -42,3 +42,13 @@ Requisitos: Se estructura en 6 objetivos que se dividen en 12 requisitoes, alred
         11.Realizar pruebas habituales en los sistemas y procesos de seguridad.
     6.Mantener la politica de seguridad de la info actulizada
         12.Crear una politica que contemple y mantenga actualizada los aspectos relacionados con seguridad de la informacion.
+
+Las regulaciones GDPR e HIPAA establecen medidas especificas para la proteccion de los datos personales y de salud.
+
+    1.GDPR(Reglamento General de Poteccion de Datos), Conocido en espanha como RGPD, es uno de los marcos ma recientes [entro en vigor en 2016] para proteger la informacion personal identificable.
+     Los requisistos incluyen la app de control solidos para limitar el acceso no auth a los datos de alamacenamiento, promoviendo por el principo de "menor privilegio"
+     y la auth multifactor. Enfatiza el deber de informar a las empresas, como serveras sanciones economicas en caso de icumplimiento.
+    2.HIPAA(Health Insurace Portability and Accountability Act) establece pautas y controles para permitir a las organizaciones publicas y privadas del sector sanitario, uso, transmision y alamacenamiento seguro
+     de ingo de empleados y pacientes. Requiere que las entidades del sector de salud cumplan durante todo el ciclo de vida de la info del paciente, desde su recopilacion hasta su eliminacio. Esto implica estandares de
+     seguridad  que la organizacion debe acreditar mediante auditorias periodicas.
+

@@ -1,0 +1,14 @@
+En el ambito de la ciber, se presenta diversas tecnicas y herramientas que posibilitan la busqueda y el analisis de inofo.
+Una de estas tecnicas se conoce como googlg HAcking o google Dorking, la cual es una tecnica empleada para identificar
+vulnerabilidades en sitios web y encontrar info.
+
+    1.""(comillas): realiza una busqueda de las palabras o frases exactas.
+    2.[+] y [-]: se utiliza para incluir o excluir texto.
+    3.[*]: el asterisco lo utiliza como un comodin, reemplazandolo por culaquir palabra.
+    4.AND y OR: utilizado para enlazar expresiones del tipo 'y' 'o'
+    5.intitle: expresion. Se devolvera resultados donde la palabra aparezca en el titulo.
+    6.intext: permite localizar webs que contengan el texto indicado
+    7.inurl: Busca la expresion mencionada en la URL
+    8.site: Especifica resultados dentro de la web que indiquen
+    9.filetype: Unicamente te devolvera resultados que coincidas con el tipo de archivos especificos(doxc, xlsm, PDF....)
+
