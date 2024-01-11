@@ -1,0 +1,44 @@
+ESTANDARES:
+Los estandares tambien son fundamentales para establecer directrices y mejores practicas en la proteccion de los sitemas, ya que son una tool valiosa.
+Estos pueden ser oficiales o de facto, y su alineacion ofrece beneficios.
+DEFINICION:
+    Son aquellos que sirven de tipo, modelo, norma, patron o referencia, en la ambito tecnico, la estadarizacion es el proceso mediante el cual se establece
+    normas universalesmente aceptadas.
+    Las NORMAS OFICIALES son las que han sido aprobadas y sancionadas por un organismo oficial de normalizacion, tanto nacional como internacional.
+    Los ESTANDARES DE FACTO, patrones o normas que se utilizan por eleccion o convivencia.
+    Un MARCO DE CIBER, es en esencia un sistema establece estandares, pautas y buenas practicas para lidiar con los riesgos  que surgen en el ambito digital.
+
+BENEFICIO DE LA ALINEACION CON LOS ESTANDARES DE SEGURIDAD:
+    1.Mejores practicas: Los estandares permiten la applicacion de las mejores practicas utilizadas, proporcionando una serie de acciones, metodologias, tools y tecnicas.
+    2.Madurez organizacional: Los estandares contribuyen a la progresion de los procesos organizacionales, empleado en concepto de mejora continua.
+    3.Conjunto de enfoque: Los estandares permiten la combinacion de diversos enfoques con un objeto en comun(la proteccion)..
+    4.Desarrollo de experiencia: Son el resultado de la experiencia de expertos en temas de seguridad, estableciendo a traves  de consensos de grupos conformados por las grandes empresas.
+    5.Marco de trabajo: Alineacion con un estandar de seguridad permite el disenho, desarrollo y applicacion de un marco de trabajo que contribuye a estructuras....
+
+ISO 27000:
+    Conocido como 27k, contituye un marco integral para la gestion de la seguiridad; publicados por Organizacion Internacional de Normalizacion (ISO) y Comision Electronica Internacional (IEC).
+    Establece los requisitos para una Sistema de Gestion de Seguirdad de la Informacion(SGSI) en una organizacion. Ofrece una guia de que se debe tener y como cumplir los requisitos.
+    Las guias de implementacion se enfocan en el fortalecimiento y mejora de las redes y sestemas. Recomendacion detalladas y practicas para la infrastructuras de TI, abordando temas como la config
+    segura de servers, la proteccion de redes y la gestion de vulnerabilidades.
+PCI-DSS:
+    Payment Card Industry Data Security Standard; cualquier entidad pub o priv que procese pagos de terceros. Este estandar establece un conjunto  de requisistos minimos para proteger los datos de cuenta.
+Requisitos: Se estructura en 6 objetivos que se dividen en 12 requisitoes, alrededor de 200 controles y 250 procedimientos de pruenba.
+
+    1.Construir y mantenewr una red segura:
+        1.Intalar yy mantener una conf de firewall para proteger los datos.
+        2.No usar password o valores predeterminadas por los proveedores.
+    2.Proteger los datos de los titulares de las tarjetas:
+        3.Salvaguardar la info personal de los propietarios de las tarjetas.
+        4.Cifrar la transmision de datos e informacion confidencial de los titulares a traves de redes publicas.
+    3.Establecer un programa de gestion:
+        5.Actualizar y activar el programa antivirus de forma regular.
+        6.Desarrollar y mantener sistemas y applicaciones seguras.
+    4.Crear medidas solidad de control de acceso:
+        7.Limitar el acceso a la info unicamente a la empresa que lo necesiten.
+        8.Asignar una identificacion unica a cada persona con acceso al sistema.
+        9.Restringir el acceso fisico a los datos a los propietarios.
+    5.Monitorear y testear regularmente las redes:
+        10.Rastrear y Monitorear el acceso a los recursos de red y datos del titular.
+        11.Realizar pruebas habituales en los sistemas y procesos de seguridad.
+    6.Mantener la politica de seguridad de la info actulizada
+        12.Crear una politica que contemple y mantenga actualizada los aspectos relacionados con seguridad de la informacion.

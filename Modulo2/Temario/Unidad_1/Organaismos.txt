@@ -1,0 +1,65 @@
+La ciberseguridad es un campo  que involucra a multitud de organismos a nivel internacional y nacional, los cuales desempenhan un papel fundamenntal para
+proteccion de info y la gestion de riesgos, estos se dedican a garantizar la seguridad.
+Asimismo, existen analistas de mercado que examinan las condiciones de mercado con el objetivo de analizar y evaluar las tendencias, amenzas y mejoras practicas
+de la ciberseguridad.[https://www.first.org/members/map, https://www.enisa.europa.eu/topics/incident-response/csirt-inventory/certs-by-country-interactive-map]
+    -Organismos Internacionales:
+        ENISA(European Union for Cibersecurity):Es una entidad quie tiene  como objetivo garantizar un alto nivel de seguridad cibernetica en toda Europa. Fue creada en
+        en 2004 y se reforzo por el Reglamento sobre la seguridad cibernetica de UE, mejorando la confianza en los productos, servicios y procesos de Tech de la informacion
+        y comunicacion.
+        -Objetivos:
+            1.Contribuir a la implementacion de un politica de seguridad cibernetica de UE.
+            2.Mejorar la confizanza en los productos, servicios y procesos digitales usando certificacion.
+            3.Cooperrar con los Estados miembros y con los organismos de la UE.
+            4.Ayudar a Europa a prepararse para los desafios del futuro en materia de ciber, mediante el intercambio del conocimiento, la creacion de capacidades y sensibilizacion.
+        OEA(Organizacion de los Estados Americanos): es una entidad  internacional con la mision de promover la democracia, los derechos, la seguridad de EEUU.
+            -Areas de Accion:
+                1.Formacion de politicas: Ayuda a los Estados mienbros a desarrollar y aplicar politicas, estategias y marcos legales, basados en los principios y estandares internacionales.
+                2.Capacitacion: Ofrece cursos, talleres, seminarios sobre diversos temas de ciberseguridad para funcionarios publicos, profesionales en el sector, ademicos y sociedad.
+                3.Coordinacion de respuestas a incidentes: Abarca las creacion y consolidacion de los equipos nacionales de asistencia a incidentes (CIRSTs), asi como la colaboracion regional e
+                intenacional.
+                4.Proteccion de infraestucturas criticas: Ayuda a los estados miembros y al sector privado a indentificar y proteger las infraestucturas criticas de la region, como la energia, el
+                transporte, comunicaciones, salud y la banca.
+
+        NIST(National Institute of Standards and Tech): es la entidad del Departamento de Comercio de los Estados Unidos, cuyo objetivo es la investigacion y el desarrollo de los estandares y tech
+        en diversos campos, incluyendo la ciber. Establecen estandares en las publicaciones especiales de SP, que tratan de temas como la gestion de riesgo, la proteccion de datos, la seguiridad de las redes
+        y la informacion, la criptografia o la identidad digital.
+            -El marco de seguiridad del NIST:
+                1.Aplicabilidad: Se aplica a entidades que se encuentran en dependencia tech, dado que sy enfoque de seguridad se centra en la Tech de la Informacion(TI), sistema de control(ICS), sistemas
+                ciberfisicos(CPS), o Dispositivos conectados en general incluyendo(loT).
+                2.Estructura:
+                    1/El nucleo del marco se compone de Cinco funciones: Identificar, Proteger, Detectar, Responder y Recuperar; esto permite ver el ciclo de vida del proceso de gestion de riesgo de la seguiridad
+                    de un organismo, se agrupan en subcategorias.
+                    2/Los nivels de implementacion indican el nivel de sofisticacion y madurez de la gestion de la seguridad  de una Organizacion. Los niveles van del Nivel 1 [Parcial] al 4 [Adaptativo].
+                    3/Los perfiles del Marco son los resultados de como se combinan las funciones, categorias y subcategorias  del Nucleo del Marco con los obj de negociom los requisitos legales y regulatorios, y
+                    el riesgo de organizacion.
+
+Organismos Nacionales:
+    1.INICBE(Instituto Nacional de Ciberseguridad de Espanha)
+    2.CNN-CERT(Cerntro CriptologicoNacionas-Computer Emergency Response Team)
+Latam:
+    1.CNN-CERT-CL(Centro de Respuestas a Incidentess de Seguridad Informatica de Chile)
+    2.CERT-Py(Centro de Respuestas a Incidentes Ciberneticos de Paraguay)
+    3.CERT-UY(Centro de Respuestas a Incidentes de Seguridad Informatica de Uruguay)
+    4.CERT-Dominicana(Centro de Respuestas a Incidentes de Seguridad Informatica de Republica Dominicana)
+    5.CERT-PERU(Equipo de Respuesta ante Incidentes de Seguridad Informatica Peru)
+    6.ColCERT(Equipo Colombiano de Respuestas a Incidentes de Seguridad Informatica)
+
+
+Analisis del Mercado:
+    Son entidades privadas que se dedican a la informacion y analisis de la ciberseguridad, apesar de los marcos de referencia estes desempenhan un gran papel.
+        1.Gatner:
+            Empresa de consultoras e investigacion de la tech de la info con sede en EEUU, que se dedica a analizar tendencias y las oportunidades del mercado.
+                -MODALIDADES:
+                    1.Investigacion del mercado
+                    2.Investigacion de asuntos
+                    3.Investigacion por sectores
+            Utilizacion del cuadrante magico de Gartner:
+                1.Eje vertical se refiere al conocimiento de mercado, el cual evalua la compresion y la anticipacion de las demandas y expectativas de los clientes.
+                2.Eje horizontal se refiere a la habilidad de ejecuacion, la cual mide la capacidade de cumplir con los compromisos y los objtivos establecidos.
+            Posicionamiento:
+                1.Lideres: Destacan la vision actual del mercado y estan solidamente posicionados para el futuro.
+                2.Visionarios: Comprenden la direccion hacia la que se dirige el mercado, ejecucion limitada.
+                3.Jugadores de nicho: Carecen de innovacion
+                4.Retadores o aspiranters: Dominan un amplio segmento, pero no tiene una clara vision de la direccion futura del mercado.
+
+        2.Forrest: Empresa de investigacion y asesoramiento que ayuda a los lideres empresariales y tech a impulsar el crecimiento poniedo en el centro de todo lo que hacen.

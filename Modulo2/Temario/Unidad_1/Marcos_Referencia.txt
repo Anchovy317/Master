@@ -1,0 +1,126 @@
+MARCOS DE REFERENCIA:
+    La ciberseguridad, un ambito en constante evolucion, estos marcos ofrecen orientacion y estrategia avanzadas para proteger los sistemas de informacion.
+    Es importante establecer directrices y buenaspracticas en la proteccion de sistemas informaticos. Elaborados por diversas organizacione.
+    Existen marcos internalmente conocidos para los Sistemas de Gestion de Seguridad de la Informacion (SGSI), los cuales ofrecen orientacion para mejorar continuamento.
+    El desarrollo del Framework NIST es singulas, ya que integra la seguridad, privacidad y la gestion de riesgo de la cadena de suministro cibernetico durante el ciclo de
+    vida del sistema.
+
+Critical Security Controls(CIS):
+    Center for Internet Security es una organizacion sin animo de lucro que se dedica al desarrollo y promocion de mejores practicas
+    Los CIS Controls son un recurso valioso para la organizacion de cualquier tamanho, ya que pueden mejor su postura de seguridad y reducir el riesgo a sufrir ataques.
+        1. Implementar controles de seguridad efectivos para mitigar los ataques ciberneticos mas comunes.
+        2. Priorizar los esfuerzos de seguridad para obtener el mayor beneficio.
+        3. Comparar la postura de seguridad de su organizacion con las mejores practicas de la industria
+
+    Estos CIS se estructuran en tres categorias:
+
+        1.Controles basicos(son esenciales que toda organizacion debe aplicar para establecer una base solida de seguridad)
+            1.Inventario y control de activos de hardware: Es una herramienta de mantener un registro actualizado de todos los dispotivos que se conectan a la red, ubicacion, propietario y config.
+            2.Inventariado y control de activos de software: Consiste en mantener un registro actualizado de todos los programaas  que se ejecuten en los dispositivos, incluyendo su version, licencia y parches.
+            3.Gestion de vulnerabilidades continuada: Consiste en identificar y corregir las debilidades que pueden ser explotadas por los atacantes, mediante el escaneom la evaluaion y la remediacion de las vulnerabilidades.
+            4.Control de uso de privilegios administrativos: Se trata de limitar el acceso y el uso de las cuentas con permisos elevados, mediante el estableciminto de politicas, el registro de actividades y la revision
+            periodica de privilegios.
+            5.Uso de configuracionse seguras para hardware, softwarem en dispotivos moviles, portatilesm workstation y servers: Forma de usar las config recomendadas por  los fabricantes o por funtes de confianza para
+            reducir la superficie de ataques y mejorar el rendimiento del sistema.
+            6.Mantenimiento, monitoreo y analisis de logs de auditoria: Se trata de recopilar y alamcenar los registros de las actividades que ocurren en los sistemas, para facilitar la detenccion e investigacion de los incidentes.
+        2.Controles fundamentales(Son lo que complemetan a los basicos y permiten mejorar la seguirdad de los sistemas y los datos):
+            1.Proteccion en emails y navegadores: Es una forma de prevenir el phishing, el malware y otras amenzas que se propagan via correo, web.
+            2.Defensa frente al malware: Es una manera de prevenir, detectar y eliminar malware que puede infectar el sistema; utitilizacion de antivirus, sandbox, antimalware....
+            3.Limitacion de puertos, protocolos y servicios de red: Se trata de limitar y monitorea el trafico de red a traves de firewalls, listas blancas y negras...
+            4.Capacidades de recuperacion de datos: Consiste en asegurar las disponibilidad y la integridad de los datos, mediante copias de seguridad, restauracion....
+            5.Configucion segura para dispotivos de red, firewalls, routers y switches: Aplicar las config recomendadas por los fabricantes o por funtes fiables, con obj de reducir la superficie de ataque y mejorar rendimineto.
+            6.Seguridad perimetras: es una forma de proteger el acceso a la red interna desde el exterior, VPN, proxy, DMZ....
+            7.Proteccion de datos: Es una forma de proteger la confidencialidad, integridad y la disponibilidad.
+            8.Control de acceso con base en necesidad de saber: Otorga el acceso a los datos solo a las personas autorizadas y solo para fines necesarios.
+            9.Control de acceso wireless: Forma de proteger el acceso a la red inalambrica.
+            10.Control de monitoreo de cuantas de users: Gestion de ciclo de vida de las cuentas de user, desde la creacion hasta la eliminacion.
+        3.Controles Organizativos(Estos involucran a las personas y los procesos en la gestion de la seguridad):
+            1.Implementar un programa de coincienciacion y entrenamiento en seguridad.
+            2.Seguridad en software de app/
+            3.Gestion de respuesta a incidentes
+            4.Test de pentesting y ejercicios de Red Team
+            5.Analisis de riesgos
+
+ISO/ICE 27001(Es un estandar internacional de seguridad por la ISO(Organizacion Internacion de Normalizacion) y el IEC(Comision Electronica Internaciona), el objetivo es crear un sistema de Gestion de Seguridad de la Informacion(SGSI))
+    1.Requisistos de certificacion:
+        1.Analizar de manerea sistematica los riesgos de seguirdad de la info, teniendo en cuanta las amenazas y vulnerabilidades y los impactos.
+        2.Disenhar e implemetar un conjunto coherente y apropiado de controles de seguridad, o bien aceptar, evitar o transferir los riesgos que no pudan mitigarse.
+        3.Adoptar un enfoque de mejora continua, que asegure que el SGSI se adapte a los cambios internos y externos.
+    2.Ciclo de gestion(Es fundamental el ciclo Deming, metodo de mejora continua):
+        1.Planificar: Crear politica, los obj, los procesos y los procedimientos de SGSI segun necesidades y expectativas
+        2.Hacer: Implemetar y operar el SGSI, segun su planificacion
+        3.Verificar: Monitorear y evaluar el rendimiento y eficacia del SGSI, con indicadores, auditorias y revisiones.
+        4.Actuar: Tomar acciones correctivas y preventivas para mejorar el SGSI, segun el resultado obtenido.
+
+COBIT(es un estandar internacion de gestion y gobierno de la tech de la info, desarollado por ISACA, una asociacion profesional dedicada a la auditoria, el control y la seguridad de la info)
+    PARA QUE SIRVE:
+        Para proveer gobierno y gestion para la funcion de TI, estableciendo una clara destincion entre estas does disciplinas quye abarcan diversas act, requiere diversas estructuras con diff propositos.
+            1.Aseguran las necesisdades, condiciones y opcioines de las partes interesadas para determinar obj empresariales equilibrados y consensos.
+            2.La direccion se establece a traves de la priorizacion y la toma de decisiones.
+            3.El desempenho y el cumplimiento se monitorea con los obj acordados.
+        Por otro lado la gestion se enfoca en planificar, construir, ejecutar y monitorea actividades alineadas con la direccion establecida por el organo de gobierno para alacanzar obj de la empresa.
+
+   COMO FUNCIONA:
+        Establece los componentes para crear y sostener un sistema de gobierno que incluye los siguientes elementos o catalizadores: procesos, estructura, organizativas, politicas y procedimientos, flujos de info, cultura y
+        comportamiento, habilidades e infraestructura.
+        Definen factores de disenho que debe consederarse para crear un sistema de gobierno adecuado.
+
+   MODELOS DE REFERENCIA:
+        1.Objeticos de gobierno y gestion:
+            Evaluar, dirigir y monitorear(EDM), de agrupan en cuatro dominios:
+                -Alinear, planificar y Organizar(APO): Aborfda la organizacion general, estrategia y actividades con apoyo para las IT.
+                -Construir, adquirir e implementar(BAI): Se encarga de definicion, adquisicon e implementacion de soluciones de TI.
+                -Entrega, dar Servicio y Soporte(DSS): Ejecucion operativa y el soporte de los servicios de TI, incluida seguridad.
+        2.Caracterizacion del proceso:
+            1.Descripcion y proposito general
+            2.Metas de negicio y  metas de alineacion junto con sus metricas para medir el desempenho.
+            3.Practicas de gobierno, gestion, incluyendo las metricas de desempenho, actividad a realizar, documentacion realizada, matriz de roles, responsabilidadm entrada y salida de practicas,
+            4.Personas, habilidades y compentencias
+            5.Politicas y procedimientos
+            6.Elemento culturales clave
+            7. Servicios, infraestructura y aplicacion
+
+FRAMEWORK NIST:
+Existen tres tipos principales de marcos en ciberseguridad:
+    1.Framework de control: Se centran en la implementacion de controles especificos de seguridad para medir y mejorar el estado tecnico de la seguirdad cibernetica. Marco NIST (NIST CSF)
+    2. Frameworks de programa: Se centran en el desarrollo de programas de seguridad cibernetica holisticos, ex COBIT(Objetivos de Control para las Tech de la Informacion y Relacionadas)
+    3.Frameworks de riesgo: Ayuda a identificar, evaluar y gestionar los riesgos de seguridad(Cybersecurity Risk Magnament Framework)
+Framework NIST es una tool que se basa en el riesgo para gestionar la ciberseguridad. Esta compuesto de 3 elementos fundamentales(nucleo, nivel de implementacionny perfiles de marco).
+    1.Nucleo del Marco:
+        Constiuye el conjunto de actividades de seguridad ciberneticas, resultandos deseados y referencias aplicables que son habituales en todos los sectores de infraestructuras criticas.
+        Presenta series de estandares, directrices y practicas de la industria, con el fin de facilitar la comunicacion de las actividades y los resultados.
+        El nucleo del marco identifica categorias y sub categorias clave subyacentes para la funcion(identificar, proteger, detectar, responder y recuperar).
+
+    2.Nivel de implementacion:
+        Van desde el TIER1=PARCIAL hasta el TIER 4=ADAPTATIVO;
+            1-Parcial:
+                Las practicas de gestion de riesgo de ciber de la organizacion no estan debidamente formalizadas. Los controles de seguridad pueden estar implementados, pero no se gestionan de forma sistematica.
+            2-Riesgo de formacion:
+                Las practicas de gestion de riesgo son autorizadas por la administracion, pero no puden establecerse como politicas de toda esta.
+            3-Repetible:
+                Las practicas de gestion de riesgo de la organizacion se aprueban formalmente y se expresan como politicas, se centran en gestionar el riesgo y ha emplemeto de metodos consistentes para responder de
+                manera eficaz a los cambios en el riesgo.
+            4-Adaptable:
+                La organizacion puede adaptarse a sus practicas segun lo aprendido y los indicadores que se han obtenido de las actividades anteriores. La gestion de riesgo  es parte de la cultura organizacional y cambia
+                a medida que se conciencian de las actividades previas.
+
+    3.Perfiles de Marco:
+        Respresenta los resultados obtenidos a partir de las necesidades comerciales que una organizacion ha selecionado de las categorias y subcategorias del Marco. Se pude caracterizar como alineacion de estandares,
+        directrices y practicas con el nucleo del marco en un escenario de implementacion particular.
+
+    PROCESO DE IMPLEMENTACION NIST:
+        Para la implementacion se requiere 5 funciones simultaneas y continuas:
+            1.Identificar: Fomenta la comprension organizacional para gestionar el riesgo para los sistemas, activos, datos y capacidades.
+            2.Proteger: Desarolla e implementa las salvaguardias necesarias para garantizar la entrega de servicios de infraestructura critios, limitados o que tenga un posible evento de ciber.
+            3.Detectar: Implementa acciones para detectar la ocurrencia de un evento de ciber, lo cual posibilita el descubrimiento oportuno de estos sucesos.
+            4.Responder: Desarrolla y aplica las actividades necesarias para adoptar las medidas necesaria en relacion con un evento de ciber detectado.
+            5.Recuperar: Desarrolla y efectúa las actividades necesarias para mantener los planes de resiliencia y restaurar las capacidades o servicios que se vieron afectados por un evento de ciberseguridad
+
+    COMO IMPLENETAR EL PROGRAMA DE SEGURIDAD:
+        1.Priorizar alcance: identificar obj pricipal.
+        2.Orientar: Identificar sistemas y activos relacionados
+        3.Crear un perfil actual: Elaborar un perfil indicado a los resultados del nucleo.
+        4.Realizar una evaluacion de riesgo:Examinar el entorno operativo para determina un posible evento.
+        5.Crear un perfil destino: Perfil enfocado en categorias y subcategorias.
+        6.Determinar, analizar y priorizar brechas: Comparar perfil actual con el perfil objetivo para posibles brechas.
+        7.Implementar un plan de accion: Determinar que acciopnes tomar con respeto a la brechas.
