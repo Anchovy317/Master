@@ -21,3 +21,231 @@ diversas recomendaciones:
     5.No se deben anotar las cuentas y passwords en lugares de facil acceso, ni alamacenamiento  en archivos en el pc sin ninguna proteccion.
     6.Es necesario limitar la opcion de "Recordar pass" que ofrecen ciertos navegadores.
     7.Apps de alamacenamiento de passwords
+
+
+Identidad vs autentificacion:
+    La identificacion requiere a la informacion exclusiva que distingue a un individuo de otro user. Al presentarse en algun sitio necesitas la identificacion
+    con un DNI. La autentificacion es el proceso de comprobacion o prueba de indentidad que se realiza tras la identificacion.
+
+        -Metodos y categorias de autentificacion:
+            1.Password estatica: Es la cadena de caracteres que se utiliza para la autenticar la identidad de un user, metodo de autentificacion mas comun. pero tambien mas vulnerable.
+            2.Password de un solo uso(OTP): Es una password que solo es valida para una sesion de acceso. Las OTP se genera de manera aleatioria y se envian al user a traves
+            de un cana seguro[SMS, token, etc.]
+            3.Certificado digital: Es el documento electronica que vincula un par de claves criptograficas a un entidad, como una persona, una organizacion o un dispositivo.
+            4.Credenciales biometricas: Es una dato fisico o conductal de una persona que utiliza para identificarlas.
+            ESTOS METODOS SE PUEDEN CLASIFICAR:
+                1.Algo que el user tiene conocimieto, como una password especifica.
+                2.Algo que el user posee, una SIM card, generador de password....
+                3.Algo que el user es, como una huella datilares, voz. geometria de la mano o la cara.
+
+        -Metodos de autentificacion con Microsoft Authenticator
+            Es una app que brinda a un nivel adicional de seguridad para cuentas de Microsoft, como servicios de correo electronico y redes sociales.
+            Los users pueden recibir una notificacion para aprrobar  el inicion, para generar un codigo de verificacion OATH puede ser insertado en una interfaz de inicio de sesion.
+            La autentificacion sin password es una caracteristica que posobilita la iniciacion de una sesion son necesidad de recorda o escribirla.
+
+AUTORIZACION:
+Es el proceso que sigue a la autorizacion, y que se encarga de permitir o denegar el acceso de un user a los recursos del sistema.
+    *Principios de provilegio minimo:
+    Una vez el user ha sido identificado y atenticado, se procede a la autorizacion para acceder a servicios, programas o datos. Se define los limites del acceso del user; aqui entra el principo minimo, que
+    suguire otorgar al user solo el acceso necesario para realizar sus funciones requeridas, evitando la autorizaciones mas alla de lo necesario.[OBJ: confidencialidad, integridad y disponibilidad.]
+
+Acciones recomendadas:
+    1.Principio de privilegios minimo: Solo debe escalar temporalmente en funcion del nivel de autorizacion y justificacion, como necesidad de realizar una config temporal en una plataforma.
+    2.Control de acceso: Establece politicas de control de acceso solidas para el acceso. Esto podria incluir el uso de listas de control de acceso (ACL) y politicas de grupo para determinar quien puede incluir quien puede acceder.
+    3.Regular privilegios: Efectuar revisiones periodicas de los privilegios de los users con fin de asegurarte de que se encuentren un optica condiciones para su posicion actual.
+    4.Formacion:Asegurar que los empleados de la empresa esten debidamente informadas sonbre las politicas y cmprendan la importancia de la autorizacion.
+
+AUDITORIA:
+La auditoria es el proceso de seguimiento de las actividades de un user al acceder a los recursos del sistema. Esto comprende el tiempo mque el user transcurre en la red, los servicios a los que acceden durante su estancia y
+la cantidad de datos tranferidos durante la sesion.
+PARA QUE SIRVE:
+    1.El analisis de comportamiento
+    2.La detenccion de intentos fallidos de inicio de sesion
+    3.La identificacion de violaciones de datos
+    4.El analisis forense
+    5.La planificacion de la capacidad
+    6.La facturacion
+    7.La auditoria de seguridad del sistema
+    8.La asignacion de costos
+ACCIONES RECOMENDADAS:
+Para que la auditoria de gestin de identidad y acceso (IAM) se efectiva:
+    1.Evitar cuentas genericas compartidas: Las acciones de cada individuo puede ser evaluadas de manera eficaz.
+    2.Proceso continuo y no un evento unico: Deben existir politicas y procedimientos en su lugar para revisar los registros de auditoria de manera regular y responde a cualquiera actividad sospechosa de manera oportuna.
+    3.Implementar tools de auditoria automatizadas: Estas prmitirian alertas a los admins de cualquier actividades inusual o sospechosas. Estas tools pueden ser de gran ayuda para detectar problemas de seguirdad antes de que
+    conviertan en incidentes mas graves.
+
+ADMINISTRACION:
+La administracion de identidades y accesos(IAM) es un elemento en la gestion de la seguirdad de la info, que permite crear y administrar permisos de recursos en sistema y plataformas.
+QUE OPERACIONES INCLUYE:
+    1.Administrar el acceso a proyectos y organizaciones
+    2.Administrar el acceso a otros recursos
+    3.Ofrecer una descripcion general de la cuenta de servicio
+    4.Crear y gestionar cuentas de servicio
+    5.Administrar el robo de identidad de cuentas de servicio
+    6.Proporcionar y administrar funciones personalizadas
+    7.Solucionar problemas de acceso
+
+Una de las bases fundamentales de la IAM tambien es adoptar el principio de seguridad de minimo provilegio. EL permiso para acceder a un recurso no se concede directamente el user final, los permisos se agrupan en roles, se otorgan a los users.
+Es importante tener presente que los sistemas de identidad tambien puden identificar los dispositivos de internet de las cosas, no solo de las personas.
+
+PARTES EN UNA IAM:
+Una politica es un elemento fundamental en la gestion de la entidad academica de IAM, ya que facilita el establecimiento y la aplicacion de roles asginados a sus miembros. Esta politica esta vinculada a un recurso.
+Cuando un miembro autenticado intena acceder a un recurso, IAM verifica la politica asociada al recurso para determinar si la accion es permitida.
+    -Miembro: Se trata de un user o una cuenta de un user final, pero tambien puede ser una cuenta de servicios, una subs, un dispositivo loT en el que no hay permisos detra, pero si la identidad.
+    -Funcion: Es un conjunto de permisos que se asignan. Estos permisos establecen que operaciones estan permitidas en un recurso determinado.
+    -Politica: Se compone de un conjunto de conexiones de roles que se asignan a unos o mas miembros con roles individuales. Para conocer la identidad de un miebro de acceso(un rol) a un recurso, es necesario crear una politica y asociarla cn el recurso
+
+IAM en la Nube:
+La infraestructura de la nube es un elemento esencial en la administracion de identidades y acceso(IAM), especialmente en la gestion de la seguiradad de la informacion. En estas plataformas de almacenamiento en el nube, como AWS, Azurem GCP, se
+conceden permisos con un mayor nivel de detalles.
+    -Recursos: Sevicios, sistemas o plataformas a los que un user requiere accederm se pueden asignar la funcion de admin de alamacenamiento a un user para una instancia especifica de computo en la nube, los permisos se establecen a nivel proyecto, todos los
+    recursos dentro de ese proyecto puede obtener los permisos.
+    -Permisos: establecen que operaciones estan o permitidas en un recurso. No se conceden permisos a los users directamente en su lugar, se identifican las funciones que contienen los permisos adecuados y luego se otorgan esas funciones al user.
+    -Funciones: Es un grupo de permisos, se pueden conceder permisos directamente al user en su sitio, sino que se otorga una funcion, al un user....
+
+ANALITICA:
+La identidad digital es una funente de datos enriquecidora, que abarca desde registros digital hasta el comportamiento fisico y ubicacion real de los individuos. Al considerar esta metodologia de analitica, resulta imperactivo coniderar el perfilamiento de las
+personas que abarca desde sus intereses hasta interacciones tecnologicas.
+La implementacion de las habilidades actuales de analitica en la nube, conocidad como BIG DATA, las posibilidades se han ampliado significativamente.
+QUE NOS PERMITE LA ANALITICA:
+El BIG DATA ofrece la posibilidad de realizar un analisis exhaustivo de la info en lo que se conoce como DATA LAKE. La analitica de indentidad y acceso permite analizar el comportamiento de los users, mediante el mecanismo prodictivo, detectar anomalias en el
+comportamiento que podria surgerir un posible ataque, Camnbio no solo mejora la seguiridad, sino que tambien brinda una respuesta mas rapida y eficaz a las amenazas potenciales.
+
+ZERO TRUST(ZT):
+Debido a las recientes amenazas a la seguridad de red y la complejidad de las infraestructuras de las redes empresariales modernas, la arch ZERO TRUST  se presenta como una evolucion imprecindible en el pensamiento
+y disenho de la seguridad.
+Es un terminno que significa un cambio fundamental en la defensa de la red, en lugar de enfocarse en defensas de indole estatica, como la conexiones VPN, ZERO TRUST se enfoca en los user, activos y recursos(servicios, flujos de trabajo, cuentas de red....)
+y en los segmentos de la red. La ubicacion de la red ya no se considera el elemento principal de la postura de los recursos.
+Esta arch se fundamenta en principis de confianza, lo cual implica que no se otorga confianza implica a los activos  o cuentas de user.
+Tanto la autentificacion como la autorizacion de la persona y del dispositivo que se conecta son tareas que se llevan a cabo de antes de que se establezca una sesion con un recurso corporativo.
+El ZERO TRUST es una respuesta a las utiltimas tendencias de las redes empresariales, que incluyenel acceso a recursos por parte de users que trabajan desde cass, la posibilidad de usar su propio dispositivo(BYOD) y los
+activos basados en la nube que no se encuentran dentro de lois limites de una red propiedad de una organizacion.
+
+    -MARCO DE REFERENCIA:
+    Las capacidades fundamentales de la seguridad de confianza cero, se pueden resumir[“Esquema basado en identidad, acceso seguro a recursos, evaluación de confianza continua y control de acceso adaptable. Estas capacidades se asignan a un conjunto de componentes
+    arquitectónicos centrales interactivos que son altamente adaptables a varios escenarios comerciales”.]
+    El NIST define la arch ZTA como una seria de conceptos, ideas y relaciones de componentes concebidad para eliminar la incertidumbres al hacer cumplir  decisiones de acceso precisas en sistemas y servicios de informacion,
+    (https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf) enfoque de extremo a extremo.{EX:https://cloud.google.com/beyondcorp?hl=es}
+
+    -Modelo conceptual:
+    Se basa en establecer un sistema de control de acceso que se basa en la identidad adaptable entre el sujeto y el obj acceso. Los recursos fundamentales se encuentran ocultos detras de los componentes de seguridad y no son visibles para los sujetos de acceso de forma
+    predeterminada. Al presentar mayor atencion a la atenticacion, la autorizacion puede minimizar el acceso a las areas de confianza implicitas, mateniendo la disponibilidad y minimizando los retrasos temporales en el procedimiento de autenticacion,
+    CAPACIDADES CLAVES:
+        1.Esquema de identidad
+        2.Acceso seguro a los recursos
+        3.Evaluacion de confiaza continua
+        4.Control de acceso adaptativo
+        Estas definiciones pueden variar y utilizar otros terminos, el concepto sigue siendo el mismo. El user, identificado como individuo, se considera zona de no confianza. Este busca acceder a recursos definidos como el objeto, ubicado en una zona implicita de confianza.
+    ESQUEMA BASADO EN IDENTIDAD:
+        Un sistema de control de acceso en la identidad, en lugar de la ubicacion de red, es crucial al dar una identidad digital a individuo y dispositivos en red.
+        La identidad digital es el elemento fundamenta de la arch ZERO TRUST y requiere una identificacion intergras.
+        El individuo de acceso puede ser una agrupacion dinamica de organizaciones digitales. Este grupo de llama "agente de red", {https://cdn.ttgtmedia.com/rms/pdf/Zero_Trust_Networks_ch2.pdf}
+    ENFOQUE DE PRIVILEGIOS MINIMO DINAMICO:
+        Es una de las medidad fundamentales, el ZERO TRUST lleva esto mas lejos siendo un enfoque mas dinamico. Significa que si el user requiere permisos de acceso mas altos, solo puden obtenr esos cuando los necesite.
+        Se sugiere que "el individuo auth no es una entidad unica", sino un conjunto formado por el agente de red. Este no solo sigue el principoo de privilegios, sino que tambien el principo de dispositivos.
+        EL sujuto auth puede definir ma en funcion del atributo del sujeto, el atributo del entorno, el nivel de confianza y el nivel de seguridad del obj. El paradigma es un enfoque que emplea "agentes de red como sujetos auth".
+        Genera organizaciones ttemporales bajo demanda en el momento de la decision de autorizacion, es mas dinamica y conciencia mas.
+
+    ACCESO SEGURO A LOS RECURSOS:
+        Construccion de una "superficie de proteccion" comercial para proteger los recursos, estos recursos comerciales puden ser app, servicios, interfaces o datos.
+        Para establecer una superficie de proteccion y reducir la expuesta, es necesario que todos los recursos comerciales estan ocultos por defecto, todas las solicitudes de acceso  deben esta sujetas al cifrado de trafico completo y autorizacion obligatoria [El mecanismo de acceso
+        opera en la cpaa de protocolo de la app de manera diligente y efectiva].
+        El Construir esta ARCH, es crucial prestar la atencin a los "activos principales" que deben protegerse. Se requiere ordenar las diversas superficies de los activos principales y ocultar la expuesta.
+        LAS escuchas ilegales de red y los ataques de intermediaros son las principales causas del robo de datos. En la practica de confiaza cero, es fundamental "cifrar el trafico" de todas las app, APIS.
+        Sugiere que el agente de trafico sea completo, en lugar de que sea exclusivamente el trafico locl de la solicitud de autenticacion.
+        Es necesario un punto de aplicacion de politicas. Todas las solicitudes de acceso deben estar autenticadas, autorizadas y tener alto nivel de confiazna.
+    CONTROL DE ACCESO ADAPTATIVO:
+        Es una caracteristica esencial de la capacidad de bucle cerrado de seguridad de la arch ZERO TRUS. Se propone de la implementacion de "lineas de base de control" de acceso flexible mediante la combinacion de:
+            1.RBAC(Control de Acceso Basado en Roles)
+            2.ABAC(Control de Acceso Basado en Atributos)
+        Se puede llevar a cabo un "acceso empresarial jerarquico" en funcion del nivel de confianza, es necesario una intervencion en tiempo real de todos los accesos cuando haya riesgo, multiples modelos de acceos como [RBAC, ABAC, MAC(control de acceos obligatorio),
+        DAC(control de acceso discrecional), y otros modelos]
+        -Filosofia de la 'escala de grises':
+            Es importante "considerar la integracion". Se recomienda Implementar una auth de granularidad gruesa basada en modelo RBAC, es crucial establecer una jerarquia  de autoridad para cumplir con el principo fundamental de privilegios minimos de la empresa e implementar un mecanismo dinamico de
+            mapeo y filtrado baseado en el sujeto, el obj y los atributos.
+        -La linea base de Permisos:\
+            Conjunto de permisis otorganod por un individuo; el acceso, el contexto de acceso, la confiaza y el estado de riesgo puden estar vinculados con los derechs de acceso. La "estrategia de control de acceso jerarquico" debe implementarse
+            en concordancia con el nivel de confiaza del individuo y el nivel de seguridad del obj.
+
+        MIGRACION DE LA ARCH ZT:
+        La apuestas en marcha de una arc ZT es un trayecto,no un remplazo totoal de la infraestructura o los procesos existentes. Esto significa que si una organizacion desea implementar este modelo, debe buscar implementar gradualmente principios de confianza cero, cambio de proscesos y soluciones tecnologicas
+        que protejan sus activos de datos de mayor valor. La mayoria  de las empresas continuaran funcionando de manera hibrida de confianza cero/basado en el perimetro durante un periodo ondefinido mientras continuan invirtiendo en iniciativas de modernizacion de TI. Tener un "plan de modernizacion de TI" que
+        incluya la transicion a uina arch basada en los principio de ZT puede ayudar a una empresa a formar hojas de rutas ppara las migraciones.
+        Dependen de su postura de seguridad actual y de las operaciones ciber. La empresa debe alcanzar una "linea base de competencia" antes de que sea posible implementar un entorno significativo centrado en estos modelos. Esta liunea de base se compone de la identificacion y catalogacion de activos, servicios,
+        procesos comerciales, flujos de trafico y asignacion de dependencia para la empresa.
+
+BIOMETRICA:
+Las passwords han adquerido un autentico desafio para los users de app y los expertos en seguridad. La mayoria de las intrunsiones en el sistema se deben a compromisis de password, ya que muchos users aplican practicas de gestion de pass deficientes.
+En gran medida, muchos de nosotros gestionados diversas cuentas utilizando una unica pass, debido a que estamos cansados de olvidar o restablecer pass. Incluso pirmitimos que el sistema guarde nuestra pass, la que aumenta los problemas de seguridad, ya que  cualquier persona con acceso al equipo podra acceder a nuestras
+cuentas. Las pass pueden causar problemas si no se gestionan adecudamente y debemos tener en cuanta otras soluciones. Informe[https://www.verizon.com/business/resources/reports/dbir/] indico que la cantidad de filtracion de datos relacionadas con pass robadas o debiles paso del 50% al 81% entr 2020 y 2023.
+Demustran que la seguridad actual no funciona, por lo que las soluciones biometricas ayudan a reducir el numero de incidentes de seguridad.
+PORQUE ENTONCES, ALGUNOS INFORMES SUGUIEREN QUE LOS DATOS BIOMETRICOS DE MUCHAS PERSONAS SE HAN VISTO COMPROMETIDO?
+    1.Algunos sistemas de seguridad biometrica son mejores que otros.
+    2.La falta de conocimieto en otros elementos de seguiridad puede proporcionar a los individuos informaticos la posibilidad de adquir informacion confidencial.
+
+    -Soluciones de autenticacion biometrica:
+    Con el fin de solventar el problema de la  seguridad de las pass, la industria esta implementando nuevas alternativas, como la autenticacion biometrica y autenticacion multifactor.
+    El eslabon mas debil de una organizacion son las personas, hay que destacar que el elemento mas fragil en el proceso de autenticacion de multiples factores es la pass, aunque sea uno de los factores.
+    !!!La biometrica no solo brinda mayor seguridad, sino que tambnien mejora experiencia del user!!!
+
+    -Privacidad y regulacion:
+        Utiliza caracteristicas unicas e irrepetibles, ofrece una solucion segura para el acceso, en contraste con las pass, que puede ser compartidas y robadas con facilidad por delicuentes informaticos. Esta presenta desafios de privacidsad, ya que las caracteristicas clave para el reconocimento estan expuestas al mundo.
+        Otros pueden grabar voz, usar una imagen sin previo consetimiento en el reconocimiento facial o copiar sus huellas dactilares de la superficie de un objeto.
+        Las agencias gubernamentales han implementado una seri de regulaciones que establecen la manera en que se puede gestionar la info del user, incluyendo los factores de identidificacion. La rapida adoptacion de la biometrica ha dejada inconvenientes en las leyes, a medida que la autenticacion se vuelve mas comun, las
+        empresas deben saber las nuevas normas que entraran en vigencia y como mantener el cumplimiento sin comprometer la seguridad.
+            1.Autenticacion basada en dispositivos: Ayudaria a las empresas a evitar ciertos problemas de seguridad asociados a la recopilacion y alamcenamiento de identidicadores, al permitir que los users cuestionen infomacion biometrica en dispositivos individuales en lugar de uuna ubicacion.
+            2.Servicios de autenticacion de terceros: Para su uso se requiere una evaluacion cuidadosaa antes de la implementacion para asegurar que todas las practicas cumplan con las normas de cumplimiento vigente.
+            3.Proveedores: Deben cumplir con las leyes adicionales sobre el consetimiento, la propiedad de los datos y el derecho a la privacidad para prevenir posible consecuencias finacieras.
+
+    -Beneficios de la autenticacion biometrica:
+        El uso de biometrica para la autenticacion permite que el sistema identifiquen y permita el acceso de personas al sistem a traves de sus caracteristicas fisicas. Existen dicersos metodos, voz, iris y retina, la huellas.....
+            1.No hay que recordad las pass para acceder.
+            2.El mecanismo de autenticacion es fuerte, puestop quye es dificil replica las caracteristicas biologicas.
+            3.Es instrasferible a otros personas.
+
+    -Errores:
+        1.Tasa de falsa aceptacion(FAR): Es la probabilidad de que el sistema acepte a una persona autorizada.
+        2.Tasa de falso rechazo(FRR): Es la cantidad de veces en que el sistema rechaza los intentos de un user autorizado.
+        La tecnologica biometrica funcionan de acuerdo con las teoria de que los user autorizados tienen un "puntaje de patron" mas alto que los impostores a los que se les niega el acceso. Esto significa que a medida que disminuye la FAR, la FRR aumenta y viceversa.
+        Estos errores pueden surguir debido a factores como la edad, los cambios climaticos a los condiciones fisicas, lo que pueden generar desafio a todos el sistema y tener consecuencias adversas.
+
+    -Biometrica del comportamiento:
+        La biometrica del comportamiento es una metodologia de autenticacion que emplea "identificadores" asociados con la forma en que un user se encuentra habitualmente en su conducta, tales como inflexiones vocales unicas, patrones de pulsacion de teclas, gestos de pantalla, movimiento oculares, carateristicas de la piel, flujo sanguineo.....
+        Esta forma de autenticacion puede facilitar una forma de integrar identificadores biomentricos sensibles y seguros en un modelo de "autentucacion continua". Para que se efectiva, el sistema debe disponer de una forma de verificar la identidad real de un user durante la duracion de una sesion. A pesar de la complejidad de la biometrica del comportamiento
+        la implementacion requiere una evaluacion miniciosa de la necesidades de seguridad y los flujos de trabajo para determinar si dicha solucio es practica en cualquier caso de uso dado.
+
+
+ISO 27000:
+La gestion de controles de acceso dentro de la ISO 27001 permite que los user solo puedan acceder a la red y los servicios para los que se les ha autorizado especialmente usar.
+Para poder controlar el acceso, se debe llevar a cabo un procedimiento a inicio seguro y restringido, de acuerdo con la politica de control de acceso que este establecida en una empresa.
+Los controles de acceso tienen como proposito preservar la confidencialidad, integridad y disponibilidad  de la informacion y los recursos de la organizacion, a fin de prevenir acceso no autorizado o maliciosos:
+    1.El acceso a redes y servicios de red
+    2.El registro de user y anulacion de registros.
+    3.El aprovisionamiento de acceso privilegios.
+    4.La gestion de derecho de acceso privilegios.
+    5.La gestion de informacion secreta de autenticacion de user.
+    6.La revision de los derechos de acceso del user hasta llegar a la eliminacion o ajustamientoo de los derechos accesos.
+
+    -Objetivos de control de acceso:
+        1.Requisitos de negocios para el control de acceso:
+            Este obj de control establecer una politica de control de acceso que establezcas las reglas y responsabilidades para el acceso de la info y los recursos de la organizacion:
+                1.Politica de control de acceso
+                2.Acceso de redes y servicios de red
+        2.Gestion de acceso de user:
+            Este proposito de control se refiere al establecimiento de un proceso formal para el registro de user y la anulacion de resgistros, que garantice que solo se otorgue acceso a los users autorizados y que se elimine el acceso cuando ya no es necesario:
+                1.Registro de user y anulacion de registro
+                2.Aprovisionamiento de acceso de user
+                3.Gestion de derechos de acceso privilegios
+                4.Gestion de info secreta de autenticacion de user
+                5.Revision de los derechos de acceso del user
+                6.Remocion o ajuste de los derechos de acceso
+        3.Responsabilidades del user:
+            Este proposito de control se refiere a hace los user reponsables de proteger su info de autenticacion y de seguir las norma de uso aceptables de los sistemas y servicios de info:
+                1. Uso de la info secreta de autenticacion
+        4.Control de acceso a sistemas aplicaciones:
+            Este proposito de control se enfoca en prevenir el acceso no autorizado a los sistemas y apps, mediante mecanismos de resticcion, validicion y registro de acceso:
+                1.Restriccion de acceso a la informacion
+                2.Procedimiento de conexion seguro
+                3.Sistema de gestion de pass
+                4.Uso de programas de utilidad privilegios
+                5.Control de acceso al codigo de programas fuente

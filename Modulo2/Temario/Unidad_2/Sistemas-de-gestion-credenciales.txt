@@ -1,0 +1,133 @@
+Los protocolos de gestion de identidades y acceso (IAM) se han concebido con el fin de garantizar la trasferencia segura de ionformacion y autenticacion.
+
+AUTENTICATION SINGLE/MULTIPLE-FACTOR
+La autenticacion es un elemento esencial de la seguridad en linea, metodos:
+    1.Algo que conozco: Se basa en que el user conoce, como password o un PIN
+    2.Algo que tengo: se basa en el que posee el user, token, card inteligente o llave criptografica
+    3.Algo que soy:Se basa en la caracteristica fisica o comportamiento unucios del user, como una huella, patron  o voz.
+
+En el caso de que empleen multiples factores de autenticacion, se puede identificar esta caracteristica como la autenticacion como "autenticacion de miltiples factores(MFA)" o la
+autenticacion de dos factoresm, la eficacia de un sistema de autenticacion se encuentra en gran medida determinada por la cantiodad de factores que incorporar.
+Cuanto mayor sea la cantidad de factores que utilices, mas robusto sera el sistema de autenticacion.
+
+
+GESTION DE SESIONES:
+La gestion de sesiones es un elemento esencial en la interaccion entre un user y la app, una sesion se establece cuando un user se conecta a una app y permanece activa durante el transcuerso del tiempo en que el user interactua con la misma.
+La informacion de la sesion, que puede abarcar la identidad del user, las credenciales de inicio de sesion, detalles personalizados, acciones recientes, el carrito de compra, entre otros, se encuentra el estado de la sesion.
+
+    -Principios y practicas de la gestion de sesiones:
+        1.Gestion eficiente de la sesiones: Es necesario que la lectura y la escritura de los datos de la sesion se efectuen de manera eficiente con el fin de no afectar la experiencia del user, La sesion se raliza en cache para permitir respuesta
+        rapida a las acciones del user, lo que evita la necesidad de acceder constantemente a la base de datos central y regenerar un proceso de autenticacion y autorizacion.
+        2.Diferencia entre estado de la sesion y cache: El estado de la sesion es similar a una cache, pero tiene dff ciclos de vida lectura/escritura; a diferencia del cache, que puede evitar la perdida de datos y restaurar  desde una base de datos
+        principal, el estado de la sesion se puede restaurar unicamente desde la fuente de datos  primaria cuando se inicia sesion del user, y persiste la fuente cuando finaliza la sesion.
+        3.Volatilidad y permanencia del estado del sesion: Los datos volatiles, como el historoal, pueden descartarse cuando el user finaliza sesion. Los datos permanentes, como un carrito de compra en una app, deben guardarse en un almacen permanentes.
+        4.Almacenamiento de estado de la sesion: Esta se almacenan como un par de clave-valor, con el identificador del user como clave  y los datos de sesion como valor.
+        5.Uso del estado de la sesion: el almacenamiento del estado de la sesion en un cache rapida en memoria permite algunos escenarios analiticos en linea, como el analisis y los paneles en tiempo real, los moteores de recomendacion t la deteccion de fraudes.
+
+ALMACENAMIENTO DE CREDENCIALES:
+La seguridad de las pass contituye un elemento fundamental de gestion de la identidad y acceso, a medidad que los users aumenta el numero de identidades, usuario y credenciales, surge la cuestion de como y donde almacenar esta informacion. La plataforma en la nube,
+emplea dispositivos de seguridad y claves para administrar las password.
+Extienden diversas tools para el cifrado de credenciales, coda con sus caracteristica especificas. La mas importante es que estas tools cumplan con los estandares NIST SC-28, que establecen los requisitos  minimos  para el cifrado y previenen el acceso no
+autorizado o la divulgacion de credenciales. Las credenciales pueden ser depositadas en un texto claro o cifrado en la base de datos, lo que porporciona una capa adicional de seguridad en caso de que se obtengan acceso a la base de datos.
+En el momento en que un user o servicio desee acceder a un recurso informatico, es necesario proporcionar infomacion que verifiqiue  su identidad. Se implementan atraves de  de varios protocolos, como Kerbeos().
+
+
+SISTEMAS SINGLE SINGON:
+Los sistemas de SINGLE SINGON permite a los users acceder a multiples apps o servicios con un solo inicio de sesion. Existen una verdad de protocolos que implementan este tipo de sistemas:\
+
+-SAML: Este protocolo se basa en XML y se utiliza para apps web que utilizan el metodo de "control de acceso de inicio de sesion unico (SSO)".
+EX: Un empleado de una empresa se registra en su portal web mediante su nombre de user y pass, posterioirmente pueden acceder a otras apps webs de la empresa, tales como el correo electronico, el caledario, el CRM, entre cosas, sin reinicio.
+
+-OpenID: Se trata de un protocolo que se emnplea en apps web yt que posibilita a los users mantener uns "identidad coherente en todas las platoformas".
+EX: Un user desea registrarse en una plataforma web que ofrece la opinion de Inicio de sesion con Google".'
+
+-OAuth: Se trata de un protocolo que se utiliza para "conectar apps de terceros" con el permiso de user. este puede beneficiar a las organizaciones que usan o crean apps par las que necesitan dicho acceso extendido.
+EX: Un user quiere compartir una foto de IG en su cuneta de Facebook.
+
+
+SERVICIOS DE DIRECTORIO:
+Los servicios de directorios son sistemnas que "almacenan y organizan informacion" sobro los recursos y el user de una red, lo que facilita su acceso y administracion. Lso server de directorio puden contener informacion tales como nombres, password, roles, permisos, politicas, entre otros
+y se estructuran de manera jerarquica y logica. Estos establecen comunicacion con los users y las apps atraves de protocolos que posibilitan la autenticacion, autorizacion, y busqueda de informacion.
+
+    1. Ligthweight Directory Access Protocol(LDAP):
+        Se trata de un acronimo protocolo ligero de acceso a directorios, y es un protocolo de codigo abierto que no esta asociado con ningun proveedor especifico.
+        Servers:
+            1. Se utiliza para acceder y modificaciones los datos de los servicios de directorios, especialmente para las apps locales.
+            2.Se fundmenta en el modelo clinte-servidor, en el cual es cliente envia una solocitud al server responde con la informacion requerida o con un mensaje de error.
+            3.Se ejecuta sobre la pila de TCP/IP y se usa el puerto 389 por defecto. Ademas, es flexible y se puede personalizar segun la necesidad de los sitemas, pero tambien es complejo y dificil de administrar.
+
+    2. Active Directory:
+        Se trata del servicio de directorios propiedad de Microsoft, que se fundamenta en LDAP, pero lo extiende con caracteristica adicionales.
+        Servicios:
+            1.Ofrece una base de datos y una seriee de tools para administrar la identidad, el acceso,
+            2.la politica de Microsoft, como Windows server, Exchange, Office 365....
+            3. Es mas integrado y sencillo de usar, pero tambien esta mas limitado y dependiente de las plataforma.
+
+        Active Directory incluye:
+            1."Un conjunto  de normas y el esquema" que establece las clases de objetos y atributos contenidos en el directoriol, las restricciones y limites en las instancias de estos objetos y atributos contenidops en el directorio, las restricciones y limites en las instancias de estos objetos y el formato de sus
+             nombres.
+            2."Un catalago global" que contiene informacion acerca de todos los objetos del directorio, posibilita  la busqueda del info relevante acerca de los dominios del directorio.
+            3."Un mecanismo de consulta e indice" para que los users o las apps de red puedan publicarr y encontrar obj y sus propiedades.
+            4."Un servicio de replicacion" que distribuye los datos de directorio por medio de una red. Todos los controlladores de dominio de un dominio usan una copia completa de toda la info del directorio de su dominio.
+            Si cambia los datos del directorio, se replicaran en todos los controladores de dominio del dominio.
+
+
+NUEVAS TENDENCIAS:
+La imagen digital es la forma en que nos presentamos y renonocemos en el mundo digital. Las mayoria de las veces, nuestra identidad digital no esta bajo nuestro control, sino que depende de terceros que almacenan, gestionan y verifica nuestra info personal. Causar problemas de privacidad, seguridad confianza e inclusion.
+
+        1.SSI:La identidad auto-soberana, conocida como SSI es un enfoque alternativo de la identidad digital que persigue restituir el poder a los individos sobre su propia info personal. Los users pueden crear y administrar sus propias identidades digitales sin necesidad de intermediarios o autoridades contrales. Ayuda
+        a los users a decidir que info compartir con quien y bajo condiciones, respeto su privacidad y autonomia.
+        1.Centralizado:
+            El modelo de identidad central es mas simple y tradicional de todos. Cada app digital que utilizamos esta desempenhado un funcion simultanea  como proveedor de identidad y proveedor de servicio.
+                Desventaja:
+                    1.Los datos se guardan en vase centrakizadas que no siempre estan bien protegidas y que pueden ser vulnerados por hackers o filtrados por las propias organizaciones.
+                    2.Los users deben ser identificados para cada organizacion, por lo que deben memorizar o almacenar muchas claves, lo que reduce la usabilidad y la seguridad.
+                    3.Las organizaciones deben afrontar costes elevados y disponer de una amplia infraestuctura de hardware(on-premise o en la nube) con el fin de asegurar los atuenticadores, credenciales y datos del user, lo cual requeire una gran inversion y mantenimiento.
+                    4.Mantener las bases de datos contralizadas es una ardua respobilidad para las organizaciones y empresas, las cuales debe cumplir con las normativas de proteccion de datos y asegurar la privacidad y el consentimiento de los users.
+        2.Federado:
+         En el modelo de indentidad federado, hay varios proveedor de identidad que han firmados previamente acuerdos entre ellos y operan bajo una base de confiana comun, Modelo puede ser publico y aprobado la regulacion (elDAS[https://www.signicat.com/es/blog/eidas-reglamento-europeo-de-identificacion-digital])
+         , como privados entre las partes, la info digital de los users se distribuye a traves de diversos proveedor de identidad, en lugar de ser centralizada en un solo proveedor.
+         Estructura de la entidad de proveedores de identidad es frecuentemente denominada federacion, las organizaciones que conforman la federacion  comparten un identificador exclusivo para casa user.
+         [Ventajas y Desventajas]:
+            1.Los users pueden acceder a diferentes servers con un unico identificador y una unica Auth, lo que mejora la usabilidad y la experiencia de user.
+            2.Los proveedorres de identidad pueden ceder parte de la respobilidad y el coste de la gestion de la identidad a otros proveedores de la federacion, los que aumenta la competencia y la calidad de los servicios.
+            3.Los user pueden elegir el proveedor de identidad que prefieran, lo que aumenta la competencia y la calidad de los servicios.
+            4.Los datos se guardan en distintos proveedores de identidad, lo que dificulta la accesibilidad y el control de los users sobre su propia info.
+            5.Los proveedores de identidad deben confiar en los demas proveedores de la federacion, lo que puede causar problemas de seguridad y privacidad si algun de ellos es comprometido o actua de forma maliciosa.
+            6.Los users deben tomar cuenta las disposiciones y politicas de cada proveedor de identidad, lo que podria generar discrepancias y conflictos entre ellos.
+
+        3.Centrado en el user:
+        En este modelo, el user guardaen su dispositivo personal los autenticadores u credenciales que han sido emitidos por diff proveedores de servicio.
+        El user  tiene el control de sis datos. En 2005, A.Josang y S.Pope presentaron un modelo de llamada "dispositivos de auth personal" y la llaron "PAD" por siglas.
+        [Ventajas y Desventaja]:
+            1.El user puede acceder a sus datos de manera mas rapida y segura desde su dispositivo, sin tener que depender de proveedores externos o servidores centralizados.
+            2.El user puede seleccionar que datos compartir y con quien, respetando su seguridad y autonomia.
+            3.El user debe proteger su dispositivo y su PIN, ya que si los pierde o se los roban, perdera el acceso a sus datos y credenciales.
+            4.El user debe actualizar y sincronizar sus datos y credenciales con los proveedores de servicios, lo que puede causar inconsistencia y dumplicarse.
+
+        4.Identidad autogestionada:
+            En este modelo de identidad digital el user es el admin central de su identidad, lo que confiere un mayor control sobre los datos y la info que se comparten y se conoce sobre el. El modelo IAG se fundamenta de dos estandares:
+                1.Identificadores Descentralizados (DID): Son identificadores exclusivos que los users  generan y registran en una cadena de bloques(blockchain), lo que les brinda la posibilidad de establecer y administrar sus propias credenciales
+                digitales.
+                2.Credenciales Verificables(VC): Son credenciales digitales que contienen info o atributos sobre los users, que puenden presentar y verificar de forma segura y eficiente.
+                El modelo IAG tambien utiliza dos elementos imporatens: los registros Descentralizados de informacion y las billeteras digitales. Los "registros Descentralizados" son bases de datos distribuidas que almacenan y verifican la informacion de identidad de
+                manera Descentralizada, segura y transparente. Las "billeteras digitales" son alplicaciones que permiten a los users almacenar y usar sis identidades y credenciales digitales desde sus dispositivos moviles.
+                [Beneficios]:
+                    1.Los users tienen el control completo de su info personal, lo que garantiza su privacidad, seguridad y autonomia.
+                    2.Los users pueden acceder a diversos servicios mediante sus propias credenciales digitales, lo que mejora la interperabilidad y la portabilidad de la identidad.
+                    3.Los users pueden elegir las credenciales digitales que desean compartir, lo que minimiza la exposicion y el riesgo de sobreidenticacion.
+                    4.Los proveedores de servicios puden confiar las credenciales digitales de los users, lo que facilita de verificacion y validacion de la identidad.
+                    5.Los users deben asumir la respobilidad y el costo de la creacion y el mantenimiento de sus credenciales digitales, lo cual requiere una mayor formacion y coincienciacion.
+                    6.Los users deben tener confianza en la tech que soporta la gestion de la identidad autogestionada, como la cadena de bloques, que puede presentar limitaciones y desafios tecnicos.
+                La tabla se puede obvserbar el comparativo de cada de los modelos de identidad y notar qwue el modelo de identidad autogestionada es el que permite mauor funcionalidad y alcances en los actuales
+        2.IAG y BLOCKCHAIN:
+            La tecnologia blockchain es un elemento clave para la identidad autogestionada, ya ofrece una forma de almacenar y verificar la informacion de identidad  de forma "descentralizadas, seguras y trasnparentes".
+            Blockchain es una base de datos distrubuida que funciona como un libro de contabilidad publico, en el que resgistran y validan las transacciones entre los participantes de la entidad. Posibilita la creacion de identificadores  descentralizados(DID), cuales
+            son identificadores exclusivos y persistentes que los users pueden asociar con sus identidades digitales, pueden ser:
+                1.Integrarse con el proposito de generar identidades digitales autononomas, las cuales los users pueden utilizar para compartir y demostrar sus atributos o calificaciones con confianza e interperabilidad.
+                2.Brindas soluciones innovadoras para diversos ambitos y situaciones de uso, tales como la salud, la educacion, la banca, el gobierno, la cooperacion internacionl y la gestion de crisis.
+
+
+
+
+

@@ -1,0 +1,153 @@
+CICLO DE VIDA DE LA IDENTIDAD CORPOTATIVA:
+Es el ciclo de vida de la identidad corporativa es un concepto fundamental en la seguridad de la informacion. El CISO(Chief Information Security Officer) de una empresa desarrolla "un plan de administracion de
+acceso de identidad(IAM)" para mitigar riesgos de seguridad. Este plan contemplaria medidas, como la apertura de una sesion unica,
+la auth miltifactor, el control de acceso a la red y la gestion de acceso privilegiado. La eleccion de estos controles se basa en una estrategia bien pensada.
+
+El ciclo de vida de un identidad corporativa tambien incluye la creacion de politicas de seguridad, la formacion de los empleadosm la monitorizacion continua y la revision periodica de
+las politicas y controles implementados. Todo esto garantiza que el plan IAM continue siendo efectivo y relevante en el cambiante panoramas de la seguridad de la info.
+
+
+1.GOBERNANZA:
+La gestion corporativa:
+Es el sistema de normas y procedimientos que rigen la direccion y control de una empresa, y es fundamental para su exito. Es la base de una organizacion en la que los miebros, que suelen ser la junta directiva, accionistas.....
+Se puede resumir en:
+    1.El sistema mediante el cual las empresas son dirigidas y controladas para alcanzar sus obj.
+    2.Incluye el conjunto de "normas, principios y procedimientos" que regulan la estructura y el funcionamiento de una organizacion.
+    3.Establecve las relaciones entre la junta directiva, los accionistas y el resto interesado.
+    4.Escribe las reglas para tomar decisiones sobre una empresa para generar valor.
+En el ambito de la gobernanza corporativa, se integra el "gobierno de la seguridad de la informacion" como una estructura esencial de gobierno de la organizacion. Un CISO de una organizacion, tiene la responsabilidad de asegurar que los propositos
+estableceidos por el miebro del gobierno corpotativo se respalden por el programa o plan  de seguridad de la info.
+!!IMPORTANTE!!!!
+No solo hay que definir que controles usar, sino que el primer paso debe ser buscar el respaldo de los accionistas y asegurar de que entriendan como el plan contribuira al exito de la organizacion.
+Trabajar de manera conjunta con el fin de "asegurar la proteccion de los activos".
+
+2.FRAMEWORKS:
+Existen diversos marcos o frameworks que pueden ser utilizados desde el gobierno corpotativo para la gestion y control de una organizacion. Ellos encuentran COBIT e ISO 27001, pero tambien existe otros como ITILm COSO e incluso ISO 9000.
+La integracion ayuda a las organizaciones a mejorar sus practicas de negocios y a tener una alianza mas efectiva.
+    1.COSO(Committee of Sponsoring Organizations of the Tradeway COmmission) creo un sistema de control interno para prevenir fraude, blanqueo o robo de empreas. Proporciona estructuras que permite
+    evaluar y mejorar el sistema de control interno de una organizacion.
+    2.ISO 9000 es una norma internacionalmente establecida qwue garantiza un sistema sde calidad. Esta norma permite a los proveedores y a los fabricantes desarrollar un sistema de calidad.
+    3.COBIT(Control Obj for Information and Related Tech), es un marco de gestion de la info y la gobernanza, creado por ISACA(Information System Audit an Control Assosocciation), una de las organizaciones que desarrolla tecnicas para asisitir a las empresas
+    a crear, organizar e implementar estrategias en relacion con la gestion de la info y gobernanza.
+    4.ITIL(Information Tech Ifrastructure Library), es un conjunto de conceptos y buenas practicas utilizadas para la gestion de servicios de tech de info, proporciona un enfoque practico y no prescriptivo para la administracion de servicios de TI.
+
+3.GOBERNANZA DE LA SEGURIDAD DE LA INFORMACION:
+    1.Alineacion de estrategia:
+    Se debe cumplir con los obj de la organizacion, teniendo en cuanta la cultura, el estilo de gobierno, la tech y la estructura de organizacion. La inversion en seguridad de la informacion debe estar relacionada con la estrategia empresarial
+    y con un perfil de amenazas, vulnerabilidad y el riesgos bien definido.
+    2.Gestion de riesgo:
+    Se debe a ejecutar las medidas correctas para mitigar el riesgo y reducir los impactos a un nivel aceptable. Esto requiere comprender la amenaza, la vulnerabilidad y el perfil de riesgo de la
+    organizacion, asi como las posibles consecuencias de un compromiso.
+    3.Entrega de valor:
+    Las inversiones de seguridad deben optimizarse para cumplir los obj de negocios. Esto significa mejorar las practicas de seguridad y mantener los gastos generales de seguridad de la informacion en el nivel
+    minimo, mientras se mantiene un programa de seguridad que permite a la organizacion alcanzar sus obj.
+    4.Optimizacion de recuersos:
+    El conocimiento y la infraestructura de seguridad de la info deben ser empleados de manera eficiente y eficaz. El conocimiento sea capturado y este disponible, documentar los procesos y practicas de seguridad, y
+    usar los recursos de infraestructura de manera eficiente.
+    5.Medicion del desempenho:
+    Se deben a monitorear e informar sobre los procesos para garantizar que se logren los obj, define metricas significativas que se adapten adecuadamente
+    a los obj estrategicos y proporcionen la info necesaria para tomar decisiones efectivas en los niveles estrategicos, administrativo y operativo.
+
+4.GOBERNANZA EN LA IAM:
+Uno de los obj fundamentales que un CISO quiere alcanzar es la creacion, la implemetacion y la gestion de un "Programa IAM", que este de acuerdo con los obj de negocio. El establecimiento de un gobierno de IAM, que este
+intrinsicamente relacionado con su ciclo de vida, proporcionara la base para todos los demas componentes de IAM. Este periodo de vida se enfoca en las politicas, procedimientos y tech que permitirian la adquisicion,
+modificacion y desaprovisionamiento de identidades digitales en la organizacion.
+Para establecer un programa solido de IAM, es fundamental disponer de politicas y procedimientos debidamente documentados que aborden todos los aspectos del trayecto de vida de un user,
+tales como las etapas de ingreso, traslado y abandono. Gartner en 2021, las organizaciones sin un programa formal gastaran un 40% mas en capacidades
+de IAM y lograran menos que las organizaciones con tales programas.
+Para desarrollar, implementar y administrar un programa de seguridad de IAM eficaz, un CISO debe tener en cuanta los siguientes obj.[https://www.gartner.com/en/publications/ciso-effectiveness]
+    1.Obtener aprobacion: Asegurar el respaldo de los accionistas y la junta directiva.
+    2.Planificacion: desarrollar un plan estrategicos que este de acuerdo con los obj de la organizacion.
+    3.Ejecucion del programa: Implemetar el plan de manera eficaz y eficiente.
+    4.Evidencia y medicion del desempenho: Monitorear y evaluar el desempenho del prgrama para garantizar que se logren los obj.
+
+
+
+CREACION DE UN PLAN:
+
+1.OBTENER APROBACION:
+La elebolaracion de un plan IAM es una tarea fundamental que un CISO debe adquirir. Una de los primeros etapas en este proceso  es obtener la aprobacion del mismo. La implementacion de iniciativas de IAM a escala global puede
+resultar un desafio considerable en las empresas, dado que los beneficios completos de IAM a menudo nose comprenden de manera clara dentro del reducido
+grupo de profesionales que administran los procesos o confian en componentes especificos, como inicio de sesion.
+IAM no superan la etapa inicial, especialmente los que estan dirigidos por TI y carecen de patrocinio y alineacion comercial. Un CISO debe "identificar los temas claves" del
+director de Sistemas de Informacion o CIO y "centrarse en las necesidades" de negocios acuales, para obtener apoyo y mostrar como respaldan activamente
+los obj de negocio definidos por la gerencia.
+
+2.PROCESOS DE PLANIFICACION:
+Durante la etapa es fundamental que el CISO efectue la planificacion de las fases, comprenda los obstaculos, copile una hoja o mapa de ruta, disenhen una aquitectura y genere
+los casos de uso.
+    1."Comunicar" los planes y gestionar los riesgos.
+    2."Generar" una hoja de ruta, lo cual permite identificar los recursos necesario y aplicar estrategias.
+    3."Reducir" el riesgo y la redundancia del programa IAM, es necesario formalizar una estructura de programa IAM.
+    4."Informar" sobre los casos de negocio y detallar las responsabilidades de las diversas partes que participan en la activiada.
+    5."Evaluar" los desafios de los recursos, tales la contractacon personal o la contratacion de personas con experiencia.
+
+-Tendencia en la IAM:
+Existen seis tendencias fundamentales en la IAM. Son importates para crear un plan de ciclo de vida de la identidad corporativa que puede guiar a la estrategia y la decision de CISO.
+
+
+EJECUCION Y PROVISION DE ACCESOS:
+    1.Mantener una comunicacion constante con las partes interesadas, empleando una combinacion de metodo de comunicacion tanto formales como informales.
+    2.Tener en cuenta que el programa problablemente dara como consecuencias un cambio comercial seginificativo. Es fundamental utilizar las estrategicas apropiadas para administrar
+    cambios comerciales para gestionar el impacto.
+    3.Definir metricas correctas para monitorear la eficacioa de IAM.
+    4.Asegurar de mantener metricas valiosas para medirlas y capturalas donde evidencien la cobertura, el redimeiento y la eficacioa de los servicios de IAM.
+
+APROVISIONAMIENTO DE ACCESO E IDENTIDAD:
+    El ciclo de vida de aprovisionamiento o incorpotacion de acceso e identidad se centra en la "emision de nuevas credenciales". LA eficacia
+    de aprovisionamiento y gestion de usarios es un aspecto fundamental que incluye todos los procedimientos de aprovisionamiento, incluyendo el acceso, la auth y la autorizacion.
+    La "automatizacion" del abastencimiento de user y el acceso a las apps. Este enfoque se centra en la relacion y el rol de cade user en su organizacion.
+EJEMPLO:
+    La Universidad de Brithis Columbia (UBC) se enfoca en un clico de vida de identidad digital de principo a fin. Desde que alguien se une a la Universidad hasta que se vam su identidad
+    digital y los accesos asociados se mantendran de manera eficiente y seguram teniendo en cuanta los roles u necesidad especifica.
+
+    [What is Identity and Access Managnament:
+    Is a set of business polices, processes, and supporting infrastructure for managing the creation, maintence and use of digital identities:
+        1.Provide secure access to resources
+        2.Efficiently control this access
+        3.Respond faster to changing relationships
+        4.Protect cofidential information from unauth user
+    For those needing access to computer system or physical resorces:
+        1.Verifies who u are.
+        2.Manage what u can and cannot do based on bussiness rules ur attributes as departmental or role within the university.]
+
+GESTION DE USER:
+    1.La gestion de user se enfoca en la creacion, mantenimiento y desactivacion de obj y atributos de user en uno o mas sistemas, directorios o apps.
+    2.Los procesos y procedimientos debem ser los mas faciles, automatizacdos y transparentes posibles.
+    3.Los derechos de acceso de las personas suelen surgir de una urgencia de conocer, que se fundamenta en su posicion como empleado o contratista y en el cargo o funciones que desempenhan.
+
+ACCESO DE USER:
+    1.La ciberseguridad y la gestion de identidad son importantes para los recursos humanos, y su relacion se genera la perspectiva de la gobernanza corpotativas.
+    2.El proceso de aprovisionamiento incluye todos los pasos necesarios para configurar, modificar y revocar la auth del user o del sistema y los privilegios.
+    3.Una politica de identidad establece la forma en que se verifica y filtran el identificador ID de un user antes de que se creen y se emitian las credenciales.
+    4.Una identificacion indica las credenciales del user, tales como el nombre del user y la password, asi como otros datos personales (PII) acerca del user, tales como el nombre, la direccion
+    de correos electronicos y el numerno de telefono.
+    5.El desaprovisionamiento se refiere tambien a la eliminacion de los derechos de acceso y las auth, esenciales para la seguridad.
+    6.La gestion de identidad usa la tech para gestionar a los diif users en entorno tech.
+
+MODELOS:
+    1.Aprovisionamiento basado roles: los derechos de la cuenta a los servicios administrado se puede aprovisionar automaticamente segun el rol del user.
+    2.Aprovisionamiento basado en solicitudes: los user, mediante departamento, solicita acceso a apps especificas de recursos en un sistema, en virtud  de su necesidad de
+    conocer o utilizar. Las solicitudes aprobadas se auditan para fines de informes y cumplimiento.
+    3.Aprovisionamiento hibrido: combina enfoques basados en solucitudes y roles. Para algunos empleados o sistemas administrados, una organizacion puede automizar el acceso
+    mediante la asignacion de roles y manejo de todas las solicitudes o excepciones de acceso mediante un modelo es basado en solicitudes.
+
+
+CAMBIO DE ROL Y ACTUALIZACION DE LA INFORMACION:
+    En el proceso de actualizar informacion y en los cambios en la gestion de identidades, se utilizan "controles de autogestion" para los users. Estos
+    controles ayudan a los users a manejas sus propias identidadesm lo que mejora la eficacioa y la seguridad.
+        1."Monitorea e informacines": Es esencial supervisar los procesos y generar informes para garantizar que se logren los obj establecidos. Detectar error y tomar medidas.
+        2."Metricas definidas y significativas": Las metricas deben ser definidas, acordadas y significativas, y alinearse bien con los obj estrategicos. Estas metricas proporcionan la informacion
+        necesaria.
+        3.Evaluacion de procesos: Es imporante seguir la evoluciom del procesp realizado en la reloucion de problemas.
+        4.Evaluacion y auditoria exetrmnas: Es un proceso crucial del proceso.
+
+DECOMISADO:
+    Es fundametal tener un "registro exhaustivo" de la baja de los users y el docomisado de sus cuentas en el momento en que ya no sea necesario. Esta
+    accion puede iniciarse por diferentes departamentos, como Recursos humanos, pero debe ser autorizada formalmente por el responsable del Departameneto de Tech de la informacion. Este proceso debe
+    ejecutarse a lo establecido en el procedimiento para altas, bajas y modificaciones de user con acceso privilegios.
+
+Gestion de acceso privilegiado(PAM):
+    La gestion de identidad y acesso (IAM) y la gestion de acceso privilegiados(PAM) se confunden debido a que ambos terminos se refiere a la relacion entre, users, el acceso y roles.
+    El obj de PAM es proteger a los user que tiene acceso privilegiado a "datos confidenciales", como admins de servers y base de datos.
+
