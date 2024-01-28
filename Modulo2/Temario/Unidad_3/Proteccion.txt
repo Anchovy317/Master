@@ -1,0 +1,96 @@
+1.Seguridad de redes:
+
+    1.1 Segmentacion de red:
+        La segmentacion de res es una practica de seguridad que "divide una red en subredes" mas reducidad, cada
+        una de ellas con sus propios controles y servicio de seguridad. Control de flujos, de trafico y limitar el
+        acceso a la info confidencuial, reducido el riesgo de ataque.
+
+        La segmentacion de res constituye una tactica de seguiridad fundamental para asegurar y obtimiuzar la red de
+        un organizacion. Necesario una planificacion e implementacion adecuadas, asi como monitorizacion y actualizacion
+        continua.
+        [FOTO]
+
+        -Buenas practicas:
+            Algunas de las practicas son:
+                1. Establecer obj y criterios de segmentacion, en funcion de las particularidades y las necesidades de la red.
+                2. Identificar los elementos criticos y flujos de datos en la red, con el fin de determinar los segmentos y las
+                   politicas de seguridad mas apropiadas.
+                3. Seguir el principio de minimos de provilegios, permitido a cada user o dispositivo acceder al acceso minimo
+                   necesario a los recursos de la red.
+                4. Utilizar listas blancas, que especifican los segmentos o los dispositivos autorizados para acceder a cada recurso,
+                   en lugar de lista negram que especifican los no autorizados.
+                5. Facilitar el acceso de terceros a la red, mediante segmentos seprarados y aislados, con medidas de seguridad especificas.
+                6. Mapear y documentar la estructura y el funcionamiento de la red, para facilitar su gestion y supervision.
+
+
+        -Ventajas:
+            La segmentacion de red otorga diversas ventajas:
+                1. Mejorar la seguridad:
+                    Al separar el trafico en subredes separadas, se dificultan que los ataques muevan por la red y accedan al los
+                    datos sensibles. Se ayuda a prevenir y evitar los ataques, aislados el segmento afectado.
+                2. Obtimizar el desempenho de la red:
+                    Al segmentar de red, se disminuye el trafico innecesario y se evitan las interrupciones. La presente medida mejora
+                    la velocidad y la eficiencia de la red, asi como la excelencia de los servicios prestados.
+                3. Mejorar la gestion de los recursos:
+                    Al segmentar la red, se puede tener un mayor control y visibilidad sobre los recursos de la red, como los dispositivos
+                    las apps y los users. Esto permite aplicar politicas y reglas de seguridad especificas para cada segmento.
+
+        -Maneras de segmentar una red:
+                1. Por areas o departamentos:
+                    Se segmenta la red segun las funciones o los roles de los users, restringido el acceso a la info segun el
+                    nivelde autorizacion.
+                2. Por dispositivos o tipos de trafico:
+                    Se segmenta la red segun los dispositivos o apps que se conectan, para mejorar el redimiento y asegurar la calidad de los
+                    servicios.
+                3. Por niveles de confianza:
+                    Se segmenta la red segun el grado de seguridad o riesgo que tienen los segmentos, aplicados medidas de proteccion adecuadas
+                    para cada segmento.
+        -VLAN:
+            LAs VLAN son un forma eficaz de segmentar una red fisica en multiples dominios de difusion logicos. Es un "segmento logico" que se encuentra
+            Las redes fisicas se fundamentan principalmente en "swtches", dispositivos que regulasn el trafico de datos entre los participantes.
+            Los swiches pueden conectar cientos de dispositivos y facilitar su comunidad, es util dividir redes granddes en segmetos mas pequenhos
+            sin tener que alterar la ifraestructura fisica.
+          EX: La segmentacion de una red en diff departamentos implicar asignar VLAN especificas a cada uno, la VLAN 10 podria estar asociada al
+            departamento de Recursos Humanos, la VLAN 20 al departamineto financiero, la VLAN 30 al departamento de Ventas y la VLAN 40 a los
+            dispositivos inalambricos. [Photo]
+            Casda VLAN individual tiene su propio "dominio de difusion". Al enviar una difusion dentro de la VLAN, los demas participantes de ese
+            segmento (solo esos) recibem el mensaje. No trasnmite mas alla de las limitaciones de la red virtual.
+            Se pueden emplear diversas formas de configurar una VLAN, con estos tipos:a
+
+                1. VLAN basada en puertos:
+                    Cada user de la red se enruta a traves de un "puertos especificos o estatico" en un swich y el dispositivo conectados solo
+                    pueden pertencer a unica VLAN.
+                    Este pueden pertenecer a una unica VLAN, Este puerto puede ser utilizado para conectar ordenados o incluso otros swiches.
+                    Aunque este configuracion es muy popular en redes en redes pequenhas y suele implementarse en un solo switch, tambien es posible
+                    extenderla en varios swiches. Los puertos 1 a 3 del primer swich y puertos 1 el segmento switch pueden formar una VLAN.
+                    Requiere dos cables para conectar  los swiches, lo cual posibilita una conexion separada para cada VLAN, un proceso conocido como
+                    trunking(https://ccnadesdecero.com/curso/configurar-vlan-trunking/)[Vlan Trunking Protocol: En todos estos == Es un termino especifico
+                    o una combinacion de conceptos en evolucion despues de mi utilizacion, te recomiendaria buscar infomacion actualizada en funtes
+                    confiables o proporcionar mas contexto para que pudea ofrecer una respuesta mas precisas.]
+
+
+                2. VLAN etiquetada (tagged):
+                    Ofrecen una "asignacion dinamica mediante una etiqueta" en marco del documento que indica la asignacion de la VLAN. Esta etiqueta
+                    contiene info acerca de la VLAN actual, lo cual posobilita al switch reconocer el segmento de comunicacion y reenviar el mensaje de
+                    manera adecuada.
+                    Una etiquet VLAN tiene una logitud de 32 bits y se encuentra en el marco Ethernet despues de la direccion MAC del remitene. Los
+                    ultimos 12 bits del protocolo identificar el ID de la VLAN, permitiendo hasta 4096 VLANs disponibles. Cada Vlan se identifica
+                    con su propio numero.
+                    Las ventajas de una VLAN etiquetada es la conexion entre diff switches donde solo se necesita un clable gracias al Trunking.
+                    EL switch detecta la VLAN correcta y realiza el envio al switch correpondiendo. En el extremo de recepcion, se quita la etiqieta y se
+                    reenvia la trama al destinatario correcto.
+
+            Los administradores de red utilizan un enfoque hibrido que combina estos dos tipos para realizar sus instalaciones y asignaciones. Una
+            "combinacion de VLAN basada en puertos y VLAN etiquetada es la mas eficaz."
+
+
+
+
+
+2.Seguridad en correos electronicos:
+
+
+
+
+
+3.Seguridad avanzada:

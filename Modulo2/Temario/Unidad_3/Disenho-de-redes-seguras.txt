@@ -1,0 +1,16 @@
+DISENHO DE REDES SEGGUERAS:
+
+<DESCRIPCION GENERAL DE LA UNIDAD>
+
+El proposito fundamental de esta unidad es adquerir conocimientos sobre como proteger la red de posibles amenazas
+y como detectar y responder a cualquier problema que puede surgir. Respecto a la "proteccion" veremos la implementacionm
+de medidas preventivas con el fin de disminuir la superficie de ataque y mitigar los riesgos. Incluyendo (firewalls, filtrado
+de contenido, autenticacion solidam encripcion de datos, control de acceso basado en roles y politicas de seguridad claras.)
+En la "detencion" nos efocamos la detencion temprana de actividdades sospechosas o no autorizaddas dentro de la red, utilizcion
+(IDS), analisis de registro(logs), monitoreo de trafico de red y analisis de comportamiento de user y sistema.
+
+Aprenderas como una organizacion puede tomar medidas rapidas y efectivas una vez que haya detectado una amenza o incidente para
+aprender y mejorar o incidentes de seguridad a traves de la respuesta.
+
+La inteligencia de amenaza implica recopilacion, analisis y utilizacion de info sobre amenazas.
+
