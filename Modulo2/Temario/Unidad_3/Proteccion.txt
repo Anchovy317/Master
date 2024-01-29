@@ -81,11 +81,192 @@
                     reenvia la trama al destinatario correcto.
 
             Los administradores de red utilizan un enfoque hibrido que combina estos dos tipos para realizar sus instalaciones y asignaciones. Una
-            "combinacion de VLAN basada en puertos y VLAN etiquetada es la mas eficaz."
+            "combinacion de VLAN basada en puertos y VLAN etiquetada es la mas eficaz". La comunicacion entre un switch se hace a traves de puertos asignados
+            mientras que la conexion entre switches se basa en VLAN etiquetada, lo que permite que un solo cable sea suficiente.
+
+        -Ventajas:
+            1. Flexibilidad: En la gestion de redes. Cuando un nuevo dispositivo se una a una LAN, normalmente requiere una conexion fisica o swich. No obstante
+                con una VLAN, este proceso se simplifica  mediante la configuracion de software. Esto permite que el admin pueda asignar un pc a otra VLAN sin necesidad
+                de cambiar.
+            2. Seguridad: Puede mejorar la seguridad de una red limitar el dominio de difusion a un reducido numero de estaciones. Esto limita el acceso a los
+                datos confidenciales a personas no autorizadas y limitar el acceso a servidores que no seben ser accesibles, reduciendo asi la superficie de ataque y
+                propagacion de posibles malwares.
+            3. Rendimiento: Al limitar el dominio de difusion, las VLAN puden mejorar el desempenho de la red. Esto se debe que los mensajes de difusion no requiere
+                atravesar toda la red, lo cual minimiza el trafico innecesario y disminuye la carga sobre el ancho de banda.
+            4. Orden: Pormite conectar un grupo logico de estaciones, independientes de su ubicacion fisica. Esto se debe que para las empresas en la que los empelados
+                estan divididos en diff habitaciones, pisos o edificios, dado que varias VLAN pueden compartir un mismo swtch, el cableado es mas ordenado y eficiente.
+
+    1.2 SEGURIDAD EN  REDES INALAMBRICAS:
+        Una red inalambrica es una red que permite la conexion de dispositivos sin la necesidad de un cable, Con el fin de establecer conexion se emplea puntos de acceso
+        y tech de conexion WIFI. La seguridad es fundamental, en contraposicion las redes cableadas necesitan el agente fisico, en las inalambricas podrias accesder sin
+        estar presente, o incluiso un ataque pasivo. El canal de resdes inalambricas deben ser consideradas como inseguras, ya que no solo podria haber un
+        individo escuchando la info, podria llevarse a acabo un ataque acativos.
+        En respuesta a estos desafios, se publicaron diversos "mecanismos de seguiridad", los cuales pueden ser utilizados como normas en la red.
+
+        - WEP(Wired Equivalent Privacy):
+            Es un protocolo de seguridad que usa una "clabe simetrica estatica"  en todas las estaciones y punto de acceso de la red. Este estandar no ofrece un mecanismo
+            de distribucion estaciones y puntos de acceso de red. Este estandar no ofrece un mecanimo de distribucion automatica de claves, lo que significa que la clave
+            debe introducirse manualmente en cada dispositivo de red. esto puede aumentar la probabilidad de que la clave sea compromentida y necesidad un mantenimiento
+            considerable por parte del admin de la red.
+            El algoritmo de cifrado empleado en WEP es RC4, que emplea claves de 64 bits. Estas clasves tienen un "vector de inicializacion"(IV) de 24 bts y uuna clave
+            de 40 bts. El IV se genera de manera dinamica para cada trama con el proposito de prevenir posibles ataques. Su implantacion a menudo produce repeticion de
+            claves debido a que se aumenta un 1 para trama y todas las estaciones usan la misma clave secreta, idealmente el IV nunca deberia repetirse, la limitada
+            cantitas de IVs dff y la alta carga de trafici en las redes hacen que esto sea inevitable en WEP.
+            Estas deficiencias permiten "ataques de fragmentacion", en los que un atacante puede generar e inyectar paquetes cifrados en una red WEP sin necesidad de
+            conocer la clave, solo es necesario capturar un paquete cifrado en la red y aplicar el ataque [photo].
+            Este tipo de ataque es muy popular entre los aficionados al hacking WIFI, suites de seguridad como aircrack-ng(https://www.aircrack-ng.org/)
 
 
+        - WPS(Wifi Protected Setup):
+            SE trata de un estandar establecido en 2006 por la wifi Alliance con el proposiotp de "simplificar la conexion" de dispositivos a redes WIFI  domesticas seguras
+            LA idea principal era que, si tanto es router como el cliente teniann esta capacidad, la conexion entre ambos serian tan sencilla como pulsar un boton.
+            WPS se convirtio en una amenaza para la seguridad de las conexiones WPA y WPA2. EN el mes de dic de 2011, Stefan Viehbock descubrio una vulnerabilidad que permitio
+            obtener las claves wifi sin necesidad de utilizar dicc. En su documento  titulado "Brute forcing WIFI Protected Setup", Viehbock demostro como un ataque por
+            fuerza bruta  podia superar la capacidad de la seguridad de las redes WPA y WPA2. Se recomendacion para las users fue desactivar WPS, no todos esten.
+            Posterior mente en 2014, Dominique Bongard descubrio una alternativa a este ataque, conocida como "Pixel Dust". No simpre estaba disponible, si afectaba
+            a varios fabricantes de chips WIFI, tanto el ataque online como el ataque offine se itegraron en versiones posteriores de suites de seguridad y auditoria con
+            tools como pixieWPS y Reaver, lo que permite atacar este tipo de redes de forma auto y transparente para los users.
+        - WAP (WIFI Protected Access):
+            Fue disenhado para actualizar el firmware de los routers y otros equipos de comunicaciones. Se encontro que necesitaban cumplir con ciertos requisitos adicionales,
+            lo que impedia que muchos routers antiguos pudieran se actualizados. El protocolo "Temporal KEY Integrity Protocol (TKIP)", que contituyen elk componente principal
+            de WPA, utiliza una "clave por paquetes".
+            Este protocolo utilizaba un Message Integrity Check(MIC)  de 64bits para proporcionar integridad a todo el sistema. Demostraron que los "ataques a las ruedas WPA eran
+            efectivos [https://dl.aircrack-ng.org/breakingwepandwpa.pdf]", utilizando parte de lo que ya habia logrado en los ataques ChopChop a
+            las redes WEP. Llevaron a cabo una "verificacion practica de las vulnerabilidades de WPA-TKIP [https://papers.mathyvanhoef.com/asiaccs2013.pdf]"
+            Esas pass debiles acababan siendo el verdadero o problemas de una red WIFI que quedaban desprotegidos ante los ataques de "fuerza bruta o ataques de diccionarios".
+            Las apps aircrack-ng y las distribuciones Linux dedicadas a la auditoria de seguridad presentan apps que utilizan furza bruta y dicc, para atacar redes WIFI que utilizan
+            WPA,
+            Para hacer mas facil el calculo, se han creado tools que utilizan GPU en lugar CPUs,[
+                1. Hashcat{https://github.com/brannondorsey/wifi-cracking}
+                2. CPUhash{gpuhash.me}
+                3. OnlineHashCrack{https://www.onlinehashcrack.com/}
+            ]
+        - WAP2(Wifi Protected Access 2):
+            Remplazo de TKIP y el cifrado RC4, que son utilizados tanto en WEP como en WPA. con dos alternativas de cifrado y auth mas fuertes; el 'ADvance Encryption Standard (AES)' y
+            el 'Counter Mode' con Cipher Block Chaining Message Auth COde Protocol (CCMP). Se puede Usar el TKIP para la retrocompatibilidad.
+            La WPA2 no esta protegido de las posibles vulnerabilidades denominadas Hole196 con la implementacion del Group Temporal Key (GTK= generador de numeros alternativos).
+                1. El uso de pass debiles que puden ser cifrados mediante ataques de furza bruta.
+                2. El uso de metodos de ing social para enganhar al user.
+                Fluixion'https://github.com/FluxionNetwork/fluxion' para desconectar a un user de red wifi y generar una pagina web que simula la del router. Pauede que el user cree
+                que se ha perdido la conexion y que introducir las pass de su red wifi resolvera el problema.
+                Presentacion de ataque KRAKS[https://www.krackattacks.com/] (key reinstalation AttackCS), que las conexiones WIFI siguen sin estar protegidas incluso cuando se utiliza
+                WPA2.
+                Solucion utilizacion de fireware.
+        - WPA3 (Wifi Protected Access 3):
+            Uktima especificacion  de seguridad para redes WIFI, ya certificada por la WIFI-ALLIANCE. La presente especificacion establece  requisitos especificos para redes domesticas
+            (WPA3-Personal) y empresariales (WEP-Enterprise 192-bit Mode), concebido para el futuro y acorde con las exigencias del ambito industrila.
+            Este modelo se basa en la suite B de la NSA, que tiene cifrado mas grandes como AES-GCM con claves de 256 bits y curva elipticas con curvas de 384 bits.
+            Se utiliza SHA384 y las claves RSA tiene al menos 3072 bits de logitud.
+            LA autenticacion en WPA3 es mas efictiva, incluso si el user elige una pass simple. Esto se logra mediante el uso del 'protocolo SAE(Simultaneous Auth of Equals)',
+            variante de Dragonfly. Este metodo permite autenticarse sin enviar la pass en ningun momento y sin que pueda deducirse la misma desde info capturada en el intercambio de la
+            info entre cliente y AP.
+            WPA3 introduce un sistema de seguridad contra la introduce un sistema de seguridad contra la pass por fuerza bruta, a fin de evitar la entrada de posibles intrusos.
+            El trafico WIFI que se ha capturado antes no podra ser descifrado aunque la pass de acceso a la res haya sido comprometida, por el uso de Perfet Foward Secrecyp[https://ciberseguridad.com/guias/prevencion-proteccion/perfect-forward-secrecy-pfs/]
+            WPA3  permite el uso simultaneo de WPA2 y WPA3, permitiendo la convivencia de ambas suites. COn el uso de WIFI EASY Connect, conectar a la red dispositivos que no tienen es tan facil como
+            escanear un QR. [Photo]
 
+        -VPN:
+            Red Privada Virtual es una tech que conectar una red publicam como internet, a un espacio de red local. Esta tech permite conectar una red publica, creando una extension a nivel
+            local, lo que facilita la conexion y el intercambio de info a un bajo coste.
+            Son usadas para conectar dos o mas oficinas de una empresa a traves de Internet. Esto permite que los miembros de un equipo se conecta desde ubicacion remotas.
+            Se usa una red publica, los datos se transmite por un 'canal privado', garantizando la seguiridad e integridad de la info interna.
+            -Uso de una VPN:
+                1. Conexion remota segura a la red de trabajo: Permite que los users trabajen desde cualquier lugar como si estuviera fisicamente en su puesto de trabajo, proporcionando
+                    acceso a toda la info y los recuersos con  privacidad y seguiridad especiales.
+                2. Navegacion segura por Internet: Protege los datos de navegacion.
+                3. Mayor privacidad  y ocultacion de ubicacion: Los users no pueden vewr la IP real y no se pude localizarse.
+                4. Evitar restricciones del proveedor de Internet: Algunos proveedores de Internet supoervisan el trafico de archivos y paquetes de info.
+            -Arquitectura de VPN:
+                1. VPN de acceso remoto (Roadwarrior o Mobile Client): permite que uno o varios users se conecta a un server  VPN y pudan acceder a todos los recursos compartidos de su casa....
+                2. VPN Sitio a sitio (VPN Site-to-Site): si una empresa tiene distintas sedes, puede conectarse entre ellas via VPN y acceder a todos los recursos.
+                IPsec[https://www.redeszone.net/tutoriales/vpn/ipsec-que-es-como-funciona/]
 
+                1. Autenticacion: El proceso permite a los users demostrar su identidad mediante el uso de una "password"  o un "certificado digital". Esto garantiza
+                    que se ha auth previamente. IPsec ofrece diversos tipos de autenticación, como Hybrid Certificate + Xauth, Mutual Certificate + Xauth, Mutual PSK + Xauth, EAP-TLS,
+                    EAP-RADIUS, EAP-MSCHAPv2, Mutual Certificate, Mutual Certificate (PKCS#11), y Mutual PSK.
+                2. Confidencialidad: En una VPN, la confidencialidad implica que la info esta disponibles exclusivamente para entidades autorizadas.
+                    Esto se logra 'cifrado de punto a punto' todas las comunicaciones. IPsec admite todos los cifrados simetricos actuales, como AES (128, 192 y 256 bits), AES-GCM (128, 192 y 256 bits) y Blowfish.
+                3. Integridad: Todos las conexiones en una VPN presentan codigos de deteccion de errores con el proposito de asegurar que la info 'no modifique' desde
+                    origen hasta el destiono. Si se cambia el paquete, el paquete se descarta auto y prodria caer en el tunel VPN por seguridad.
+                    IPsec permite al host receptor verificar que los campos de cabecera de los datos y la carga util cifrada no han sido modificados  mientras que esba en ruta hacia el destino.
+                    Los algoritmos de hash soportados por IPsec van desde MD5 hasta el SHA-512, siendo los más seguros el SHA-256, SHA-384 y SHA-512 pertenecientes a SHA2. También soporta AES.
+                4. No repudio: Impide a un user 'negar el envio' de determinada info, que esta firmada por su certificado digital o user clave. Esto confirma que un user especifico ha enviado
+                    una info espacifica. Maneras de 'berlar' el no repudio es su alguien es capaz de robar el user/clave a olos certificados digitales.
+
+            -Protocolo VPN:
+                Los protocolos VPN son fundamentales para asegurar un nivel de seguridad adecuado cuando la infraestructura de red subyacente no pude proporcionar  por si misma.
+                Metodos de proteger:
+                    1. Seguridad Ip (IPsec)
+                    2. Capa de sockets seguros (SSL) y seguridad de la capa de transporte(TLS)
+                    3. Protolo de tunel punto a punto (PPTP)
+                    4. Protocolo de tunel de capa 2 (L2TP)
+                    5. OpenVPN
+                La VPN SSL brinda acceso remoto mediante el protocolo SLL o una version mejorada TLS, lo que permite una conexion segura  entre un user y la red interna de una empresa[photo].
+        -SD-WAN:
+            Red de Area Extensa Definida por Software, permite gestionar y controlar de forma centralizada todos los componetes de hardware mediante software. Esta tech
+            ofrece un nuevo enfoque para la conectivadad de red, permitiendo a las empresas construir su WAN a medida y mejorar el uso de recursos.
+            Arquitectura:
+                La Arquitectura SD-WAN ofrece una seleccion de ruta dinamica entre las opciones de conectivadad, MPLS, 4G/5G o banda ancha, asegurando un acceso rapido y facil
+                a las apps de nube criticas para el ambito comercial.[photo]
+                -Ventajas:
+                    1. Gestion eficiente del ancho de banda: Permite configurar y distribuir el ancho de banda en red WAN segun la necesidad y proridades de la empresa.
+                    2. Control centralizado: El control y la gestion se realizan desde una unica plataforma centralizada, lo que facilita implementacion inmediata de cualquier cambio.
+                    3. Seguridad mejorada: Mejorar la seguridad de la comunicacion al cifrar los datos de manera precisa y supervisar todas las comuinicaciones a traves de un firewall gestionable.
+                    4. Reduccion de costos: Esto reduce los costos tanto para el proveedor de telecomunicaciones como para la empresa.
+                    5. Alta disponibilidad: En terminos de seguridad, ofrece alta disponibilidad y ayuda a admirar la creciente complejidad de los datos y sus vulnerabilidades.
+                    6. Enrutamiento dinamico: Ofrece un enrutamiento dinamico del trafico de apps, seguridad integrada y una politica de reconocimiento de apps a tiempo real.
+                    7. Seguridad descentralizada: A diff de los sistemas tradicionales que requiere un servidor central de seguridad, con SD-WAN, cada lugar es seguro sin tener
+                    que depender de un server principal.[https://www.cisco.com/c/es_mx/solutions/enterprise-networks/sd-wan/what-is-sd-wan.html?socialshare=lightbox-1111]
+
+       -Firewalls:
+            Conocidos como cortafuegos, es un elemento esencial en la seguridad informatica. El obj principal es 'Bloquar' el acceso no autorizado a una red privada conectada a Internet y
+            'permitir' solo aquellas comunicaciones establecidos.
+            Mediante una metafora: asi como una puerta protege nuesta casa en el mundo fisico, un firewall actua como la puerta digital que salvaguarda una red informatica.
+            COMO FUNCIONA?
+            El firewall se situa gernealmente en el punto de union entre Internet y un pc o red de pcs. Gestiona toda la info y el trafico que se transmite de una red a otra
+            atrabes del router. Si datos cumplen con  de seguridad y protocolo, el cortafuegos autoriza su entrada en la red privada. [Photo]
+            El firewall protege la seguiridad y privacidad de los users, protege una red empresarial o domestica de ataques malintencionados y menatiene la info y los archivos
+            en buen estado.
+                -Tipos de firewalls:
+                    1. Packet-filtering firewalls: Funciona a nivel de red como filtro de paquetes segun un conjunto de criterios establecidos, como la IP de origen de destiono, puertos, tipos de paquetes.
+                    2. Circuit-level gateways: Supervidan el intercambio de datos entre host  locales y  remotos para asegurar que dicha sesiones es legitima.
+                    3. App-level gateways: Ademas de comprobar la conexion entre origen y destino, filtran los paquetes de acuerdos con el servico al que3 estan destinados.
+                    4. Stateful inspection firewall: No solo inspecciona cada paquetem, sino que tambien hacen seguimiento de este, aportando un extra de seguirdad.
+                    5. Multiplayer Inspection firewall: Combina el filtrado de paquetes con la monutorizacion del circuito, permitiendo o rechazando conexiones directas entre los host locales
+                        remotos.
+
+                    -UTM(Unified Threat Magnament):
+                        Es la solucion que se enfoca en todas las funciones de seguridad en solo dispositivos y su capacidad de procesamiento  puede ser reducida. Los UTM pueden
+                        distrubuirse en diversos dispositivos para mejorar su capacidad de procesamiento.
+                    -NGFW(Next-Generation Firewalls):
+                        Se estructura en diversos elementos, cada uno con caracteristicas distinta. Esto permite una mayor capacidad  de procedimeito y, en caso de fallo
+                        de uno de los servicios, el resto puede seguir funcionando con normalidad. Su adquisicion tiene un coste mas elevado.
+        -Proxy:
+            Actua como un 'Servicio intermediario' entre un user y un sitio web, con salida para el trafico del user hacia inernet.
+            -Funcionamiento:
+                1. Un user solicita un recurso en Internet (como paginas web)
+                2. El proxy busca en su cache local de las paginas visitadas.
+                3. En caso de que el recuros este en cache, se encia al user sin necesidad de buscarlo en Internet.
+                4. De no ser asi, el proxy solicita el recurso en nombre del user, pero con su propia OP, ocultando la IP de origen.
+            -Tipos de proxys:
+                1. FOWARD PROXY:
+                    Detectan solicitudes de paginas webs de los users de una red de empresa y llevan a cabo tareas de proteeccion de la red, mejora de rendimiento
+                    y aplicacion de las politicas de uso de internet en la empresa.:
+                        1."COntrolar el uso de Internet" de los empleados, limitando el acceso a determinados dominios, app o protocolos.
+                        2. "Aumenta la seguridad", vigilando trafico hacia lugares peligrosos o infectados por malware, y mantenimiento un registro de la actividad
+                            de los empleados para controlar actividades.
+                        3. "Mejorar el redimiento" de las paginas mas visitadas por el user usando cache, la copresion del trafico y la elmiminacion de los anunciois de los sitos.
+                2. REVERSE PROXY:
+                    Se dedica a asegurar la seguridad y el rendimiento, gestionando las solicitudes provenientes de la red a los servers de la organizacion.
+                        1."Proteccion contra ataques", incluyendo seguiridad en servers, datos y traficos. Posibles ataques DOS
+                        2."BAlence del trafico" entre los distintos servicios donde se almacenan el contenido y los datos de nuestra web, creando un unico punto de acceso.
+                        3."Comprimir solicitudes" de archivos grandes que provienen de los clientes, reduciedno el tiempo de carga y ancho de banda.
+                        4."Ofrecer servicios geolocalizados", laes como la discriminacion de anuncios publicitarioos en determinadas regiones......
+                -HTTP en proxy:
+                    1."Trasnparente" no oculta la IP real y modifica el campo HTTP, monitorear y administrar trafico.
+                    2."Anonimo" oculta la IP real, pero modifica el campo de solicitudes, lo que su uso pude ser facilmente detectado.
+                    3."Competamente Anonimo" oculta la IP, pero no  modifica el campo HTTP que se recibe como si proviniera de un navegador real. I2P(Invesible Internet Project)
+                    u TOR (The onion Router.)
 
 2.Seguridad en correos electronicos:
 
@@ -93,4 +274,4 @@
 
 
 
-3.Seguridad avanzada:
+3 .Seguridad avanzada:
