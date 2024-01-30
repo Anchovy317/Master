@@ -269,9 +269,63 @@
                     u TOR (The onion Router.)
 
 2.Seguridad en correos electronicos:
+    La seguridad en la navegacion web, apps y correos son elementos fundamentales de la seguridad en linea. Los antivus han evolucionado con el onj de incorporar productos adicionales
+    que contribuyen a reducir las amenazas en linea. Estos productos que protegen contra el malware, filtros web que se visita.
 
+    -Email Protection:
+        Es empleado por diversos de productos de seguridad con el proposito de ofrecer tools que aseguren el servicio de correo electronicos. Los correos es uno de las
+        'vectores de amenza'. Los ataques  que emplean tecnicas de ing social, como el phishing, son trasmitidos a traves de correos, a un 96% de los users.
+            -Tools:
+                PerNIX es una tool que permite detectar los masajes electronicos buenos y malos. Envia correos filtrados y escaneados a la bandeja de entrada del user con un semaforo que
+                indica si el correo es seguri hay areas[photo].[https://www.youtube.com/watch?v=5WxqaLn2Iv4].
+    -Firewall de App Web (WAF):
+        Es una tool de seguridad que protege las apps web filtrar y monitorear el HTTP entre las apps de internet. Su objetivo es proteger contra los ataques como falsificacion, cross-site
+        scripting(XSS), inclusiones de archivos e inyecciones de SQL.
+        Se encuantra eb el protocolo de capa 7 del modelo OSI y forma parte de un conjunto de tools que brindar una defensa integral contra una amplia fama de vectores de ataque.
+            -Como funciona:
+                El funcionamiento se basa en un conjunto de reglas, comunes llamadas 'directivvas', que tienen como obj proteger contra las vulnerabilidades en la app al filtrar el
+                trafico malicioso. Se basa en la rapida y eficiente modificable de las directrices para responder  rapidamente a diversos vectores de ataque.
 
+    -Secure Web Gateways (SWG):
+        Es una solucion de seguridad nativa que prtege a las empresas de los riesgos que pueden surgir en la nube, es una evolucion al tradicional puerta de enlace web, segura , llamada
+        proxy web o filtro web, superando pde la puerta de enlace web segura tradicional que se limita solo al trafico web.
+        Se enfoca en la 'la gestion del trafico en la nube y en la web', superando la limitacio de la puerta de enlace web seguro tradicional que se limnita exlusivamente al trafico web.
+            -Funcionalidades:
+                1.'Supervision y evaluacion de acciones individuales': Proporciona una variedad de app y servicios en linea que se pueda usar en linea, tafico web. Combina SWG, CASB y DLP.
+                2.'Control minucioso de las apps': Ofrece un control detallado en tiempo real de miles de apps en la nube, Shadow IT, permitiendo detener amenzas y permitir los usos legitimos.
+                3.'Implementacion de politicas de uso aceptable': Incorpota una combinacion de filtros web tradicional y una valoracion exhaustiva del uso de apps en la nube, los riesgos y
+                    las amenazas y permitir los usos legitimos.
+                4.'Proteccion frente a amenzas': Ayuda a proteger contra el malware propagado por la web y la nube y las amenazas avanzadas con funciones de defensa avanzada.
+                5.'Proteccion de datos en cualquier lugar': Controla y protege los datos en cualquier lugar, asegurandose de que se inspeccionen con percision y seguridad.
 
+3 .Seguridad avanza:
+    -Servicios de Acceso Seguro:
+        El SASE es una arch basada en la nube que ofrece servicios de red y seguridad para proteger a los users, las apps y los datos. Dado que muchos users y apps ua no estan  conectadas
+        a una red corpotativa, las medidad de acceso y seguridad no puedem estas sujetas a dispositivo de hardware habituales en el contreo de datos  corporativos.
+        SASE quiere ofrecer 'servicios de red y seguridad en la nube'. En este modelo bien implementado, los users se conectan al servicio en la nube para acceder y utilizar los servicios web,
+        apps y datos de manera segura, con una app coherente de las politicas de seguridad.
+        El termino 'borde' o 'permitro' en SASE se refiere a los sistemas globales del proveedor de la nube que se encuentra en su hardware (centro de datos y dispositivo).
+        Los users accedeen a servicios en la nube al iniciar sesion y autenticar su identidad desde cualquier lugar, atraviesa este borde para acceder a la nube.
+        [photo](https://www.arubanetworks.com/es/faq/que-es-sase/)
 
+        Con el translado de los datos de las empersas a la nube, el incremento de teletrabajo.
+            -Tecnologia y fincionalidades:
+                1. 'Microservicios nativos' de la nube en una arch de plataforma unica.
+                2. 'Inspeccionar trafico' con cifrada SSL/TLS a escala de la nube.
+                3. 'Proxy en linea' capaz de descodificar el trafico en la nube y en la web.
+                4. 'cortafuegos y proteccion' frente a las instrucciones para los puertos y protocolos.
+                5. 'Integracion de API' de servicios en la nube gestionados para fados robustos en reposo.
+                6. 'Proteccion avanzada frente a la amennza', IA/apredizaje automatico, UEBA, entornos aislados.
+                7. 'Uso compartidos de inteligencia' sobre amenazas e integracion EPP/EDR, SIEM y SOAR.
+                8. 'Proteccion de datos avanzada' para datos en reposo y transito.
+                9. 'Proteccion de oficinas remotas o delegacion', compatibilidad con la iniciativas de red de sucursales como SD-WAN.
 
-3 .Seguridad avanzada:
+                [https://www.arubanetworks.com/es/video/?v=Products%20and%20Solutions/SASE-Series/What%20is%20SASEV7-1.mp4]
+                [https://www.netskope.com/resources/cloud-security-collateral-2/sase-and-the-seven-forces-shaping-security-transformation]
+
+    -Proteccion contra DDoS:
+        Multiples peticiones simultaneas desde diversos sitos web.
+        -Soluciones:
+            1. Analisis de todos los paquetes en tiempo real y alta velicidad.
+            2. Desviacion del trafico entrante del servidor.
+            3. Separacion de los elementos iligitimos del resto, permitiendo asi el paso del trafico legitimo.
