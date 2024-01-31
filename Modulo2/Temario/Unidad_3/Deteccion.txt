@@ -20,7 +20,52 @@ DETECCION:
         -TOOLS:
             CUCKOO SANDBOX consiste en un sofware de gestion central que se encarga de la ejecucion y el analisis.[https://iicybersecurity.wordpress.com/2016/10/15/como-hacer-analisis-automatizado-de-malware-con-cuckoo/]
             [Photo]
-3.SECURITY INFO AND EVENT MAGNAMENT(SIEM)
-4.SECURITY ORCHESTRATION, AUTOMATION. AND RESPONSE(SOAR)
-5.USER AND ENTITY BEHAVIOR ANALYSCS (UEBA)
+3.SECURITY INFO AND EVENT MAGNAMENT(SIEM):
+    La informacion de seguridad y gestion de eventos (SIEM) es un sistema de seguiridad integral que centraliza la recopilacion de registros, eventos y alertas. Este sistema permite a las empresas detectar y responder con rapidez
+    a cualquiera amenazas en sus sistemas informaticos. El SIEM esta al dia para controlar todos los acontecimietos que sucede en la empresa, lo que le permitir detectar cualquiera tendencia o patron inusual y actuar de inmediato.
+    El SIEM es el avance de dos tecnologia de seguridad anteriores: la "gestion de eventos de seguridad (SEM)", que detecta patrones detectar patrones de acceso inusuales en tiempo real, y la "gestion de informacion de seguridad (Sim)", que centraliza
+    los registros de seguridad para su interpretacion y alamcenamiento en tiempo.
+    Un SIEM actua como el punto central al que los dff dispositivos, ya sean hardware o virtuales, envian informacion, sin importar el frabricante. Sus funciones fundamentales son alamacenar e interpretear los registros, lo cual se realiza en tiempo real con
+    el fin  de brindar  una capacidad de respuesta rapida ante cualquier incidentes de seguridad informatica.
+        -Caracteristicas:
+            1. Identificacion de amenazas reales y falsas incidentes.
+            2. Monitorizacion centralizada de todas las amenazas potenciales.
+            3. Ejeccion de la accion a personal capacitado para resolvera
+            4. Documentacion detallada de todo el proceso de deteccion, actuacion y resolucion.
 
+        -Tool: Logpoint
+
+4.SECURITY ORCHESTRATION, AUTOMATION. AND RESPONSE(SOAR)
+    El sistema de Orquestacion de seguridad, automatizacion y respuestas(SOAR) es una serie de funciones concebidas para proteger los sistemas de amenazas:
+        1. Gestionar casos y flujos de trabajo
+        2. Automatizar las tareas.
+        3. Acceder a la informacion sobre amenazas.
+
+    Como es la implemetacion:
+        Se de SOAR se hace junto con el Centro de Operacion de Seguridad(SOC) de las empresas. Pueden controlar las funtes de informacion sobre amenazas y genrear respuestas automaticas para mitigar los problemas de seguridad.
+        Se trata de una serie de 'tools de automatizacion de procesos'. Si estos procesos no estan debidamente establecidos, la automatizacion puede ser limitada. En entornos que se crecen de forma elastica, como las nubes hibrida,
+
+        -Componentes clave:
+            1. Security orchestration: Permite coordinar las tools de seguridad y otras tech, que pueden ser de diff fabricantes y normalmente se utlizan de formas independientes.
+            2. Segurity Automation: Esta funcion se refiere a la automatizacion de tareas y procesos manual, sin intervencion humana. El uso de los "playboos" son tares lineales o pasos que
+            contienen acciones basicas basadas en cordinaciones.
+            3. Security Responde: Los equipos de seguridad se enfrentan al desafio de gestionar incidente y cerrar  eficazmente las brechas de seguiidad. La automatizacion, se pueden tomar medidas especificas como
+            poner  en cuarentena una estacion de trabajo, bloquear una dirr IP o deshabilitar una cuenta de user, lo reduce el tiempo medio de respuesta.
+5.USER AND ENTITY BEHAVIOR ANALYSCS (UEBA):
+    El analisis del comportamiento de los users y organizaciones conectadas a la red de una organizacion. El proposito es detectar amenazas, tanto externas como internas, mediante el aprendizaje del comportamiento
+    normal de los users  y organizaciones.
+        -Deteccion por comportamiento:
+            La mayoria de las soluciones UEBA comprenden como los users, grupos y dispositivos se comportan para establecer lineas base y aplicar porcentajes de riesgo adaptivos a lo largo  del tiempo un funcion de la actividad.
+            [Photo] https://ciberseguridad.blog/ueba-user-and-entity-behavior-analytics-deteccion-por-comportamiento/
+            Permite 'detectar riesgo o amenazas de seguridad':
+                1. Compriso de credenciales
+                2. Insecure insider
+                3. User priviligiados
+                4. Hacker maliciosos
+                5. Incumplimiento de politica
+                6. Ataques de furzas bruta a pass.
+        -Beneficio y retos:
+            UEBA brida una mayor visibilidad y conocimietos, no solo para detectar una amenza potencial, sino tambien para ayuda a una organizacion a disminuir su superficir de ataques mediante la identificacion y la eliminacion
+            de deficiencia de seguridad adquiridad.
+        -Deteccion en tiempo real de actividad.
+        -Busqueda de inteligenci Forense/ Amenazas.
