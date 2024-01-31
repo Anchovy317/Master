@@ -1,7 +1,25 @@
 DETECCION:
 
-1.INTRUSION DETECCION SYSTEM(IDS)
+1.INTRUSION DETECCION SYSTEM(IDS):
+    Es una tool que tiene como obj 'identificar los accesos o manipulacion no autirizadas' a los sistemas.
+    Su funcion principal es analizar el trafico entrantes u comprarlo con una base de datos de firmas de ataque conocidas [Photo].
+        -Tipos de IDS:
+            1. Network Intrusion Detection System(NIDS): Supervisar las anomalias ocurridas en la red, como trafico anormla o malicioso.
+            2. Host-based Intrusion Detection System(HIDS): Es un complemeto que se anhade a la solucion anti malware de una organizacion. Es un agente que detecta instruciones en un ordenador (Host) y que revisa logs, modificaciones de arch o al
+                sistema.
+        -Tecnicas:
+            1. IDS basados en firmas: patrones o una identidad conocidas de una instrusion o evento de instrusion especifico. Se requiere act periodicas para asegurar que su base de datos de instrusion este actualizada.
+            2. IDS basados en anomalias: que buscan los tipos de ataques desconocidos que los IDS basados en firmas encuentran dificiles de detectar. Se emplea enfoques de aprendizaje auto con el fin de comparar modelos de comportamiento
+                confiable con comportamiento nuevo, generado anomalias o comportamientos de caracter estranhos o inusual.
+            [https://www.clavei.es/blog/que-es-un-ids-o-intrusion-detection-system/]
 2.SANDBOX:
+    Es un termino utilizado habitualmente en el analisis de malware, se refiere a una 'replica aislada del entorno operativo' de un ordenador. Funcion principal de es aislar un programa especifico en un entorno separado, protegido de esta forma el
+    ordenador  y la red de posibles problemas de seguridad.
+    Es una tech que ofrece una gran variedad de beneficios. No solo protege del malware las estafas, sino que tambien ayuda a las empresas a ahorrar tiempo y dinero. Actua como un entorno aislado de la red corporativa, permitiendo validar el
+    comportamiento de un arch, apps o binario sin afectar ningun de la red.
+        -TOOLS:
+            CUCKOO SANDBOX consiste en un sofware de gestion central que se encarga de la ejecucion y el analisis.[https://iicybersecurity.wordpress.com/2016/10/15/como-hacer-analisis-automatizado-de-malware-con-cuckoo/]
+            [Photo]
 3.SECURITY INFO AND EVENT MAGNAMENT(SIEM)
 4.SECURITY ORCHESTRATION, AUTOMATION. AND RESPONSE(SOAR)
 5.USER AND ENTITY BEHAVIOR ANALYSCS (UEBA)
