@@ -68,4 +68,4 @@ DETECCION:
             UEBA brida una mayor visibilidad y conocimietos, no solo para detectar una amenza potencial, sino tambien para ayuda a una organizacion a disminuir su superficir de ataques mediante la identificacion y la eliminacion
             de deficiencia de seguridad adquiridad.
         -Deteccion en tiempo real de actividad.
-        -Busqueda de inteligenci Forense/ Amenazas.
+        -Busqueda de inteligencia Forense/ Amenazas.

@@ -1,0 +1,33 @@
+RESPUESTAS:
+
+1. Instrusion Prevention Sistem(IPS):
+    El sistema de prevencion de intruciones es un dispositivo de seguridad que funcionan como un IDS(Sistema de Deteccion de Intrusos), pero tambien puede tomar acciones en tiempo real al detectar una anomalia y bloquear una amenaza gracias a politicas
+    confuguradas por el admin de la tool.
+    El IPS se encarga de supervisar actividades a nivel de capa 3(red) o nivel de capa 7(app) del Modelo OSI, con el objetivo de identificar comportamientos maliciosos, sospoechosos e indebidos. Los IPS etorgan 'decisiones basadas en los contenidos
+    del trafico', a diferencia  de los sistemas de deteccion de intrusiones tradicionales.
+        -Arquitectura del IPS:[photo]
+            1.Metodo de deteccion:
+                1. Ips basado en firmas: Utiliza una base de datos de firmas que reflejan patrones conocidos de ataque a la seguiridad. Se usa para buscar coincidencias.
+                2. IPS basado en anomalias(basado en 'perfil'): Metodo que intenta  identificar comportamiento que se desvien de lo que ha predefinido como una "actuacion normal".
+                3. IPS basado en politicas: Se requiere que las politicas de seguridad se declaron de manera especifica.
+                4. IPS basado en deteccion por Honey Pot: COnfigurando para vulnerar e interesante para ataque, dejar evidencia de los ataques.
+            2.Tecnologia:
+                1. IPS basado en hosts: Monitorear las caracteristicas de un dispositivo especifico en la red para detectar actividades internas. Se analiza: trafico, registros, acceosm ejecuciones y modificaciones de archivos.
+                2. IPS basado en la red: Se lleva un seguimieto un flujo de trafico que se encuentra a traves de segmentos especificos de la red, examinando protocolos para detectar actividades sospechosas.
+
+            3.Procedimiento de un IPS:
+                Se basa en instrucciones especiales que permite inspeccionar cada parte del paquete de datos intercambiados. El trafico de datos se encuentra clasificado y examindao en su totalidad por los filtros necesarios antes de su salida, antes de
+                esta salida es necesario pasar por una serie de normas.
+2. Network Access Control (NAC):
+    El control de Acceso a la Red es una Tecnologia basada en 'politocas' por el admin de la red para verificar todos los dispositivos antes de conectarse a la red, si no comple las politicasm es restiongido o denegarse el acceso a la red.
+    Una politica se aplica es el estado del antivirus en un pc. Si el pc tiene el antivius update, se permite conectar. Sino entra en estado de cuarentena.
+        -EX:
+            1. Control de proveedores que trabajan en una red corporativa
+            2. Control de redes en infraesturas criticas
+            3. Contol de oficinas remostas
+            4. Control de redes corporativas
+            5. Gestion de BYOD(Bring Your Own Device) al usar dispositivos para acceder a los recursos.
+
+3. Network Detetion and Response(NDR)
+4. Network Analysis and Visibility (NAV)
+

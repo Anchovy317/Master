@@ -1,1 +1,4 @@
-info
+En el mundo del cibercrimen, la inteligencia de amenazas es fundamental debido al constante cambio del panorama y la aparición de nuevos actores. Los analistas aconsejan ir más allá de una evaluación masiva de amenazas y utilizar la inteligencia de amenazas para obtener una 'visión más precisa y real' del riesgo organizacional.
+La inteligencia de amenazas no solo se enfoca en encontrar amenazas potenciales, sino también en cómo los ciberdelincuentes podrían usar tácticas, técnicas y procedimientos (TTP). Esto posibilita a las organizaciones anticipar las amenazas antes de que surjan y adoptar acciones de protección.
+El objetivo es convertir esta 'inteligencia en información efectiva' que pueda ser utilizada en los dispositivos de seguridad de las empresas. Esto podría incluir la actualización de las firmas de virus, la mejora de los sistemas de detección de intrusiones y la implementación de controles de seguridad más eficaces.
+La inteligencia de amenazas también ayuda a las organizaciones a comprender mejor su perfil de riesgo y a tomar decisiones informadas sobre dónde invertir sus recursos de seguridad.
