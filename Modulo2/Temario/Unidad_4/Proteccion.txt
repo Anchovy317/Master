@@ -1,0 +1,149 @@
+Configuración segura de dispositivos y sistemas informáticos:
+
+Fortalecimiento de la infraestructura tech de medidas de seguridad.
+
+1/ PROTECION EN LA INFRAESTRUCTURA TECNOLOGICA:
+
+    1.Reduccion de servicios:
+        Es una udea muy sencilla de aplicar, se trata de dejar activos de informacion funcionamiento de 'servicios estrictamente necesario' para funcionamiento de un server. Por ejemplo cuando se instala un servidor o equipo con sistemas operativos como el protocolo IPv6.
+    2.Hardening:
+        Es la forma o mecanismo que trata de 'reducir vulnerabilidades' en servicios, procesos, servidor o otro dispositivos de red a disminuir de ataques. Esta tecnica de enduracimiento emplea grupos de 'tools, tecnicas y buenas practicas' para mitigar el riesgo mediante
+        la eliminacion de posibles vectores de ataque y reduccion de la superficie de ataques del sistema.
+
+        Existe un 'enfoque metodico' para auditar, cerrar y controlar:
+            1. Administracion de servicios: evaluar que servicios deberia estar en funcionamiento y cual es la mejor manera de Configuración los servicios que deben estar activos.
+            2. Hardening de apps: es un punto fundamental de instalar apps y se refiere a no dejarla con los valores predeterminados.
+            3. Hardening de sistemas operativos: servicios por defecto en los SO, desisntalar segun las necesidades de la organizaciones.
+            4. Organizacion: CIS(Center for Internet Security) o el CNN-CERT.
+        -Actividades de fortalecimiento del sistema.
+            El Hardening tiene varios tipos:
+                1. Aplicacion de endurecimiento
+                2. Endurecimiento del sistema operativos
+                3. Endurecimiento del server
+                4. Refuerzos de base de datos
+                5. Enderecimiento de la red
+            Fortalecer el sistema es necesario durante 'todo el ciclo de vida' de tech.
+            Objetivos es reducir la superficie de ataques, que es la combinacion de todos los fallos posibles.
+                1. Pass predeterminadas
+                2. Pass y otras credenciales almacenadas en archivosd de texto sin formato.
+                3. Vulnerabilidades de software y firmware sin parches.
+                4. BIOS, cortafuegos, puertos, servicios, enrutamiento y otras partes de la infra estuctura que no esten cofigurados correctamente.
+                5. Trafico de red sin cifrar o datos de reposo
+                6. Falta o deficiencia de controles de acceso proviligiados.
+        -Buena practicas:
+            Dependera de los riesgos:
+                1. Auditoria los sistmeas existentes.
+                2. Efectuar auditorias de seguridad exhaustiva de la tech.
+                3. Utilizacion pruebas de penetracion, escaneo de vulnerabilidades, admin, de configuracion y otras tools de auditoria de seguridad para encontrar fallos.
+                4. Realizar evaluaciones de fortalecimiento del sistema utilizando los estandares de la industria de NIST, MICROSOFT, CIS, DISA.
+        -Pasos a Seguir:
+            1. Estrategia: Realizar el plan de riesgo identificados del ecosistema en el que vamos a aplicar.
+            2. Aplicacion de parches
+            3. Fortalecimiento de la red: Firewall configurado correctamente.
+            4. Refuerzo del servidor: Evitar instalacion de software inecesario y privilegios de superuser.
+            5. Fortalecimiento de apps: Eiminar componentes y funciones innecesarias, registro de acceso en base al user.
+            6. Refuerzo de base de datos: Resttricciones de admin, control de acceso  proviligiados o la reduccion de lo que pude hacer cada user.
+            7. Fortalecimiento del sistema operativos: update del sistema.
+            8. Eliminacion de cuentas y privilegios innecesarios.
+
+        -Beneficios:
+            1. Funcionalidad mejorada del sistema
+            2. Seguridad mejorada de forma significativa
+            3. Cumplimiento y auditabilidad simplificados
+
+    3. Parcheado: Politicas y desafios:
+        Una correcion de errores o bugs que hay en una app o sistema. Parchear es una practica fundamental para 'minimizar vulnerabilidades' en sistemas, crear y establecer  una politica con el
+        procedimieto de implementacion de los parches.
+
+        -Plan de actualizacion:
+            Es fundamental no emplear sofware que este desuso, ya que no recibia nuevos parches que permite corregir fallos y vulnerabilidades. La evolucion de virtualizacion tambien ayudo al
+            desarrollo de la computacion en la nube (Cloud Computing).
+            En el grafico de riesgo se puede identificar como el riesgo de una vulnerabilidad que no tiene actualizacion o parches incrementa cada dias que pasas. Desde el software empieza a
+            verse afectado hasta que comienza la correcion y los cambios en el codigo puden pasar dias o meses.[Photo]
+            El momento de la publicacion de las actualizacion debirias ser el mismo en el que las empresas la implementaran, tarda un tiempo en generarse la correcion. Esto se debe a que el operador
+            o responsable de las actualizaciones y los servidores  debe probar el parche para conocer el impacto.
+
+        -Casos reales:
+            El mayor fue el Wannacry  un ransomeare aprovecho la 'falta de una actualizacion critica' en el servidor de Windows para podere propagarse de forma muy rapida dentro de la infraestuctura.
+            Esta actualizacion critica se relaciona al botin MS17-010, conocido con ese nombre en los clicos de actualizar sque MICROSOFT realizada el segundo marted de cada mes. Corregia un fallo en el servicio
+            de carpetas compartidas del protocolo SMB, pero lo que resulta mas curioso dentro de ese suceso es que mostro la actualizacion en las organizaciones, ya que la vulnerabilidad que aprovecho
+            Wannacry ya contada como un parche. DSe acuerdo con informacion de criptografia.com, el impacto fue de 200000 victimas en 150 paises, todo ello en tan solo dos dias.
+            La vulnerabilidad fue parcheada hace dos meses mediante el boletin en 2017. La 'validacion de vulnerabilidades' es una forma de ayudar a las empresas si sus sistemas estan expuestos ante amenzas o no.
+            [photo].
+        -Gestion de parches:
+            Utilizan tools o apps que facilita la automatizacion del 'proceso apps en parches', para asi reducir la dificultad dse apps. En algunos casos son tools propias de una sistmea o pueden permitir la apps de parches
+            en diff plataformas.
+            En la gestion de parches se identifican, adquieren, implementan y verifican actualizaciones de sofware para dispositivos y apps. Esto incluye actualizaciones para sistmeas operativos, codigo de apps y sistmeas
+            integrado, incluidos los servers.
+            Debido a la complejidad del desarrollo de sofware, la practica de la vigilancia es clave para que las organizaciones puedan garantizar que sus sitemas esten actualizacidos.
+            No actualizar el software implica correr el riesgo de 'exponerse a las vulnerabilidades' que se hayan identificados, Los actores de amenzas maliciosos toman nota de cada parche que se lanza, y ponen el banco en las
+            organizaciones que tardan en actualizar sus sitemas.
+            El 'software de admin  de parches'  es una tool muy util para la organizaciones. La app de los parches pueden agotar los recursos de TI si no se cuenta con una de ellas, ya que ayudan a gestionar dichos parches  para una
+            red de dispositivos.
+        -Procesos de gestion de parches:
+            Es un proceso continuo hasta que se retira el software. Conocimiento de su clientela y la inteligencia de amenazas, los desarrollors generan parches para distribuirlos en la red de sus clientes.
+            Para evitar contratiempo, los admin deben 'probar las actualizaciones' ante de enviarle a todos los dispositivos.
+                1. Gestion de ancho de banda y optimizacion de recursos de red.
+                2. Descarga auto de actualizaciones y descargar por categorias.
+                3. Descarga dirigidfa  de actualizacion y descargar por categorias.
+                4. Descarga dirigida de actualizaciones a equipos o conjunto de equipos especificos.
+                5. Capacidades de informe
+
+            Practica recomendadas:
+                1. Crear un inventario de todo el software activos para la organizacion
+                2. Limitar la extension de los tipos de software en uso para disminuir la exposicion al riesgo de terceros.
+                3. Clasificar los sistemas segun el riesgo para informar la estrategia de parches y actualizar las prios.
+                4. Priorizar los anuncios de parches de proeevedores para garantizar su procedimieto inmediato.
+                5. Probar los parches en un subconjunto de sistmeas antes de implementar una actualizcion en toda la red.
+                6. Configurar parches auto para programas especificos y bibliotecas de codigo abierto.
+                7. Validar y registrar toda la actividad de parches para facilitar la visibilidadm, el analisis y la evidencia.
+
+    3. Plataformas de gestion de parches:
+        A diferencia de un gestor de parches, el virtual  parching o parche virtual permite proteger tanto de 'vulnerabilidades conocidad como desconocidas'. Otra gran diff que lo separa de una gestor  de parches es quer 'no requiere reiniciar'
+        el sistema, servidor o apps para poder ser aplicado, lo cual es una gran ventaja  en un entorno productivo en el que realizar cualquier tipo de mantenimiento requiere cierta preparacion y planificacion. El parche  virtual ayuda atomoatizar
+        la remendacion de apps frente a la explotacion frente a la explotacion de vulnerabilidades.
+        Segun la estadistica de la OWASP (Open Web App Security Project), que cuenta con el manual de buenas practicas virtual patching.
+        La proteccion que genere el virtual parching tiene como componentes principal la inteligencia que brinda el equipo de investigacion de vulnerabilidades conocico como ZERO DAY INICIATIVE(ZDI), que es el mayor programa de recompensa para el
+        descubrimiento  de vulnerabilidades del mundo. ZDI realiza la notificacion de vulnerabilidades a los diferentes fabricantes se cre un parche virtual de forma paralela. [https://www.zerodayinitiative.com/about/] [Photo]
+        Demostrar la capacidad de proteccion y de estrategia de virtual patching:
+            1. Blindaje de vulnerabilidades, tanto del sistema operativo como de apps
+            2. La proteccion de servidores soportados y no soportados
+            3. Escanear y evaluar las vulnerabilidades y la forma de proteccion
+            4. La proteccion frente a ataques de denegacion de servicio
+            5. La proteccion frente a ataques de buffer overflow o desbordamiento de buffer
+            6. El monitoreo de integridad y generacion de lineas base en servicio con Integrity Monitoring.
+        El patching funciona por medio de un agente liviano que se instala en el servido, nivel perimetral; es 'mas comun en el punto final de los servidores'. Se puede aplicar otros elementos como bases de datos, correo, sevidores....
+        Protege de Web App Protection frente a crooss-site scripting (XSS) y SQL Injection.
+        La app de parche virtual proporciona 'la misma funcionalidad que los parches de software', mediante la implementacion de controles de red de proteccion que pueden  proteger a los serividores ante los atauqes.
+        Reglas de autoaprendizaje y el analisis de comportamiento:
+            1. Proporciona proteccion de dia cero:  especialmente util ante vulnerabilidades conocidas para las que aun no se han emetido parches.
+            2. Bloquean las vulnerabilidades desconocidas: Saliente de busqueda de desviaciones de protocolo, infracciones de politica y senhales.
+            3. Defiende a la app web: Contra la SQL Injection, crooss-site(XSS) y vulnerabilidades.
+        Cuando se usa esta técnica como complemento de los parches estándar, una organización no sólo mitigará los riesgos que conllevan las vulnerabilidades, sino que también minimizará los problemas operativos y financieros asociados a los
+        parches estándar.
+        [https://owasp.org/www-community/Virtual_Patching_Best_Practices]
+        [https://documents.trendmicro.com/images/TEx/infographics/Security-101-virtual-patching-infographic-updated-03-2021.jpg]
+        [https://www.trendmicro.com/vinfo/us/security/news/vulnerabilities-and-exploits/virtual-patching-patch-those-vulnerabilities-before-they-can-be-exploited]
+
+        1. Plataforma WSUSU/SCCM: La plataforma de MICROSOFT proporciona un 'concentrador unico para actualizaciones' de Windows dentro de una organizacion, sino tambien aprobalas de manera selectiva, elegir cuando se entrega  y determinar
+        individuales o grupos de dispositivos individuales o grupos de dispositivos las reciben. Adicional sobre Windows Update. Cuando se elige WSUS como origen para las actualizaciones de Windowsa, se usa la 'directiva de grupo' para incluir
+        dispositivos cliente al servidor WSUS para sus actualizaciones.
+        Las funciones de administrar de parches en SCCM puede ayudar a los admins a gestionar las complejas tareas de seguimiento y aplicacion de actualizaciones. Conjunto de 'tools integradas' para el software de forma manual o automatica, asi
+        como para controlar cuando y como se implementan los parches.
+
+        2. Plataforma BigFIX:
+            Esta tool fue muy popular hace unos anhosm y cambio de nombre a ENDPOINT Manager cuando anhadimos mas funcionalidades. Proporcionar un 'un porceso de app de parches automatizados' y simplificado que se administra desde una unica consola.
+            IBM Endpont Manager, permite la gestion de parches en dispositivos y aunque todavia esta en uso, ya no es frecuente encontrar este tipo de plataforma robusta  en las arch.
+            Incluye analisis de uso de software para ayudar con el cumplimiento de acuerdo a la licencia y puede ayudar a garantizar que todos sus puntos funasles tengan paquetes. Gestion de parche.
+                1. Administracion de energia
+                2. Gestion del ciclo de vida
+                3. Seguirdad y cumplimento
+                4. Analisis de uso de software
+                5. Automatizacion de servidores
+                6. Dispositivos moviles
+
+
+            2/ SEGURIDAD Y CONTROL DE ACCESO A LA RED:
+
+
+            3/ RESPALDO Y ELIMINACION SEGURA DE DATOS:
