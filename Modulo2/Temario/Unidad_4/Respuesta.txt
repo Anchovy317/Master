@@ -1,1 +1,33 @@
-asasa
+EDR:
+    El proceso de EndPonit Detection and Responde(EDR) es una 'solucion de seguirdad en tiempo real' que provee visibilidad, monitoreo y registro de toda la actividad EndPonit, permitiendo detectar cualquier actividad:
+        1. Se instala e inicia del monitoreo en el que equipo del user final
+        2. Intenta correcional todas las actividades
+        3. Detecta y reporta las actividades sospechosas
+        4. Busca un punto de origen de actividad sospechosas
+        5. Clasifica la info
+        6. Equipo de respuestas a incidentes definira si se trata de un incidentes de seguridad y su origino, en base a la info por el EDR. Permiten 'agilizar y acelerar el proceso'. La respuesta ayuda a 'detectar amenazas desconocidad'
+            y brinda apoyo mediante el analisis de datos 'para determinar patrones' de dichas amenazas, ayuda al equipo de respuesta a incidentes.
+
+XDR:
+    Extended Detection and Response (XDR) es una metodo para 'recopilar y correlacion automatica la info' en varias capas de seguirad para permitir la detencion rapida de amenazas. Supervision de amenazas  en dff fuentes o ubicacion dentro
+    de un organizacion.
+    Un ataque puede infiltrarse entre la brecha de seguridad creadas como resultado de alertas de soluciones desconectadas. Permanencer ocultos con exito debido a los puntos de visita de ataque desconectados y limitados de la mayuoria.
+    XDR se dedica a 'eliminar los fallos de seguridad' a traves de una estrategia integral y holistica de deteccion y respuesta.
+    El XDR dedica 'eliminar los fallos de seguridad' a traves de una estrategia integral y holisticas de deteccion y respuestas. Recopila info y compara las relaciones de datos de actividad profunda en muchas capas de seguridad,
+    incluidas las config para ter para terminales, servidores, correo electoronico, nube y cargas de trabajo.
+
+EPP VS EDR:
+    EndPonit Protection se encarga de 'detectar firmas y otros atributos' que indican una intrusion de amenazas conocidad. Las EDR 'agregan una capa adicional de defensa' mediante el uso de tools de busqueda de amenazas para la deteccion de
+    amenazas en puntos finales basadas en el comportamiento.
+    Tener una EDR no convierte a las EPP en tools de seguirad redundante, EDR puede parecer una solucion mas poderosas. 'Adoptar un enfoque holistico' que cubra las amenazas de seguridad tradicional y avanzadas.
+    Ha llebado a los proeevedores de EPP a agregar capacidades de EDR a su producto y viceversa. Las EDR requiere investigacion y analisis activos de info por parte de expertos en seguridad para responder adecuadamente a las amenazas.
+    Estos tipos de sistemas de porteccion de terminales 'se complementan y no se reemplaza entre si'. XDR proporciona la evolucion de la deteccion y la respuesta mas alla del enfoque actual de soluciones puntual y vector unico.
+    Instancia 'EDR estan restringidas' porque solo son capaces de observar punto finales admin.
+
+XDR como futuro de la EDR:
+    Se presento el concepto de la 'cadena de eliminacion de intruso' a los pros de la seguridad mediante la publicacion de articulos 'Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaignns and Intrusion Kill Chains'.
+    El articulo presento un concepto simple pero brillante. Controles de seguridad azar en varios punto de una red y esperar que los adversarios tropiecen con ellos como si de minas terrestres y alambre de puas en un campo de batalla se trata,
+    las empresas prodrian colocar 'controles de prevencion' en cada lugar de la cadena de ataque que sabian que los adversarios tenian que recorrer.
+    XDR 'reduce la probabilidad de un impacto meterial' en una organizacion debido a las amenazas, estas tools 'implementan como una plataforma', en lugar de una producto individual que se compra ea un proveedor y se instala en su red, lo que facilita
+    su implementacion, update, ampliacion y administracion.
+    AL crear una lente mas amplia con visitas en tiempo real de los movimientos de los adversarios,'se mejora drasticamente la agilidad de la ciber'.

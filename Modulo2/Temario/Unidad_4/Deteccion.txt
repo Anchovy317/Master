@@ -1,1 +1,20 @@
-aa
+1. Antivirus:
+    El nacimiento de antivirus fue el 'catalizador de la ciber', Creeper, hizo su apariencia en 1971 y fue un programa que podia moverse entre pc, imprimiendo un mensaje. BOB Thomas, de ARPANET.
+    Despues de estos incidentes tuvieron 16 anhos para que surgieran los primeros de antivirus. Hay dos tecnicas principales que emplean los antivirus para poder detectar el malware, basadas en 'las firmas' y en el 'coportamiento'. Como el machine
+    learning o el analisis de sandbox, pero estas las usan pricipales los conocidos como antivirus de nueva generacio, los 'patrones ' archivos empleados por los antivirus para poder identificar a los antivirus. Un patron cuanta con la definicion
+    de virus pequenhas y basiacas, lo que le ayudan a identificarlo. Un programa antivirus contara con una 'gran  biblioteca de virus', los patrones suele contener 'definiciones parciales' que le ayuden a identificar archivos potencialmente
+    maliciosos, pero no es el encargado de tomar la decision la info de los archivos que hay en  el pc. [https://www.thepcinsider.com/history-of-computer-virus/]
+
+2. EDP:
+    Una plataforma de detencion en punto finales(EDP) es una solucion que se implementa en dispositivos de puntos finales con el obj de detectar ataque de malware basado en arch, detectar actividades maliciosas y proporcionar las capacidades de
+    investigacion y reparacion necesarias para responder a alertas e incidentes de seguridad dinamicos.
+    Las capacidades de detenccion son variasbles, pero las soluciones avanzadas utiliza multiples tecnicas de deteccion, desde IOC estaticos hasatra analisis de comportamiento.
+    EDP deseavle ya que puede 'administrar principalmente en la nube', lo que permite el monitoreo continuo y la recopilacion de datos, junto con la capacidad de tomar medidas de remediacion remotas, sin importar que el punto final este en la red
+    corporativa o fuera de la oficina.
+
+3. IDS:
+
+    Un sistema de deteccion de intrusos(IDS) es una tool para detectar un uso no autorizado a un ataque a un server, red o infraestructuras de telecomunicacio, 'identificar algo sospechoso' que suceda en el sistema y alertas al respecto.
+        1. IDS basado en red: Monitorear las comunicaciones de red.
+        2. IDS basado en host (HIDS): Pueden analizar la actividad dentro de un server en particular. Info detallada sobre lo que sucede en sus activos de info critico para poder detectar y responder ante acciones maliciosas o anormales que se
+        encuentren en su entorno.

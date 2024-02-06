@@ -144,6 +144,47 @@ Fortalecimiento de la infraestructura tech de medidas de seguridad.
 
 
             2/ SEGURIDAD Y CONTROL DE ACCESO A LA RED:
+                1. Firewall local:
+                    Un firewall local se encuentra 'directamente en el servidor', por medio de una agente o app, permite al user inspecionasr todo el trafico que entra en el pac y analizar el trafico desde la tarjeta de red  del server por medio de un
+                    network driver.
+                    Son de tipo Stateful, son los encargados de permitir y bloquear el trafico. En Windows panel de control, mientras que en linux emplea IPtabkes[Photo].
+                    1. Firewall Stateful:
+                        Tambien conocido como cortafuegos, efectua un seguimiento y monitorear el estado de las conexiones de red activas mientras analizan el trafico entrante y busca posibles riesgos de trafico de datos.  Situandose en la capa 3 y 4
+                        del modelo (OSI).
+                        Bloqueo de 'trafico desginado como peligroso, ya que sea  de entrada o salida de una red. El monitoreo del estado y del contexto de las comunicanones de la red es clabe. Conceptos
+                            1.  Contexto: Se refiere a las direcciones, paquetes y otros tipos de datos del Protocolo de Internet (IP), se puede usar para patrones repetidos. Puede examinar el contenidos de los paquetes de datos que han atravesado el
+                                cortafuegos/
+                            2. Estados: Conocer el estado mas reciente o inmediato de un proceso de solicitudes.
+                            3. Funcionamiento: Estado recopila ddatos sobre cada conexion ejecutada a traves de el y perfiles de conexiones seguras. Si no hat conexion segura se descartara los datos..
+                            4. Inspeccion de paquetes: El firwall examina el contenido de un paquete de datos y lo compara con los datos de otros paquetes que han superado el firewall. El filtrado de paquetes estaticos basado en la red examina la conexion de red
+                                pero solo a medida que entran y centrandose en los paquetes de los encabezados , info limitada su origen y destiono.
+                            5. Protocolo de control de transporte (TCP): principal porotcolo utiliza Internet para el envio y recibimiento de datos. Ademas de ayudar en la trasmision de info, el TCP contiene datos que puden resultar en el restablecimiento
+                                (RST) de la conexion, deteniendola por completo. Dicta cuando debe terminar la transmision con el comando FIN y agrupar los datos en paquetes que se volveran ea ensamblar en datos entendibles por el receptor.
+                                Usa el TCP para realizar  un seguimiento de las conexiones examinando el contenido de los paquetes creados en el proceso TCP, realizacion de 3 capas[Sincronizar o SYN, sincronizacion-reconocimiento o SYN-ACK, o reconocimiento ACK]
+                                para la identificacion.
+                            6. TCP 3-Way Handshake Procces: Implica la sincro de ambos lados del proceso de transmision para iniciar una conexion y asegurar que se pudan reconocer mutuamente. Cada lado retrasmite info al otro.
+                            7. Diferencia con firewall sin estado: COnjunto predefinido de reglas para frustar a las amenaza, utilizacion de clave(como la de fuente destino) para verificar si hay alguna amenaza). No hay diferenciacion con los tipos de nivel de
+                                trafico de app(HTTP, HTTPS, SSH, FTP, VOLOP....), por lo que sera menors riguroso y mas susceptibles a ataques. [https://study-ccna.com/tcp-three-way-handshake/]
 
+                2. Politicas de seguridad:
+                    Conjunto de normas, reglas, y directrices establecidas en una organizacion para salvagurdar la info y reducir los riesgos. Reglas de control de trafico, permite gestionar y administrar diff dispositivos de seguridad para determinar las
+                    acciones que debe generar.
+                    Obj; generar una accion de permitir o bloquear. Cada 'condicion de coincidencia' que se aparece en la imagen pudee ser opcional para una pilitica de seguridad. Realizacion de AND se considera que el trafico coincide con una politica
+                    unicamiento cuando coincide con todas las politicas de seguridad. Se coloca en or, si el trafico coincide con la coindicion siempre que coincida con el valor. [photo]
+                    Las coindincidencia mas especifica en una politica de seguridad filtran el trafico con mayor precision. Usar solo la tupla de 5(direcciones IP de origen y destino, puertos de I/O y protocolos). Esta tabla describe la 'politica de seguridad
+                    local'. El pc que se encuentra enla zona Trust inicio en el firewall y configura una politica de seguridad para que la zona Trust acceda a la red inical. [Photo]
+
+                    Para identificar que zonas pretenecen al firewall y cuales a las redes externas, hay que tener en cuanta que el firewall se ecuentra en la zona local. Es comun que los firewalls que tengan un 'poitica predeterminada'.
+                    En la tabla, la direccion IP de un server dentro de esa red empresarial 10.1.1.1 y los users del area de oficinas que esta en el segmento de red 10.2.1.0/24 acceder al server. La politica de seguridad que esta configurada es policy1,
+                    tras funcionar durante un periodo de tiempo, dos serves de dos PCs de oficina temporales (10.2.1.1 y 10.2.1.2) [Photo]
+
+
+                    La politica de la zona de seguridad policy2, que es la utiliza que se han confugurado, de policy1. Rango de direcciones de policy1 contiene el ranfo de direcciones de policy2, no se puede con policy2.[Photo][https://forum.huawei.com/enterprise/es/fundamentos-sobre-firewalls-pol%C3%ADticas-de-seguridad/thread/667225878968549376-667212881550258176]\
 
             3/ RESPALDO Y ELIMINACION SEGURA DE DATOS:
+                1. Backup:
+                    Proteccion de la info, caso de peridida de datos, ya que sea debido a una catastrofe natural, por el robo o destruccion accidental o no de la info, se contara con la posibilidad de recuperar la info.
+                    Estas politicas incluira la 'frecuenci' con la que se realiza las copias de 'tipo backup' definir 'tiempo de retencion' de cada copia, si es necesario cifrarlas.
+                2. Borrado seguro:
+                    La informacion pasar por tres fases de su vida util 'generacion, transformacion y destruccion'. Una politica de borrador seguro se debe aplicar tanto a la info digital como la fisica
+                    [https://www.aecemco.es/publicaciones/INCIBE-Guia_ciberseguridad_borrado_seguro_de-datos-empresariales.pdf]
