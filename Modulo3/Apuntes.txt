@@ -1,0 +1,25 @@
+certificacion:
+    CEH, CISSP, AZURE, AWS
+
+Claves simetricas
+Claves Asimetricas
+Fijarse  en la utilidad en vez de cada cifrado.
+
+Cifrado en flujo - Cifrado en bloque
+
+c= m*k
+c= contrasenha
+m= mensaje
+k= clave
+
+PUERTA XOR = 0 0(0), 11(0), 01(1), 10(1)
+n *(n-1)/2 pares de claves necesarias
+    21[en clase]*(21-1)/2= 210
+
+y = f(x)
+x = dervada de f-1(y)= resulta inviable computacionalmente.
+
+RSA y DEFFIE-HELLMANQUES
+
+SISTEMAS HYBRIDOS:
+

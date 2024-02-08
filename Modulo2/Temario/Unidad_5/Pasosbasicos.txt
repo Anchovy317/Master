@@ -35,37 +35,107 @@
             Los riesgos es una paso crucioa; en la gestion de la seguridad de una empreas. Debe tener en cuenta 'alcance y contexto' de los diferentes procesos de empreas. Se puede recurir a la norma de
             ISO 27001[https://normaiso27001.es/a8-gestion-de-activos/], tabla de  amenazas y vulnerbilidades:
                 Amenazas:                                                                                   Vulnerabilidades:
-                1.
-                2.
-                3.
-                4.
-                5.
-                6.
-                7.
-                8.
-                9.
-                10.
-                11.
-                12.
-                13.
-                14.
-                15.
-                16.
-                17.
-                18.
-                19.
-                20.
-                21.
-                22.
-                23.
-                24.
-                25.
-                26.
-                27.
-                28.
+                1. Acceso a la red o al sistema de informacion por personas no autorizadas.                 Interfaz de user complicadad.
+                2. Amenazas o ataques con bomba.                                                            Password predeterminadas no modificadas.
+                3. Incumplimiento de relaciones contractuales.                                              Eliminacion de medios de alamacenamiento sin eliminar datos.
+                4. Infraccion legal                                                                         Sensibilidad del equipos a los cambios de voltaje
+                5. Comprometer info condifidencial                                                          Sensibilidad del equipo a la humedad, temp o contaminantes.
+                6. Ocultar la identidad de un user                                                          Inadecuada seguridad del cabledoa
+                7. Danho causado por un tercero                                                             Inadecuada gestion de capacidad del sistema.
+                8. Danhos resultantes de las pruebas de penetracion                                         Gestion inadecuada del cambio.
+                9. Destruccion de registros                                                                 Clasificacion inadecuade de la informacion
+                10. Desastre generado por cuasas humanas                                                    Control indecuado del acceso fisico
+                11. Desasatres naturales                                                                    Mantenimiento inadecuado.
+                12. Revelacion de informacion                                                               Inadecuada gestion de red.
+                13. Divulgacion de pass                                                                     Respaldo inapropiado o irregular.
+                14. Malversacion y fraudes                                                                  Inadecuada gestion y proteccion de pass.
+                15. Errores en mantenimiento                                                                Proteccion fisica no apropiada.
+                16. Fallo de los enlaces de comunicacion                                                    Reemplazo indecuado
+                17. Falsificacion de registro                                                               Falta de formacion y conciencia.
+                18. Espionaje industrial                                                                    Inadecuada segregacion de funciones.
+                19. Fuga de informacion                                                                     Mala segregacion de la instalacion operativa y de pruebas.
+                20. Irrupcion de procesos de negocio                                                        Insuficiente supervison de los empleados y vendedores.
+                21. Perdida de servicios de apoyo                                                           Prueba de software Insuficiente
+                22. Mal funcionamiento                                                                      Falta de politica de acceso o politica de acceso remoto
+                23. Codigo malicioso                                                                        Ausencia de politicas de acceso o politica de acceso remoto.
+                24. Uso indebifo de los sistemas de info                                                    Falta de control sobree los datos de entrada y salida.
+                25. Uso indebido de las tools de auditoria                                                  Falta de documentacion interna.
+                26. Contaminadacion                                                                         Carencia o mala implementacion de la auditoria interna.
+                27. Errores de software                                                                     Falta de politicas para el uso de la criptografia.
+                28. Huelagas o paros                                                                        Falta de derecho de acceso a determinado empleo
+                29. Ataques terroristas                                                                     Desproteccion en equipos moviles.
+                30. Huertos o vandalismo                                                                    Desproteccion de los moviles.
+                31. Cambio involuntario de datos en un sistema de info                                      Ausencia de sistemas de identificacion y autenticacion
+                32. Cambio no autorizado de resgistros.                                                     No validacion de los datos procesados.
+                33. Instalacion de software                                                                 Ubicacion vulnerable a inudacion.
+                34. Acceso fisico no autorizado                                                             Mala seleccion de datos de prueba.
+                35. Uso no auth de materal copyright                                                        Copia no controlada de datos.
+                36. Uso no auth de software                                                                 Descarga no controlada de Internet
+                37. Error de user                                                                           Uso incontrolado de sistemas de info.
 
-3.Controles
+    2. Evaluacion de riesgo:
+        Es una fase crucial en la gestion de riesgo. Se lleva a cabo una evaluacion exhaustiva de la 'frecuencia y probabilidad' de ocurrencia de cada riesgo, asi como de su posible 'impacto' o la consecuencia.
+        Cabe destacar que no importa el numero de riesgo identificacdos, la clave radica en la 'inclusion de todos los elementos' en una matriz de riesgo. Esta matriz posibilita la valoracion adecuada de cada
+        riesgo con el fin de determinar los significados para la ejecucion y continuidad.
+        En el caso de que estos riesgos surjan, es fundamental establecer 'controles' que ayuden a reducir el impacto.
+            1. Frecuencia: se refiere a cuan a menudo se espera que ocurra un risgo:
+                1. Improbable
+                2. Posible
+                3. Ocasional
+                4. Probable
+                5. Frecuente
+
+            2. Impacto: se refiere a la 'gravedad' de las consecuencias si el riesgo ocurre:
+                1. Insignificante
+                2. Menor
+                3. Moderado
+                4. Mayor
+                5. Catastrofe
+
+    3. Presentacion de riesgo:
+        Es un aspecto esencial en la gestion de riesgos. Lo mas eficaz de logarlo es mediante un mapa de riesgo:
+            -Verde: No indican alarma inmediata, es imp la supervison y analisi periodico
+            -Amarillo y naraja: Atencion para evitar sorpresas futuras en la operacion de la empresa.
+            -Rojo: Critico, implementar controles y planes de accion para mitigar el riesgo.
+
+3.Controles:
+    El siguiente paso es la defincion de controles que ayuden a reducir los riesgos identificados en la organizacion. Existen diversos 'marcos de trabajo' que facilita las gestion. ISO dispone del estandar
+    ISO/IEC 27032, controles tecnicos aplicables que se indican en ISO/IEC 27002, marco de trabajo COBIT y NIST.
+    Numerosas opciones disponibles [https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.ipd.pdf]
+        1. Tools: El CSF del NIST puede ser una tool valiosa para la definicion de los controles en la estrategia de gestion de riesgos de una organizacion. El CSF brinda un lenguaje comun y significatido con el fin de comprender y gestionar
+        los ciber-riegos.[photo]
 
 4.Gestion de confuguracion
+    Es asegurar que los sistemas operativos y las apps se actualicen despues de la publicacion del parche. Una vez identificados todos los activos acudir a una 'Gestion de confuguracion de seguridad.(SCM)' Es una tool imp para Tl, que combina
+    practicas clave como la evaluacion de vulnerabilidades, la rectificacion automatizacion y la evaluacion de las conf. Una solucion SCM para 'reducir sus superfice de ataque' mediante el monitoreo proactivo y el fortalecimiento continuo
+    de las configuracion de seguridad en los sistemas.
+
+        1. Pasos del proceso:
+            1. Decubrimiento de activos
+            2. Establecer una estructura segura aceptable como lineas base para cada tipo de dispositivos en el entorno y alcance de control.
+            3. Evaluacion de los activos de manera constante automatizada en funciones de intervalos predefinidos.
+            4. Gestion de excepciones: Deben asegurarse de que alguien se ocupe de los esfuerzos de corregir o le otorgue una excepcion.
+
+        2. Principales Carateristicas del SCM:
+            1. Sistemas operativos y soporte de apps: Si tienen la intencion de aprovechar al maximo la capacidad de admin de la conf de seguridad, las organizaciones deben segurarse de que su solucin de SCM brinde asistencia para cada sistema
+                operativo.
+            2. Flexibilidad de politicas: Las tipos de soluciones SCM ofrecen varias plantillas de politicas y conf, lo que permite a las organizaciones ajustar la tool a sus propios requisitos.
+            3. Escalabidad: Deben de asegurarse de que pueden ajustar los intervalos, el impacto y el alcance del analisis de conf de seguridad.
+            4. Cierre de ciclo operativo: Pueden optar por una interaccion manal con la solucin SCM
+
+        3. Cosideracion para garantizar la seguridad:
+            1. Archivos ejecutasbles y plantillas dde documentos: Todos los ejecutables y las plantillas de documentos compartidos deben estar ubicado en un directorio de solo lectura.
+            2. Directorio personal: Cada user debe contar con su propio registro personal en la red, a fin acceder a la lectura y la escritura.
+            3. Directorio compartidos: El uso directorios compartidos por varios users es una practica habitual en el trabajo.
 
 5.Politica de seguridad
+    Es un sistemas que 'regula el estado de la info y los servicios' es una organizacion.
+        1. Analisis de riesgo:
+            Se puede identificar los 'riesgo' que la organizacion presenta, los 'impactos, potenciales, las amenazas y la vulnerbilidades' que pueden ser explotadas. Al aplicarla la proteccio para cumplir con ella.
+        2. Medidas de seguridad:
+            1. Preventivas:
+                Reducen el riesgo proteccion fisica, medidas tecnicas, y medidas de procedimentales.
+            2. Analiticas:
+                Orientasdas a la identificacion del riesgo, proteccion fisica, medidas tecnicas y analisis BIA del impacto de los activos.
+            3. Correctivas:
+                Impiden o reducen el impacto sobre los activos y proteccion fisica, medidas tecnicas, medidas procedimentales.

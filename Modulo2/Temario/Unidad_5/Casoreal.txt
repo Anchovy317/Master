@@ -1,0 +1,19 @@
+Controles basicos:
+    1.Parchear lo conocido:
+    2.Disenhar una red moderna
+    3.Cambiar credenciales por defecto
+    4.Fortificar las configuraciones
+    5.Evitar errores en la programacion
+    6.Ensehar seguridad
+    7.Pentesting
+    8.Criptografia segura
+    9.Sistema de gestion de identidades
+
+Controles avanzados:
+    1. Monitorizacion continua
+    2. Pentesting persistente
+    3. Revision de codigo
+    4. Data Leak Prevention
+    5. Control de cuenta privilegiosa
+    6. Digital Surveillance
+    7. Anti-APT
