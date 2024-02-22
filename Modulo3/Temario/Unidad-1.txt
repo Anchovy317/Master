@@ -1,0 +1,58 @@
+1. Introduccion a criptografia:
+    La criptografia es una disciplinna que se basa en conceptos y tecnicas matematicas para 'garantizar la comunicacion digital y proteger informacion sensible'. Tiene coomo obj proteger la confidencialidad
+    integridad y auth de la informacion. Utilizacion de cifrado 'avanzado y firmas digitales' como elementos valiosos de la privacidad y seguridad.
+        1. Codidencialidad:
+             Se centra en prevenir la divulgacion de informacion, los "algoritmos de cifrado" protegen los datos mediante la utilizcion de una 'clave secreta' para convertir el texto claro en un texto cifrado
+             legible unicamente por el destinatario previamente establecido.
+                1. Proteccion de datos sensibles
+                2. Competitividad empresarial
+
+        2. Integridad:
+            Detecta y evita modificacione en la informacion, 'firmas digitales' es fundamental para asegurar que los datos no se hayan alterado. Solo necesitamos que un solo bit de los datos cambien para que
+            la firma sea distinta; esto permite a las partes que se comunican, realizar comprobaciones de integridad con respecto a su informacion y asegurarse de que nada haya cambiado.
+                1. Prevencion de manipulacion
+                2. Garantia en trasacciones
+        3. Autenticidad/ Autenticacion (no repudio):
+            Permite atribuir de manera confiable una identidad al remitente de una msj o al autor de la informacion. Esta propiedad es crucial para evitar el no repudio que el autor pueda autorizar el msj,
+            los certificados digitales son una tools muy util para la auth, porque se basan en funciones hash y cifrado de clave pub:
+                1. Seguridad en la comunicacion
+                2. Prevencion de sumplementacion
+        El equilibrio adecuado entre estos tres pilares crea un entrono seguri en el que la innformacion puede influir sin temor a acceso no autorizado.
+
+    2. Primitivas criptograficas:
+        1. Numeros aleatorios
+        2. Cifrado simetrico o de clave secreta
+        3. Cifrado asimetrico o de clave pub:
+        4. Funciones hash
+        5. Firmas digitales
+    3. Para que sirve la aleatoriedad:
+        1. Generacion de claves criptografiacas:
+            En la generacion de claves es un proceso critico para garantizar la seguirdad de los sistemas. Repercusiones:
+                1. Eliminacion de patrones
+                2. Resistencia a ataques
+        2. Generacion de nuemro criptograficos:
+            Se utiliza para generar numeros criptograficos, como los que usan en algoritmos de cifrado y firmas digitales. La falta de patrones en estos numeros ayudan a que el sistema sea mas seguro.
+                1. No repeticion
+                2. Dificultad de prediccion
+        3. Vector de Iniciacion(IV) en cifrado:
+            En los cifrados simetricos, tales como el modo de operacio CBC (Cipher Block Chainin), la aleatoriedad se utiliza para generar vectores de inicializacion.
+                1. Prevencion en firmas digitales:  Los IV evitan que los bloques identicos en el mensaje original generen cifras identicas.
+        4.Protocolos de generacion de numero aleatorios:
+            Seguridad en firmas: Anhaden capas de seguirdad, evitando la posibilidad de que adivinen o reproduzcan los valores generados
+2. Cifrado simetrico o de clave secreta:
+    Los algoritmos de cifrado simetrico o de clave priv se subdivide en 2 grupos:\
+        CLAVE PUB --- CLAVE PRIV: CIFRADO EN FLUJO CIFRADO EN bloque
+    1. La libreta de flujo por exelencia es una libreta de un solo uso, en la que el msj se mezcla con una clave igual de larga [ C = m * k]
+        Los generadosre pseudoaleatorios generaban la secuencia cifrante (keystream)k, apartir de una semilla s, que constituye la clave de cifrado. Esta secuencia cifrante se mezcla con el mensaje.
+        Como Vernam, la mayoria de los cifrados en flujo propuestos hasta la fecha en la literatura de activos.
+        Un cifrado de flujo aditivo binario  es un cifrado en flujo sincronimo(la secuencia k se calcula idependiente del texto claro m y cifrado c) en el los digitos de la secuencia cifrantem de texto
+        claro y del texto son binarios y la funcion de salida f es la funcion XOR:
+    2. Cifrado en bloques:
+        Se enfoca en la tarea de tratar el texto claro de manera distinta, dividiendo en bloques de igual longuitud para ser cifrados de forma bloque bloque. Se utiliza un tamanho de bloque de 64 o 128 bits
+        igual que con el cifrado en flujo , en este ambos users comparten una clave de cifrado simetrica.
+        El texto claro original no es un multiplo exacto  del tamanho en bloque, por lo que hay que recurir a esquemas de relleno[https://es.wikipedia.org/wiki/Esquema_de_relleno], los bits restantes
+        hasta completar el tamanho de bloque se rellenan(pading) con bits extras seguiendo algun tipo de convencion, esto garantiza que cada bloque posea la longuitud necesaria para el proceso de cifrado.
+
+3. Cifrado asimetrico o de clave pub
+4. Funcion hash
+5. Firmas digitales y certificados digitales
