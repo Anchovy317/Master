@@ -1,0 +1,15 @@
+Forma tradicional de cifrado.
+    1. Grupos de cifrado simetrico:
+        Dos grupos:
+            1. Cifrado en flujo:
+                Se cifra de uno los caracteres individuales, frecuentemente se denominan digito binario, que se corresponde con un mensaje de texto claro,
+                mediante una trasformacion  de cifrado que varia con el transcurso del tiempo.
+                La libreta en el flujo por excelencia es una libreta de un solo uso, en la que el mensaje se mezcla con una clave
+                [c=m*k]
+                Los genradores pseudoaleatorios generaban la secuencia cifrante(keystream)k, a partir de una semmilla s, que constituye la clave de
+                cifrado. La mayoria en flujo aditivo binario es un cifrado en flujo sincrono, en el que los digitos de la secuencia cifrantes, del texto
+                claro y del texto cifrado son binarios  y la funcion de salida f es la funcion XOR[Phoy]
+            2. Cifrado en bloques:
+                Tienen la capadcidad de cifrar simultaneamente los bloques de un mensaje de texto claro usando una transformacion de cifrado fijo.
+
+

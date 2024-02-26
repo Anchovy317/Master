@@ -1,0 +1,50 @@
+Es una disciplina que se basa en el concepto y tecnicas matematicas para 'garantizar la comunicacion digital y proteger info sensible.'  Tiene como obj proteger las cofiedencialidad, intergridad y autenticacion de la informacion, 'cifrado avanzado
+y firmas' como elemento valioso de la privacidad  y seguridad en la actualidad.[Photo]
+
+    -Objetivo de la criptografia:
+        Integridad, cofidencialidad y autenticacion son los tres principios fundamental de la criptografia, ya que protege  conla la exposicion, alteracion y suplemetacion  de info.
+
+            1. Confidencialidad:
+                Se centra en prevenir la divulgacion no auth de informacion. Los algoritmos de cifrado protegen los datos la utilizacion de una 'clave secreta' para convertir el texto claro en un texto cifrado, legible unicamente por el
+                destinatario previamente establecido.
+                    1. Proteccion de datos sensibles: Garantiza que la info critica, como pass, datos financieros o mensajes personales.
+                    2. Competitividad empresaral: Permite a las permite a las organizaciones proteger sus secretos comerciales y estrategias, manteniendo ventajas competitivas.
+
+            2. Intregridad:
+                Permite detectar y evitar modificaciones no auth en la informacion. La 'firma digital' es fundamental para asegurar que los datos no han sido alterados. Solo necesitamos que un solo bit de los datos cambie para que la firma
+                sea distinta; esto permite a las partes que se comunican, realizar comprobaciones de integridad con respecto a su informacion  y contruir una pieza clave de las firmas digitales.
+                    1. Prevencion de manipulacion: Evita que los datos criticos sufran modificaciones no auth, asegurando su exactitud y Confidencialidad.
+                    2. Garantia en transacciones: Entornos financieros y comerciales, la integridad es esencial para asegurar la validez de las transacciones.
+            3. Auth:
+                Permite atribuir de manera confiable una identidad al remitente de un mensaje o al autor de una accion. Esta propiedad es crucial para evitar el no repudio, asegurar el remitente no pueda negar la autoria del msj.
+                    1. Seguridad en la comunicaciones: Asegura que la info provenga de funtes legitimas y que las transacciones sena autenticas.
+                    2. Prevenvion de suplantacion: Impide que entidades no autorizadas asuman identidades falsas para acceder a informacion sensible.
+                El equilibrio adecuado entre tres pilares crean un entorno seguro.
+
+            4. Primiticas criptograficas:
+                Son algoritmos criptograficos de bajo nivel:
+                    1. Numeros aleatorios: En la criptografia para la generacion de claves y vectores de iniciacion, nonces, salts, asegurando la imprevisibilidad y fortaleza de los sistemas crip.
+                    2. Cifrado simetrico o de claves secretas: Utilizan claves cortas para cifrar rapidamente grandes cantidades de datos.
+                    3. Cifrado asimetrico o de clave publica: Adecuado para cifrar pequenhas cantidades de datos, este tipo de cifrado es clave para el intercambio seguro de claves secretas y firmas.
+                    4. Funciones hash: Valor de salida fijo a partir de una entrada de longitud variables y son disenhadas para ser uniderecionales, lo que significa que es practicamente imposible reverti el proceso
+                        o encontrar dos entradas distintas.
+                    5. Firma digital: Capa de seguiridad adicional a los documentos digitales, permitiendo la verificacion de la integridad y la autenticidad del autor.[photo]
+
+            5. Aletoriedad en la criptografia:
+                1. Criterios esenciale:
+                    -Independencia de valores.
+                    -Impredencialidad.
+                    -Distribucion uniforme.
+                2. Generacion de claves criptografiacas:
+                    1. Eliminacion de patrones: La aletoriedad garantiza que las claves generadas no sigan patrones precindibles.
+                    2. Resistencia a ataques: La introduccion de elementos aleatorios hace que sea mas dificil para un atacante.
+                3. Generacion de numeros criptografia:
+                    1. No repeticion: La aleatoriedad garantiza que los numeros generados no se repitan.
+                    2. Majora la dificultad de prediccion: Numeros verdaderamente aleatorios dificultan.
+                4. Vector de Iniciacion (IV) en cifrado:
+                    1. Prevencion de de ataques de patron.
+                5. Protocolos de generacion de numeros aleatorios:
+                    1. Seguirad en firmas digitales.
+
+
+                [https://www.random.org/]

@@ -1,0 +1,47 @@
+Realizacion del caso practico:
+
+    1.Intro:
+        Ralizacion de seguridad de Capture Flag. Consite en aporbechar el analisis que estamos realizando en Worry free
+        por medio de de esta prueba de identificacion.
+    2.Planteamiento del problema:
+        Se pondra a prueba diferentes funcionalidades de proteccion en Endpoint:
+
+            1. Firewall
+            2. Deteccion de ransomware
+            3. Filtracion de navegacion
+            4. Funciones de EDR/XDR
+            5. Analisis de eventos y telemetria
+    3.Desarrollo:
+
+        1. Evaluacion de analisis de mercado:
+            Investigacion y confirmar si el fabricante del producto en Endpoint es evaluado y se encuentra como lider en
+            Gartner.
+            OBJ: Porporcionar la imagen y nombre de ese estudio de mercado e indicar el nombre de todos los fabricantes
+            lideres.
+        2. Ataque de Powershell: Los eventos generados anteriormente(Proteccion y analisis de solucion EDR/XDR). Genera
+            en la consola un analisis de causa principal de alguno de los eventos, identifica, registra los procesos que
+            intentan ejecutar la amenaza con el comando de Powershell antes que fuera bloqueado.
+            OBJ: Generar un analisis de causa principal, registrando los procesos ejecutados por el comando e indicar cual
+            es el nombre de este ataque que se realizo  por medio de Powershell.
+        3. Bloquear navegacion a faceboock: Este resto es necesario utilizar el producto de seguridad para bloquear el acceso
+            a la pagina de faceboock. Es qu manualmente generes la restriccion a estas paginas, por lo que debes explorar la
+            consola para encontrar la forma de hacerlo.
+            OBJ: Cual es el nombre de la categoria que muestra cuando se bloquea el acceso.
+        4. Poner a prueba la solucion de seguridad en los portales peligrosos, utilizando urls que parece no tener peligro.
+            [http://[offsethumorous].com] OBJ: Cual es el tipo de amenza.
+        5. Ejecutar un ransomware: Realizacion de para poner a prueba dentro de un entorno seguro como servidor AWS
+            [https://github.com/UIM-SEC/ransomware-samples]. Busca la muestra de ransomware Ryuk que fue conocida por atacar
+            a entidades publicas y utilizar el protocolo RDP para propagarse(Podra propagarse por la conexion RDP de un servidor.)
+            Revisa el github Password: infected. Si la amenaza es detectar autobloque la ejecucion del archivo, envialo a cuarentena
+            y genera registros en la consoloa.
+            [https://www.welivesecurity.com/la-es/2021/08/04/ransomware-ryuk-analisis-principales-caracteristicas/ ]
+            OBJ: ryuk tiene un nombre de firma de deteccion cual es.
+        REQUISITOS DE ENTREGA:
+            1.Haber realizado el ejercicio 2 (no evaluable) que se encuentran en Classroom:
+                Ejercicio 2 | Protección y Análisis de ataques en una solución EDR/XDR
+
+            2.Tener acceso a un servidor en la nube (como AWS, GCP o Azure) o tener una máquina virtual, con el agente
+                Worry Free instalado. El servidor a utilizar no debe tener instalado ningún antivirus.
+
+            3.Tener acceso a la consola Worry Free.
+            4.Tener en la consola Worry Free el agente/servidor ubicado en la carpeta que fue asignada a tu usuario XX_master
