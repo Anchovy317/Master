@@ -53,6 +53,53 @@
         El texto claro original no es un multiplo exacto  del tamanho en bloque, por lo que hay que recurir a esquemas de relleno[https://es.wikipedia.org/wiki/Esquema_de_relleno], los bits restantes
         hasta completar el tamanho de bloque se rellenan(pading) con bits extras seguiendo algun tipo de convencion, esto garantiza que cada bloque posea la longuitud necesaria para el proceso de cifrado.
 
-3. Cifrado asimetrico o de clave pub
-4. Funcion hash
-5. Firmas digitales y certificados digitales
+3. Cifrado asimetrico o de clave pub:
+    En 1976  Whitfield Diffie, Martin Hellman y Ralph Merkle  modificaron el panorama de la seguiridad informatica con la introduccion de la criptografia asimetrica o clave pub.
+    En el diagrama se puede apreciar las etapas del proceso: M(mensaje), E(cifrado), C(mensaje cifrado), de
+4. Funcion hash:
+    Una fuincion hash es una opeacion matematicas denotada como H, que transforma un bloque de datos de tamanho variable m en un valor hash de tamanho h=M(m). La calidad de una funcion se mide por una capacidad
+    de producir salidas uniformes y pseudoaleatorios para un amplio rango de entradas.
+    Fundamental de una funcion hash es asegurar su integridad de los datos. En la entrada m causara un cambio significante para su entrada hash, afectando alrededor de 50% de sus bits.
+    [SHA256(“2”) =d4 73 5e 3a 26 5e 16 ee e0 3f 59 71 8b 9b 5d 03 01 9c 07 d8 b6 c5 1f 90 da 3a 66 6e ec 13 ab 35]
+    [SHA256(“3”) =4e 07 40 85 62 be db 8b 60 ce 05 c1 de cf e3 ad 16 b7 22 30 96 7d e0 1f 64 0b 7e 47 29 b4 9f ce]
+
+    -Popiedades de una funcion hash:
+        1. Universalidad: Procesar cualquier cadena de datos, sin imp su tamanho
+        2. CompresionL Genera un tamanho fijo
+        3. Eficacioa: Calculo del hash para una cadena de n bits se realiza en tiempo lineal O(n)
+    -Propiedades adicionales:
+        1. Resistencia a preimagen: es imposible encontrar un mensaje cualquier que produzca el mismo hash
+        2. Resistencia a la seguinda premiagen : Es imposible encontrar otro mensaje que produzca el mismo hash.
+        3. Resistencia a colisiones: imposible encontrar dos mensajes cualquiera que produzca el mismo hash.
+
+    -Lista de requisitos:
+        1. Tamanho de entrada variables: H se aplica a un bloque de datos de cualquier tamaho
+        2. Tamanho de salida fijo: H produce una salida de longuitud fija
+        3. Eficacia: H(x) es relativamente facil de calcular para cualquier x dada, permitiendo que tanto las implementaciones de hardware como de sofware sean practicas
+        4. Resistente a premiagenes: Para cualqier valor hash dado h, es computablemente inviable encontrar y distonto a x tal que H(x)=h
+        5. Resistente a la seguinda premiagen: Para cualquier x dado, es computacionalmente inviable encontrar y dist x H(y)=H(x)
+        6. Resistente a las colisiones: Es computacionalmente inviable encontrar cualquier par (x,y) con x  distinto a y tal H(y)=H(x)
+        7. pseudoaleatoriedad: La salida H supera a las pruebas estandar de pseudoaleatorios
+
+    -Algoritmos:
+        -SHA-2
+        -SHA-3
+        -Whirlpool
+        -BLAKE
+        -RIPEMD-160
+        -SHA-2
+        -SHA-3
+        -MD5
+        -RIPEMD-128
+        -SHA-1
+        -SHA-3
+    -Funciones:
+        1. Authe de mensajes
+        2. Firmas digitales
+        3. Proteccion de pass, deteccion de instruccuones y virus, blockchain
+
+5. Firmas digitales y certificados digitales:
+    -Como es el proceso:
+        1. Firmas un mensaje: Para la firma m, este se cifra con una clave privada del propietario (kpr), dando como resultado s=sing(kpu, m) = Ekpr(m), solo el propietario realiza esta operacion.
+        2. Verificar la firma: El mensaje original y el mensaje firmado (CIFRADO)(m,s) se comparten publicamente, cualquier persona puede descifrar la firma s con la clave pub del pro m'=D(kpub(s))
+        3. Validar la firma: Se compara el resultado m' con el mensaje. Si ambos coinciden, m=m' la firma se valida.
