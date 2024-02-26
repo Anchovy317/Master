@@ -55,7 +55,19 @@
 
 3. Cifrado asimetrico o de clave pub:
     En 1976  Whitfield Diffie, Martin Hellman y Ralph Merkle  modificaron el panorama de la seguiridad informatica con la introduccion de la criptografia asimetrica o clave pub.
-    En el diagrama se puede apreciar las etapas del proceso: M(mensaje), E(cifrado), C(mensaje cifrado), de
+    En el diagrama se puede apreciar las etapas del proceso: M(mensaje), E(cifrado), C(mensaje cifrado), D(descifrado), M(mensaje descifrado):
+        - Una kpub, conocida por cualquiera
+        - Una kpri, que es confidencail y solo la conoce el propietario
+    En una clave publica y privada estan estrechamente relacionadas, que apartir de la pub, es computacionalmente imposible deducir la clave priv. Los algoritmos de la pub se contruyen con la funcion unidireccional;
+        - y=f (x) es facil de calcular, pero
+        - y=f(-1)(y) resulta inviable computacionalmente
+
+    -Porque sucede esto:
+        1. Factorizacion de enteros: se utiliza el algoritmo RSA, de dos numeros primeros grandes es sencillo de obtener, pero factorizar dichos es dificil
+        2. Logaritmo discreto: Metodo Diffie-Hellman que se basa en la dif de resover la ecuacion g(y)=x; conocidos x y g resulta muy dificil encontrar y.
+    -La criptografia mas eficaz el la hibrida:
+        1. Los algoritmos de 'criptografia de clave secreta' se caracteriza por su rapidez, lo que los convierte en idoneos para cifrar grandes volumenes de datos.
+        2. Los de de clave pub, son mas lentos perfectos para cifrar la clave secreta utilizando crifrado de clave secreta.
 4. Funcion hash:
     Una fuincion hash es una opeacion matematicas denotada como H, que transforma un bloque de datos de tamanho variable m en un valor hash de tamanho h=M(m). La calidad de una funcion se mide por una capacidad
     de producir salidas uniformes y pseudoaleatorios para un amplio rango de entradas.
@@ -103,3 +115,62 @@
         1. Firmas un mensaje: Para la firma m, este se cifra con una clave privada del propietario (kpr), dando como resultado s=sing(kpu, m) = Ekpr(m), solo el propietario realiza esta operacion.
         2. Verificar la firma: El mensaje original y el mensaje firmado (CIFRADO)(m,s) se comparten publicamente, cualquier persona puede descifrar la firma s con la clave pub del pro m'=D(kpub(s))
         3. Validar la firma: Se compara el resultado m' con el mensaje. Si ambos coinciden, m=m' la firma se valida.
+    -Que implica la validacion positiva:
+        1. Integridad: Daber que el documento original no se ha manipulado
+        2. Autenticacion: Verificacion de firmante
+        3. No repudio: El firmante no puede echarse atras.
+    2. Aproximacion de la firma digital:
+        -Proceso:
+            1. Creacion de la firma: Comienza con un mensaje m, calcula el hash h=H(m), se cifra con su clave priv para crear una firma s= sign(kpv h)= Ekpr(h)
+            2. Verificacion de la firma: Se puede verificar calculando el hash h1=H(M) del mensaje recibido y decifrando el hash h2= Dkpub(s) con la clave pub de remitente, si coinciden, entonces se
+                valida la firma.
+    3. Ataque Man-in-the-middle:
+        Este ataque representa riesgos significativos en la criptografia de claves pub, en el cual la autenticidad de las claves pub intercambiadas entre los users no esta garantizada, ocurre cuando un
+        agente malicioso se interpone en la comunicacion, pudiendo interceptar y manipular el mensaje.
+
+    [https://en.wikipedia.org/wiki/Public_key_certificate]
+    [https://en.wikipedia.org/wiki/Public_key_certificate]
+    4. Certificados digitales:
+        1. Version: Estandar X509, actualmente 3
+        2. Numeros de serie: Usando por la autoriedad del certificado, con un entropia de 20 bits.
+        3. Identificacion de algoritmos: Posicion para ser protegido por la firma.
+        4. Identificacion de la autoridad de certificacion: (Distinguished Name, DN único:
+            1. CN-COmmonName
+            2. L-LocalityNAme
+            3. ST-StateOrProvinceName
+            4. OrganizationNAME
+            5. OU=OrganizationUnityNAME
+            6. C-CountryName
+        5. Periodo de validez del certificado
+        6. Nombre distiguido unico del titular del certificado
+        7. Informacion de la clave pub:
+            1.Algoritmo
+            2.Tamanho de la clave
+            3.Exponente
+            4.Modulo
+        8. Estensiones(opcional): Se intdujo en la version 3, una AC puede utilizar extensiones para emitir un certificado solo para un proposito especifico, como un server HTTP. Pueden ser criticas o no criticas.
+        9. Algoritmos de firma del certificado: RSA, DSA, ECC.....
+        10.Firma del certificado: El valor de la firma, se corresponde a la clave privada de la AC el hash de la informacion del certificado, firma permite verificar que la clave pub aparece en el certificado.
+
+    4, Los ceritificados digitales no son iguales:
+        Misma criptografia per distinta auth:
+            1. Validacion de Dominio:
+            2. Validacion de Organizacione
+            3. Validacion Extendida
+        Es relevante destacar que, a pesar de las discrepancias en los procedimientos de validación, todos los certificados digitales ofrecen una seguridad criptográfica igual. Esto se traduce en 256 bits de cifrado simétrico y 2.048 bits de cifrado de clave pública,
+        lo cual garantiza una protección robusta.
+    5. Como se geera un certificado digital:
+        1. Para generar una clave pub: primero hay que generar una clave pub/priv
+        2. Presentar la Kpub a ka AC, la AC verifica contruye una declaracuion m que dice la pub J m=(kpub, ID)
+        3. La AC firma el mensaje m usando su jpriv y devuelve a alice tanto el mensaje m como la firma s=EkpCA (m)
+            [Certa = [(kpub, ID), Ekpub, ID]]
+
+        Este par CertA es el certificado para kpubA. Cuando Bob necesita la clave pública de Alice, primero obtiene el certificado de Alice y verifica la firma de la AC en el certificado. Si la firma es válida, Bob confía en que kpubA es la clave pública de Alice.
+        El propósito principal de la firma digital de la AC es probar a Bob que la declaración m fue emitida por la AC. Por supuesto, para verificar la firma de la AC, Bob necesita la clave pública de la AC kpubCA.
+        Normalmente, las claves públicas de las ACs vienen preinstaladas en el sistema operativo o en el navegador web. En otras palabras, simplemente asumimos que la clave pública de la AC ya está disponible en la máquina de Bob.
+        Ahora, si Mallory intenta reemplazar kpubA por kpubM, será detectado. Así, se dice que los certificados vinculan la identidad de un usuario a su clave pública.
+
+    6. Firma digital:
+        1. Verificacion de la firma: calculando el hash con la kprib
+        2. Validacion del certificado
+        3. Verificacion de la firma:Bob calcula el hash h1 = H(m) de los datos recibidos y descifra el hash cifrado h2 = Dkpub(s) con la clave pública de Alice extraída del certificado. Si los hashes coinciden (h1 = h2), entonces Bob ha confirmado la integridad, autenticidad y no repudio de los datos.
