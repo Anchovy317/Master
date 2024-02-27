@@ -1,0 +1,51 @@
+1. Inicio de auditoria:
+    1. Preparacion:
+        Esto implica 'identificar las tipologias de activos' que posee la organizacion, presentando esspecial atencion a aquellos que se consideran mas criticso o que presentan una gran volumentarias.
+        Existen muchos tipos de activos como  variedad de SO, los dispositivos de comunicacion, los dispositivos de seguridad, los apps webs (IFA + server Web), los recursos de alamcenamiento (base de datos), los
+        recursos desplegados en nube(virtualizacion) o en nube privada (AWS, Azure, GCP) los activos legacy, entre otros.
+
+        -Que hacer con un inventario de activos:
+            1. Verificacion se factible de obtener un 'inventario independiente', con el fin de contrastarlo con el equipo de CISO dispone, verificando si coincide  en el volumetrica  de activos y tipoligia
+                asociada.
+            2. Analisis de inventario, centrando el 'analisis en los activos' que estan instalados, en uso forman parte de entornos productivos. Se debe de tener en cuenta que cualquier organizacion existen ]
+                diversos entornos y no todos ellos requieren cumplir con los mismos requisitos de ciber, esta primera seccion  ayudara a tener en alcance de activos real y susceptibless de ser evaluados en cuanto a
+                controles de seguridad.
+            3. Una vez que se dispone del inventario, emplear 'tablas dinamicas' con el fin de evaluar de manera mas sencilla las tipologias de activos  que conforman las infrasestructuras a evaluarlas.
+            4. Se debe identificar una 'muestra del 10% de activos para cada tipologia' que se decida incluir en el alcance, lo que permita obtener una muestra realmente representativa. Conforma el 'scope' y
+                permitira comenzar la auditoria.
+        -Definir el alcance:
+            1. Auditoria de Gobierno y politicas
+            2. Auditoria de sistemas
+            3. Auditoria de redes
+            4. Auditoria de gestion de vulnerabilidades
+            5. Auditoria de gestion de acceso
+            6. Auditoria de dispositivos finales
+            7. Auditoria de de entorno cloud
+            8. Auditoria de proteccion de datos
+            9. Auditoria de cumplimiento
+            10. Auditoria de sistemas de porteccion de ante amenazas
+            11. Auditoria de sistema de detencion
+            12. Auditoria de ante incidentes
+            13. Auditoria de seguridad fisica
+            14. Auditoria de redes wifi
+        Es relevante destacar que en cada organizacion 'existe un plan de auditoria' en el cual se establece las estrategias de la institucion a corto, medio y largo plazo para programar que auditoria y sobre
+        que ambitos se llevaran acabo, alternando asi con la evaluacion de procesos tanto globales como locales.
+    3. Notificar e iniciar la auditoria(kick-off):
+        El inicio de cada auditoria se lleva a cabo mediante una notificacion del CAE(Chief Audit Execution) o del maximo responsab;e de area en cuestiones, como el director de riesgos de Ciberseguridad.
+        Esta notificacion, que suele realizar por correos, informa a todas las partes interesadas e involucradas sobre aspectos fundamentales como[fechas, de inicio de la auditoria, el proposito de la misma y los
+        ambitos auditables que seran obj de analisis].
+        Tras la notificacion por medio de email, se convoca las partes involucradas a una 'reunin inical de lanzamiento', reuninon se explican los 'obj, alcance y ecpectativas ' de la auditoria.
+    4. Peticiones inicailes y debilidades autoidentificados:
+        Una vez se celabra la reunion, se enviara la msisma a los equipos interesados, acompanhados de una borrada de peticiones iniciales, estas contituyen documentado mediante el cual el equipo auditor solicita
+        una 'serie de evidencias' que permite evaluar los precesos que sustentan los ambitos aditores, incluyendo los ambitos de auditoria. Ficheros de peticiones iniciales, se suelen comunicar una propuesta de reuniones
+        iniciales que serviran para enterder mejor la labor de los equipos auditados y alinear expectativa en cuanto a la recepcion de evidencias.
+        Se senhalar en esta iteracion que la unidad auditorias puede comunicar de forma proactiva debilidades de seguridad autoidentificadas(Self Identified Issues) acerca de las que ya se encuentra trabajados y para las que
+        tengan un 'plan de accion definido'.
+    5. Seguimiento y aclaracion de peticiones(deadline):
+        Fase del proceso de arranque de auditorias, el equipo auditor hara un seguimuento sobre las respuestas/evidencias recibidas y hara una clasificacion de cualquiera ambiguendad en relacion con la mismo con los interlocutores
+        aditados. Establcer 'plazo de entrega' para garantizar la entrega a tiempo de la informacion solicitada. Es importante trasladar al principoo de arranque de las auditorias que dichos plazos has de ser representados.
+        A medida que comenzara las evidencias empieza el trabajo de campo(fieldwork)
+2. Trabajo de campo
+3. Proceso de cierre
+4. Documetacion final
+5. Post-auditoria
