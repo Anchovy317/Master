@@ -1,0 +1,94 @@
+1. Auditoria de ciberseguridad:
+    La  auditoria  de ciberseguridad es un proceso critico que requiere una evaluacion y un analisis minucioso de los sistemas, redes y politicas de seguridad de una organizacion.
+    La auditoria de ciber se enfoca en las supervision del 'gobierno corpotativo' en cuanto a la seguridad informatica. Los 'CisossH' juegan un papel fundamental en este procedimiento
+    puesto que son los encargados de dirigir y supervisar los controles y procedimientos ; procedimiento puesto que son los encargados de dirigir y supervisar  los controladores y
+    de ciberseguridad. Su tarea es relevante para asegurar para asegurar que la que la organizacion no solo cumpla con sus obligacion  legales y reglamentarias, sino que tambien mantegan
+    una posicion de seguiridad firme y resistente ante las amenaznas futuras.
+    -Cual es el obj:
+        La auditoria de ciberseguridad es un proceso sistematico y periodicos que se lleva a cabo para 'evaluar las medidas de seguridad ' de una organizacion
+        en cuanto a su eficaxia e 'identificar vulnerabilidades' tanto en los activos de la empresa como los procesos que ejecutan  los equipos implicados.
+        El obj principal de la auditoria es 'incrementar el nivel de madurez' de las ciber en las organizaciones hasta alcanzar un estado optimo.
+    -Como se implementan:
+        La auditoria de ciber es un conceptos que va mas alla de las simples evaluaciones de seguirdad estandar. Este proceso analiza las politicas de seguirdad
+        comprender la infrastructuras de tech, y los procedimientos operativos en cuerso, con el fin de garantizar las funciones esenciales de deteccion, proteccion
+        y respuestas ante cualquier tipo de amenzas  ciberneticas, es imp en cuanta el 'entorno' durante la auditoria.
+
+    -Tercera linea de defensa (3LoDL):
+        En el ambito de la auditoria  de ciberseguridad, la tecera linea de defensa se refiere a un 'equipo de auditoria interna independiente'. Su funcion es evaluar y garantizar la eficacia
+        de los controlses por la primera linea de defensa (1LoDJ), que se reidere a las operaciones  y la segudo linea de defensa (2LoD) que se ocupa de la gestion de riesgo y
+        cumplimiento.
+        La independencia de 3LoD es esencial para llevar a cabo una 'evaluacion objetiva'.
+2. La funcion de Auditoria en la empresa:
+    1. Colaborar con  1 LoD(+ GRC):
+        En la auditoria, existe una esencial colaboracion con la primera linea de defensa(1LoD), que comprende los equipos de operaciones y Tech IT. Esta colobaraciones permite un
+        enfoque unificado para 'gestionar los riesgos'.
+        La auditoria de ciberseguridad interactuar de manera segnificativa con los equipos a cargo del Gobierno corpotativo, Riesgo y Cumplimineto(GRC), esta interaccuin garantiza que
+        las medidads de ciber esten acordes con los obj estrategicos de la empresa.
+    2. Desemprenhar roles y responsabilidades:
+        Los auditores cumplen roles fundamentales en la identificacion de riesgo y vulnerabilidades. Estos profesionales se comunican directamente con la alta direccion para 'informar hallazgos'
+        encontrados y 'ofrecer recomendaciones' que mejoren la postura de seguridad de la organizacion.
+        La funcion de auditoria se caracteriza por ser un ente independiente, significa que las consclusiones derivadas de los ejercicios de auditoria tiene un impacto directo en los responsables,
+        de los equipos auditoria.
+    3. Obtimizar las politicas y practicas de seguridad:
+        La funcion de auditoria de ciber tienen un gran impacto en una organizacion, siendo reconocida como una funcion esencial, asistencia en la identificacion de debilidades y posibles
+        amenazas  sino que tambien contribuye a la optimizacion continua de las politicas y practicas de seguridad, lo que garantiza la confianza tanto intenta como externa.
+    4. Colaborar con Equipos de IT/RT:
+        La ciber, a pesar de ser un campo reciente, ha adquirido una relevancia significativa en las utlimas decadas debido a la evolucion tecn. Que se introducen nuevas tech y las recientes
+        dependencia de los sistemas informaticas, las organizaciones han tenido que adaptar sus estructuras para mantenerse al dia.
+
+3. Tipos de Auditoria de ciber:
+    1. Auditorias internas:
+        Se lleva a cabo por profesionales que pertenecen a la organizacion, los auditores poseen un profundo conocimiento de las infrastructuras, las politicas y los procedimientos de la empresa:
+            1, Conocimiento interno: Los auditores internos conocen la estructura interna de la empresa, lo que les permite evaluar de manera especifica los riesgos y vulnerabilidades adaptarse a las
+            operaciones/negacios de la empresa.
+            2, Costos efectivo: Al usar recursos internos, la auditorias internas puede ser mas rentable en comparacion con la contratacion de equipos externos.
+            3, Culturas organizacional: Los internos estan al tanto de la cultura y los valores de la organizaciones, lo que facilita la comunicacion y la implementacion de recomendaciones.
+    2. Auditorias externas:
+        1, Objetividad: Los auditores externos brindan una evaluacion obj y sin prejuicios, ya que no estan vinculados emocional no profesionalmente con la organizacion.
+        2, Experiencia especializadas: Los auditores externos tienen experiencia en dff areas, lo que les permite ver mejor las soluciones y medidas aplicadas en el mercado y validar la efectividad
+            de estas soluciones al requerir su implantacion en diversas entidades.
+        3, Independencias: Garantizar que los auditores externos esten influenciados por la politica interna y pueden efocarse unicamente en los aspectos tecnicos y de seguridad, convirtiendolos en aditores
+            solidos, lo que evita que puedan estar infuenciados en beneficio de la organizacion.
+
+    3, Gobierno del CISO:
+        La auditoria del gobierno del CISO se centra en 'evaluar la eficacioa de la politicas y practicas de gobierno' de ciber en la organizaciones. Utilizan los equipos de CISO son las
+        'metricas (KRls)' que permite medir el nivel actual de madurezde sus procesos y darles seguimiento de forma periodica con el obj de incrementarlos hasta los niveles definidos como aceptables en cada organizacion
+    4. Redes(On-premise Cloud):
+        La aplicacion de una auditoria de redes implica 'evaluacion de la seguridad de las redes' de la organizacion, tanto en ambientes locales como la nube, evaluar la confg de los dispositivos de comunidades y elementos
+        de seguridad  que ajusten a los requirimientos establecidos en las politicas de cualquier institucion y se apoyan en guias de buenas practicas.
+    5. Gestion de vulnerabilidades:
+        Deurante una auditoria de gestion vulnerabilidades, se lleva a cabo una 'evaluacion de la posibles vulnerabilidades' que puedan surguir en los elemtentos que conforman la infrastructuras. Incluye tanto
+        dispositivos de red como sistemas.
+        Un aspecto relevante en el ciclo de vida de las vulnerabilidades es la gestion que se realiza de la misma evualuando, 'funciones que llevan a cabo los equipos de ciber (CISOs)':
+            1. Identificacion:
+                En esta primera etapa se presenta las posibles vulnerabilidades en los sistemas, apps o redes de la organizaciones. Esto se puede conseguir mediante analisis de seguridad, escaneso
+                de vulnerabilidades, pruebas de penetracion y otros metodos de evaluacion de seguirdad. La identificacion de vulnerabilidades en ciertas areas de arch puede efectuar mediante un comunicado confidencial
+                del fabricante del dispositivo, asi como de la tech.
+            2. Evaluacion y priorizacion:
+                Identificadas las vulnerabilidades, resulta imperativo examinar su impacto y probabilidad de explotacion. Las vulnerabilidades se clasifican en funciones de su gravedad (CVSS[https://www.first.org/cvss/]).
+            3. Resolucion:
+                Se desarrolla e implementan soluciones para reducir las vulnerabilidades identificadas, la reconfiguracion de dispositivos de seguridad, la actualizacion de sofware o la modificacion de conf de sistemas para
+                cerrar brechas de seguridad existentes.
+            4. Seguimientos:
+                Es  crucial realizar una supervision continua de la vulnerabilidades y las medidas de mitigacion implementadas, mantener datos detallesdos de las vulnerabilidades detectadas, las acciones emprendidas para solucionar
+                y cuallquier info relevante con el proceso de gestion de vulnerabilidades.
+            5. Actualizacion y parches:
+                Verificar la ejecucion de una correcta gestion de update y parches de seguridad perteniente en sistemas y apps en funciones de posibles debilidades de seguridad identificadas.
+            6. Gestion de acceso priviligiados(PAM):
+                Acceso limitado de recursos critivos de los que son responsables, realiza el bajo principio de minimo privilegio.[https://www.microsoft.com/es-cl/security/business/security-101/what-is-privileged-access-management-pam]
+                [https://www.cyberark.com/es/]
+            7. Antimalware:
+                Evaluacion de la eficacia de las medidas Antimalware implementadas en la organizacion y la cobertura de la solucion Antimalware en total de los activos de la empresa.
+    6. Tipologias de auditoria:
+        1. Red Team
+        2. Pentesting paara web/moviles
+        3. Auditoria forense
+        4. Auditoria de Ciclo de vida del desarrollo de sofware (SDLC)
+4. El auditor de ciberseguridad
+    1.Certified Information Systems Auditor (CISA - ISACA
+    2.Certified Information Systems Security Professional (CISSPP - ISC²)
+    3.Certified Ethical Hacker (CEH)
+    4.Certified Cloud Security Professional (CCSP)
+    5.NIST (National Institute of Standards and Technology)
+    6.CIS (Center for Internet Security)
+    7.ISO 27001/27002 -- ISO 27302:
