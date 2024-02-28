@@ -45,7 +45,51 @@
         Fase del proceso de arranque de auditorias, el equipo auditor hara un seguimuento sobre las respuestas/evidencias recibidas y hara una clasificacion de cualquiera ambiguendad en relacion con la mismo con los interlocutores
         aditados. Establcer 'plazo de entrega' para garantizar la entrega a tiempo de la informacion solicitada. Es importante trasladar al principoo de arranque de las auditorias que dichos plazos has de ser representados.
         A medida que comenzara las evidencias empieza el trabajo de campo(fieldwork)
-2. Trabajo de campo
+2. Trabajo de campo:
+    Tambien es conocido como fieldwork, es una fase crucial del proceso de auditoria que trata sobre una serie de procesos de auditorias que trata sobre una seri de procesos que incluyen la recopilacion de datos, la realizacion de pruebas
+    y la evaluacion de sistemas de control internos de una organizacion.
+    Las reuniones se llaman Status meeting y soft-exit meeting son de suma importancia que permite informar, presentar y discutir los hallazgos fundamentales de la auditoria.
+
+    1. Field and Status Meetings:
+        Edequipo de auditoria interna llevara a cabo el trabajo de campo el cual implica una serie de tareas detalladas y meticulosas: desde el analisis de documentacion y aclaracion de evidencia hasta el analisis  de demos y el analisis de
+        configuracion especifica.
+        Para garantizar una comunicacion fluida y eficaz, se estableceran 'reuniones periodicas' con los equipos aditados, con el fin de informar el nivel de progreso en la auditoria y el proceso en la recepcion de evidencia. Se trata de comuinicar
+        aquellas debilidades que se vayan identificando y se hara el seguimiento sobre el envio de entregables.
+        La ejecucion de estos entregables se llevara a cabo mediante un documento denominado 'microplanificacion'. Este documento detallara las pruebas a ejecutar en relacion con la evidencias solicitudes.
+    2. soft-exit(conclusiones preliminares):
+        Al concluir el trabajo de campo, se llava a cabo una reunion de conclusiones preliminares que reuniran a todas las partes involucradas. Dueranre esta reunion, se presentaran los 'principales hallazgos' obteniendo a partir
+        de las pruebas llevadas a cabo y se les asignara una criticidad.
+            1,Intro:
+                -saludo y agradecimiento por la colaboracion
+                -Breve descripcion del proposito de la reunion: presentar preliminares y discutir hallazgos iniciales.
+            2.Contexto de la auditoria:
+                -Explicacion sobre el alcance y los obj de la auditoria
+                -Enumeracion de los sistemas, apps u procesos auditodos
+            3.Hallazgos principales:
+                -Presentacion de deficencias y debilidades identificadas
+                -Destacar practiacas de seguirdad efectivas y areas de mejoras
+            4.Metodos y tools utilizadas
+                -Descripcion de la tecnica de evaluacion, prueba de seguridad y tools utilizadas durante la auditoria
+                -Clasificacion sobre como se obtuvieron los resultados
+            5.Casos de uso y ex concretos
+                -Exposicion/explicacion de debilidades especificas identificadas.
+                -Demostracion de control de segiridad.
+            6.Clasrificacion de dudas y malentendidos
+                -ceder el derecho de palabra al equipo auditado con el obj de que realicen cualquier duda o pregunta acerca de los resultados
+                -Tratar de aclarar cualquier malentendido o discrepancia entre resultados u realidad
+            7.Comentarios y contextos adicional
+                -Discusion sobre posibles controles mitigaciones ante la identificacion de determinadas debilidades
+            8.Expectativa para el informe final
+                -Descusiones sobre que esperar del informe de la auditorias
+                -Acuerdo sobre futuras interacciones y envio del borrador del pliego recomendaciones
+            9.Confirmacion de proxima pasos
+                -Resumen de los pasos a seguir despues de soft-exit
+                -Acuerdo sobre futuras interacciones y envios del borrador del pliego de recomendaciones
+            10.Agradecimiento
+                -Agradecimiento por el esfuerzo, colaboracion y asistencias
+                -Ofrecimiento de disponibilidad para consultar o aclaraciones en caso de ser necesarias
 3. Proceso de cierre
-4. Documetacion final
+
+
+4 Documetacion final
 5. Post-auditoria
