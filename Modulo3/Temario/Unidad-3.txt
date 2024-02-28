@@ -89,7 +89,55 @@
                 -Agradecimiento por el esfuerzo, colaboracion y asistencias
                 -Ofrecimiento de disponibilidad para consultar o aclaraciones en caso de ser necesarias
 3. Proceso de cierre
-
-
+    El proceso de cierre de una auditoria es una fase crucil que asegura todas las observaciones, hallazgos y recomendaciones que se documenten de manera efectiva y se comuniquen a las partes interesadas.
+    Este proceso consta de 'un borrador de recomendaciones' y proceso de 'revision de firamas' de las recomendaciones.
+    1. Borrador de recomendaciones:
+        Preparacion de este, que se basa en 'hallazgos y evaluaciones' realizadas durante la auditoria e incluye 'sugerencias especificas' disenhadas para mejorar la seguridad de la organizacion.
+        Proporciona una orientacion especifica sobre las 'acciones correctivas' que las organizaciones deben tomar para mejorar su postura de seguridad.
+    2. Consideracion para redactar una recomendacion:
+        1. Titulo:
+            -Titulo claro y descriptivo
+            -EX: Implementacion de Aunteneticacion Multifactor (MFA) en los sistemas
+        2.Contexto y justificacion:
+            -Breve explicacion del contexto que condujo a la recomendacion
+            -Justificacion solida sobre la recomendacion es necesaria para mejorar la seguirdad de las organizacion.
+            -EX: Falta de auditacion multifactor aumenta el riesgo de acceso no autorizado a los sistemas  de la organizacion.
+        3.Descripcion de la recomendacion:
+            -Descripcion detallada de la recomendacion
+            -Incluir detalles sobre que se debe hacer y porque es importante
+            -EX: Implementar la autenticacion multifactor en todos los sistemas de la organizacion.
+                -Fecha limite para la Implementacion
+                -Posibles evidencias que se pueden proporcionar para demostrar la implementacion.
+                   -Se proporciona un listado del sistema y apps que permite la autenticacion multifactor
+                   -Se efectuara un analisis de soluciones MFA del mercado, con aplicabilidad a la organizacion.
+                   -Se identifica que users requieren acceso a que sistemas y se configura la autenticacion multifactor en consecuencia.
+                -Seguimiento y evaluacion periodica: Se realiza auditorias para asegurar cumplimientos.
+         4.Soporte de evidencias :
+            - Incluir datos, estadisticas o analisis que respalden la necesidad de la recomendacion.
+            - Referencias a estandares de la industria, marcos de seguridad, o regulaciones que respalden la recomendacion.
+            -EX: La implementacion de la autenticacion multifactor  conun analisis detallado.
+        5.Beneficios esperados
+            -Descripcion de los beneficios que se esperan obtener al implementar la recomendacion
+            -Como implementar mejoras
+            -Implementacion de MFA que reducira el riesgo de acceso no autorizado a los sistemas de la organizacion.
+    3.Firmas de recomendaciones:
+        Se procede a llevar a cabo un procedimiento meticuloso de revision y firmas, se procede la accion de detalles y se efectua ciertos ajustes en el texto de las recomendaciones.
+        -Consejos para la obtencion de furmas:
+            1.Claridad
+            2.Justificacion fundamentales
+            3.Relevancia para la organizacion
+            4.Impacto y prioridad
+            5.Comunicacion efectiva
+            6.Negociacion y compromiso
+            7.Sensibilidad a la preocupacion de los interesados
+            8.Documentacion detallada
+            9.Compromiso de las partes interesadas
+            10.Follow-up y apooyo continuo
+            11.Documentacion formal
+            12.Trasparencia y honestidad
+    4.Tipos de recomendaciones:
+        1.Recomendacion de atenccion inmediata(RAI)
+        2.Recomendacion de atencion prioritaria(RAP)
+        3.Observaciones(Issues)
 4 Documetacion final
 5. Post-auditoria
