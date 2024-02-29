@@ -139,5 +139,36 @@
         1.Recomendacion de atenccion inmediata(RAI)
         2.Recomendacion de atencion prioritaria(RAP)
         3.Observaciones(Issues)
-4 Documetacion final
-5. Post-auditoria
+4 Documetacion final:
+    La documentacion final de una auditoria es una fase que consisite en un conjunto de informes y registros que detallan el procedimiento de auditoria, los hallazgos y las recomendaciones pertinentes.
+    1. Informe y rating:
+        La alcanzar un acuerdo sobre el conjunto de recomendaciones, el equipo de auditoria, que trabajo en el campo, junto con el lider del equipo, de auditoria comienza a trabajar en un informe detallado de
+        la auditoria. Presenta 'hallagos identificados, las pruebas realizadas, y recomendaciones definidas.'
+        Un muchas oscasiones incluye un sistema de rating que clasifica el estado de ciberseguridad de la organizacion.[Sistema de rating: rojo(insatisfacorio), amarillo(mejorable), verde(acaptable),
+        verde oscuro(excelente)]
+        1.Insatisfacorio: Deficencias graves en los controles de seguiridad.
+        2.Mejorable: No existen deficiencias criticas, pero existen debilidades que deben abordarse para reforzar la seguridad.
+        3.Aceptable: Cumple con los estandares minimos de seguiridad.
+        4.Excelente: Alto nivel de madurez en la seguridad de la organizacion.
+    2. Hoja de trabajo:
+        Las josas son docuementos que 'registran en detalle los pasos y todas las actividades' efectuadas duranre la auditoria.
+        1/Para que sirve:
+            1.Como registro detallado y estrucurado de las acciones realizadas durante la auditoria.
+            2.Respalda las conclusiones y recomendaciones del informe final.
+            3.Facilitar revision, lo que posibilita que otros auditores, expertos en ciber o partesn interesadas puedan revisar el trabajo realizado.
+            4.facilitar analisis posterior, asi como la identificacion de areas de mejora en el proceso de auditoria.
+        2/Como se genera:
+            1. Auditores que presentan un adocuemntacion rigurosa y detallada de las actividades realizadas.
+            2. Hojas de trabajo se estructuran en base a los objetivos y alcance de la auditoria.
+            3. Los auditores emplean tools especificas de auditoria para registrar las actividades realizadas.
+            4. La hoja de trabajo se examina y valida de manera cuidadosa y mutua entro los auditores.
+    [Oficina de Supervision interna (OSI): https://sites.google.com/immune.institute/2311-vcso-modulo-3-u3/unidad-3-auditor%C3%ADa-end-to-end/3-proceso-de-cierre?authuser=1]
+5. Post-auditoria:
+    1. Revision del plan de accion presentado
+    2. Validacion del nivel de especificacion
+    3. Asignacion de resposables
+    4. Seguimuneo regular
+    5. Registro de progreso
+    6. Ofrecer apoyo
+    7. Cierre del proceso de segimiento de recomendaciones
+
