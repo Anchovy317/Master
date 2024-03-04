@@ -1,0 +1,100 @@
+1. Universo auditable:
+    1.Auditoria de gobierno y politicas:
+        Se enfocan en la revision  minuciosa de los documentos normativos y manuales de seguridad:
+        -Acciones:
+            1. Analizar la coherencia y alineaccion de estas politicas con los estandares y regulaciones relevantes del mercado.
+            2. Realizar una evaluacion con el fin de determinar si el equipo de CISO cumple y aplica de manera estricta los requisitos establecidos en las politicas de organizacion.
+            3. Verificar los indicadores de seguimiento o procesos periodicos que el equipo de CISO tiene establecido para supervisar los niveles de cumplimiento en contraste con los requeridos por la politicas coporativas.
+        -Posibles peticiones:
+            1. Politicas y procedimientos de seguiridad
+            2. Documentos de cumplimiento normativos.
+            3. Indicadores de seguimiento.
+            4. Minutias de foros y comites.
+    2.Auditoria de Sistemas:
+        Se enfoca en la evaluacion de la configuracion de servidores y estaciones de trabajo, asi como la identificacion de posibles deficiencias o fallas en la configuracion de seguridad de estos.
+            -Acciones:
+                1. Analisis detallado de las politicas de seguridad implementadas en los sistmeas operativos y la aplicacion de los controles definidos en las guias de bastionado pertinente.
+                2. Realizar pruebas ofensivas simuladas con el fin de evaluar la resistencia del bastionado ante posibles amenazas.
+            -Peticiones:
+                1.Inventario de servers, bases de datos, elementos virtulizados, estaciones de trabajo...
+                2.Detalle de los sistemas operativos desplegados, versionados...
+                3.Extraccion de configuracion de seguirdad.
+    3.Auditoria de redes:
+        Enfoque se centra en los dispositivos de comunicacion como routers, swithes, balanceadores...
+            -Acciones:
+                1. Realizar un analisis minucionso de la configuracion de los dispositivos, evaluados la implemtacion de la politicas de seguridad y verificando la efectividad de otros dispositivos: firewalls, IPS/IDS, elementos de acceso...
+            -Peticiones:
+                1.Configuracion de dispositivos de red(routers, swithes, VPN, DNS..)
+                2.Extraccion de las reglas de Firewalls, IDS/IPS.
+                3.Disenho de la arqueitectura de red y listado de protocolos.
+    4.Auditoria de gestion de vulnerabilidades.:
+        Se centra en los procedimientos de identificacion, analisis, seguimiento, resolucion y reporte del ciclo de gestion de vulnerabilidades.
+            -Acciones:
+                1. Analizar el escaneo de vulnerabilidades en sistemas, apps y activos expuestos.
+                2. Clasificacion y priorizar las vulnerabilidades segun el impacto.
+                3. Revisar la efectividad de los procesos y flujos de parcheado y actualizacion.
+            -Peticiones:
+                1. Listado de vulnerabilidades y estados
+                2. Inventario de activos y versiones
+                3. Completitud de los escaneos
+                4. Seguimiento periodico para la resolucion de vulnerabilidades
+                5. Flujos de actualizacion y parcheo establecido.
+
+    5.Auditoria de gestion de accesos:
+        Se prestara especial atencion de la mecanismos y politicas de acceso a sistemas y datos sensibles.
+            -Accion:
+                1. Evaluar la implemetacion de controles de acceso, asignaccion de privilegios y se verificara la coherencia con las politicas de seguridad establecidas.
+            -Peticciones:
+                1. Listas de users, roles y privilesgios.
+                2. Sistemas de autenticacion y configuracion
+                3. Registros de acceso.
+                4. Recertificacion de users, roles y permisos
+                5. Implementacion de tools de gestion de acceso privilgiados y configuracin de reglas/politicas.
+    6.Auditoria de dispositivos finales(endpoits):
+        En el mecanismo y politicas de acceso a sistemas de datos sensibles.
+            -Acciones:
+                1. Verificar la presencia de agentes de proteccion contra amenazas
+                2. Comprobar las actualizaciones de seguridad y revisar que la configuracion de seguridad vigente comtempla posibles amenazas externas.
+            -Peticiones:
+                1. Inventario de Pcs, Portatiles y dispositivos moviles.
+                2. Configuracion de seguridad aplicada a cada tipologia de dispositivos finales.
+                3. Completitud del despliegue de agentes de software y actualizaciones.
+    7.Auditoria de entornos Cloud (publico/privado):
+        Se centra en la seguridad en plataformas tanto publicas como privadas.
+            -Accion:
+                1.Evaluar aspectos criticos, tales como la gestion de identidades, la configuracion de permisos, la encriptacion de datos y la segmentacion y segregacion de redes. IMP para la nube y conexiones con infraestructuras On-Permise.
+            -Peticiones:
+                1.Configuracion de seguridad en la nube.
+                2.Politicas de acceso y control de datos en la nube.
+                3.Registros de actividades en la nube.
+                4.Configuracion de dispositivos de segregacion de red en la nube.
+    8.Auditoria de proteccion de datos DLP:
+        Fugas de informacion
+            -Acciones:
+                1. Revisar las politicas de proteccion ante fugas de datos.
+                2. Evaluar los sistmeas, procesos y medidas implementadas en relacion con la Clasificacion de informacion.
+                3. Efectuar pruebas de exfiltraccion de datos para evaluar los controles implementados.
+            -Peticiones:
+                1. Datos identificados como sensibles
+                2. Politicas, procesos y medidas de clasificacion de datos.
+                3. Sistmeas de prevencion de perdidad de datos DLP y reglas.
+    9.Auditoria de sistemas de deteccion:
+        Evaluacion de las tools y sistemas empleados con el fin de identificar y alertar sobre posibles amenazas de seguridad.
+            -Accion:
+                1.Revisar la configuracion de deteccion, la efectividad de las alertas y la capacidad de respuestas a incidentes.
+            -Peticones:
+                1.Walkthrough/configuracion/reglas de sistmeas de deteccion y prevencion de intrusiones(IDS/IPS)
+                2.Walkthrough/configuracion/reglas de sistmeas de deteccion de anomalias (SIEM)
+                3.Walkthrough/configuracion/reglas de sistmeas de deteccion de eventos de seguridad (SOAR)
+    10.Auditoria de respuestas a  incidentes:
+        Evaluar la eficacion de los planes y procedimientos establecidos para responder a eventos de seguridad.
+            -Accion:
+                1. Evaluar la rapidez y eficacion en la identificacion, contension y recuperacion ante incidentes.
+            -Peticciones:
+                1.Planes de respuesta anta incidentes Playbooks
+                2.Equipos y tools usados para la respuesta a incidentes.
+                3.Registro de incidentes.
+                4.Informes de revisisones forenses.
+2. Microplanificación:
+3. Generando un entregable:
+4. Generando un informe:
