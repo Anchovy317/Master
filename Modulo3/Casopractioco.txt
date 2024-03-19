@@ -1,0 +1,53 @@
+CASO PRACTICO:
+    1. Como pudieron pertpetar la defensa perimetral sin ser detectados y acceder a la info que residia en el sistema.
+    2. Como pudieron hacerse con el control de los sistemas con permisos priviligiados, controlando los sistemas y movimiento
+        a su entojo.
+    3. Evaluar la criticidad del incidente y determinar que info se vio comprometida, cuanto a clientes se vieron afectafos y medidas.
+    4. Recuperar la confianza a sus clientes mediante una notificacion directa de que su info personal se habia compremetidos.
+
+-Analizar de manera exhautiva la vigente solucion PAM, de gestion de accesos. Implica evaluar los contoles y reglas establecidadsd para
+esta solucion, garantizar una gestion de eficiente y seguria a los accesos priviligiados. Analisis de el alcanze de la solucion  sobre
+el total de sistemas de la organizacion, verificando el nivel de enrolamiento y ratificar la existencia de controles que evitasen el bypass
+a la solucion.
+
+!REQUISITOS DE LA ENTREGA:
+    Nombre de la recomendacion, soporte de la recomendacion, recomendaciones, en la relacion con el PAM.
+
+    1. Configuracion y politicas:
+        -Se han establecido politicas de acceso priviligiados claras y actualizadas
+        -La configuracion PAM cumple con las mejores practicas de seguridad
+    2. Auteticacion y autorizacion:
+        -Se utiliza MFA para acceder al PAM
+        -Se aplica adecuadamente los principoos de menor priviligios para los users.
+        -Procesos de revision y aprobacion para otorgar accesos priviligiados.
+    3.Registro y Supervision:
+        -Resgistro para todas las actividades de acceso priviligiados
+        -Supervidar y revisar regularmente los registros de acceso privilegiado en busca de comportemaientos sospechosos
+        -Se notifica de inmediato a los admins sobre actividades inusuales.
+    4.Segregacion de deberes:
+        -Implementa una segregacion adecuada de deberes para evitar confictos de intereses.
+        -Revision y actualizacion regularmente de los roles y permisos del PAM
+    5.Gestion de passwords:
+        -Passwords seguras y rotativas
+        -Cifrar las passwords almacenadas dentro del PAM
+        -Implametacion de politicas de cambio de passwords adecuadas para las cuentas priviligiadas.
+    6.Integridad y escalabilidad:
+        -Intefracion PAM en otros sistemas de seguridad y gestion de identidades.
+        -Es el PAm escalable para adaptarse a las necesidades futuras de la organizacion.
+    7.Respuesta a incidentes:
+        -Planes y procedimientos claros para responder a incidentes de seguridad relacionados con el acceso priviligiado.
+        -Simulacros a periodicos de respuesta a incidentes.
+    8. Cumplimiento normativo;
+        - Cumple con los estandares de cumplimiento revelante(PCI-DSS, GDRP, HIPAA)
+        -Auditorias externas o evaluaciones de cumplimiento regularmente.
+
+Puertos conflictivos para el Auditorias:
+    1. Puerto 22(SSH): Puerto que adminisitra de forma remota.
+    2. Puerto 3389(RDP): Utilizacion por el protocolo de escritorio remoto para windows.
+    3. Puerto 21(FTP): Para la transferencia de archivos.
+    4. Puerto 4421(SMB): Mensaje del server de windows para compartir achivos e impresooras.
+    5. Puerto 23(Telnet): Para la administracion remota del sistemas ya que no esta cifrado el telnet.
+    6. Puerto 80 HTTP Y HTTPS 8080: El de las paginas web
+    7. Puerto 3389(MySql): Utilizado para la base de datos
+    8. Puertos de servicio personalizado
+
