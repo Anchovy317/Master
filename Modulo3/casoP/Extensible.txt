@@ -1,0 +1,106 @@
+PAM:
+    1.Intoduccion:
+
+    Pluggble autherntication modules(PAMs): Es un framework bastante comun para la autenticacion y autorizacion, del cual
+    propotciona figerentes funtes de autenticacion(SSSD, NIS, de del sistema local).
+        1.PAM: Proporciona un esquema de autenticacion que se emplea en variedad de apps
+        2.PAM: Proporciona flexebilidad y contol sobre autherntication y administracion del sistema.
+        3.PAM: Porporciona una biblioteca unica y documentada que permite desarrollar programas.
+    https://github.com/linux-pam/linux-pam
+En el caso de la empresa realizaremos una configuracion seguiendo el estandar NIST-800-53:
+El cual nos protporciona unas pautas a seguir de en la confiiguracion de este framework, lo cual garantiza al las personas que
+tengan los principios minimo para desempenhar funciones  y evitar el acceso no autorizado.
+Controles de acceso que incluye este framework:
+    1.Gestion de cuantas: Control y gestion de creaccion.
+    2.Cumplimiento de acceso: cumplimineto las restricciones de acceso basado en el principio minimo
+    3.MInimo privilegio: Porcesos de los derechos minimos para cumplir tareas para reducir amenazas o evitar el exesico o ineccesario
+    4.Separacion de deberes: segregaracion de deberes para evitar conflicto de intereses.
+
+Proporciona un contrasenhas como deposito seguro para almacenae y administrar credenciales, como la del admin o cuenta raiz,
+y rotacion de contrasenhas para la reduccion de ataques.
+
+Algunas diferencias entre NIST y ISO:
+    Foto de delina:
+
+Tambien nos proporciona las gestion de clasves SSH:
+    1. Administacion de cuentas
+    2. Cumplimiento de acceso
+    3. Privilegio minimo
+    4. Acceso remoto
+    5. Monitoreo continuo
+
+
+1. Entendimiento de alcance
+2. Revision de controles y reglas
+3. Gestion de acceso proviligiado
+4. Verificacion de enrolamiento
+5. Prevenccion de bypass
+6. Evaluacion de mejoras
+
+CONFIGURACION PAM:
+    Es recomnedable la utilizacion de la herramienta authconfig en vez de editar la confiiguracion PAM (en teda de configuracion  de archivos)
+        1. auth: modulo para la authenticacin de los usuarios
+        2. account: Modulo para verifiar el acceso permitido para el usuario
+        3. password: modulo para cambiar la contrasenhas de los user
+        4. session: modulo para configuracion de sesiones del usuario
+    -Algunas keyword para la configuracion:
+        1, requiere: modulo para la ejecucion de la autenticacion, notifica al usuario por si hay alguna falla
+        2, requesite: hace misma funcion de requiere.
+        3, sufficient: resultado del modulo que ingnora la falla
+        4, optional: Solo es necesario para uba autenticacioncon si el user se autentica el servidor
+        5, incluide: No se realciona con el resultado de los modulos, extrae lineas del archivo de configuracion
+    MODULOS APILADOS:
+        [root@MiServidor ~]# cat /etc/pam.d/setup
+
+         autenticación suficiente pam_rootok.so
+         autenticación incluye autenticación del sistema
+         cuenta requerida pam_permit.so
+         sesión requerida pam_permit.so
+
+         1/autenticación suficiente pam_rootok.so: modulo que que verifica el usuario raiz, ya que us UID sea 0.
+         2/autenticación incluye autenticación del sistema: contenido del /etc/pam.d/system-auth modulo precesa este contenido para la auh.
+         3/cuenta requerida pam_permit.son: permite al usuario raiz o a cualquier otro loggearse en la consola o reiniciar el sistema
+         4/sesión requerida pam_permit.so: Permite que no falle al iniciar el sistema.
+         EX:
+        #%PAM-1.0
+        auth		required	pam_securetty.so
+        auth		required	pam_unix.so nullok
+        auth		required	pam_nologin.so
+        account		required	pam_unix.so
+        password	required	pam_pwquality.so retry=3
+        password	required	pam_unix.so shadow nullok use_authtok
+        session		required	pam_unix.so
+
+
+        -Administracion de credenciales:
+            pam_timestamp.so proporcion a dos interfaces:
+                -auth
+                -session
+            timestamp_timeout: especifica el periodo de validez
+            timestampdir: directorios donde se almacena el archivo de marca /var/run/sudo/.
+            EX:
+            auth       sufficient    pam_timestamp.so timestamp_timeout=600
+            session    optional     pam_timestampso
+        -Restricciones de dominio:
+            Permite la restriccion a que dominios pueden acceder al servidor PAM, SSSD evalua las solicitudes de autenticacion de los servicios.
+            Algunas opciones:
+                -pam_trusted_user en /etc/sssd.conf
+                -pampublic_domain en /etc/sssd/sssd.conf
+                -domains para archivos de configuracion PAM
+                autenticación suficiente pam_sss.so forward_pass  domains=dominio1
+                cuenta [predeterminado=mal éxito=ok usuario_desconocido=ignorar] pam_sss.so
+                contraseña suficiente pam_sss.so use_authtok
+        -En windows: Podemos implementar estas herramientas:
+            1. pam_winbind: MOdulo que permite a los sisteams Unix utilizar un windows un protocolo NTLM
+            2. SSSD(System Security Service Daemon
+            3. Centrify DirectCOntrol: soluciones para integrar sistema Unix con Active directory en entornos empresariales.
+
+
+Arquitectura para la mejora del PAM:
+    1. Creacion de coberturas para la matriz PAM
+    2. Implementacion basicas de PAM
+    3. Intregracuuibes de PAM adicionales
+    4. Integracion de soluciones PAM co SIEM o ITSM
+    5. Disenho de resilencias para la solucion PAM
+
+Imagenes de PAM para la arquitectura PAm y PAM cloud
